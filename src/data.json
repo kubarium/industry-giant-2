@@ -54,9 +54,9 @@
       "date": 1900
    },
    "Beer": {
-      "cost": -1,
+      "cost": 690,
       "composition": ["Glass","Hops"],
-      "price": -1,
+      "price": 13610,
       "date": 1900
    },
    "Bikes": {
@@ -90,9 +90,9 @@
       "date": 1936
    },
    "Bread": {
-      "cost": -1,
+      "cost": 240,
       "composition": ["Wheat"],
-      "price": -1,
+      "price": 4540,
       "date": 1900
    },
    "Calendar": {
@@ -114,9 +114,9 @@
       "date": 1900
    },
    "Cards": {
-      "cost": -1,
+      "cost": 670,
       "composition": ["Cardboard"],
-      "price": -1,
+      "price": 11540,
       "date": 1904
    },
    "Chairs": {
@@ -156,15 +156,15 @@
       "date": 1925
    },
    "Copybooks": {
-      "cost": -1,
+      "cost": 540,
       "composition": ["Paper"],
-      "price": -1,
+      "price": 8690,
       "date": 1900
    },
    "Cotton": {
       "cost": 180,
       "composition": [],
-      "price": -1,
+      "price": 350,
       "date": 1900
    },
    "Crank Telephone": {
@@ -192,9 +192,9 @@
       "date": 1900
    },
    "Cutlery": {
-      "cost": -1,
+      "cost": 2560,
       "composition": ["High Grade Steel"],
-      "price": -1,
+      "price": 19070,
       "date": 1904
    },
    "Dart Board": {
@@ -204,9 +204,9 @@
       "date": 1957
    },
    "Deep Freezer": {
-      "cost": -1,
+      "cost": 3290,
       "composition": ["Steel","Steel"],
-      "price": -1,
+      "price": 29770,
       "date": 1909
    },
    "Designer Furniture": {
@@ -228,15 +228,15 @@
       "date": 1942
    },
    "Dolls": {
-      "cost": -1,
+      "cost": 720,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 6300,
       "date": 1900
    },
    "Doughnuts": {
-      "cost": -1,
+      "cost": 420,
       "composition": ["Wheat","Milk"],
-      "price": -1,
+      "price": 12070,
       "date": 1903
    },
    "Drums": {
@@ -248,7 +248,7 @@
    "Eggs": {
       "cost": 180,
       "composition": [],
-      "price": -1,
+      "price": 4150,
       "date": 1900
    },
    "Electric Engines": {
@@ -288,9 +288,9 @@
       "date": 1935
    },
    "Fabrics": {
-      "cost": -1,
+      "cost": 840,
       "composition": ["Cotton"],
-      "price": -1,
+      "price": 7920,
       "date": 1900
    },
    "Fishing": {
@@ -332,19 +332,19 @@
    "Fruit": {
       "cost": 280,
       "composition": [],
-      "price": -1,
+      "price": 6000,
       "date": 1900
    },
    "Fruit Juice": {
-      "cost": -1,
+      "cost": 540,
       "composition": ["Fruit","Fruit","Glass"],
-      "price": -1,
+      "price": 9920,
       "date": 1900
    },
    "Furry Pets": {
-      "cost": -1,
+      "cost": 870,
       "composition": ["Fabrics","Grain Wood"],
-      "price": -1,
+      "price": 15690,
       "date": 1902
    },
    "Gambling Pieces": {
@@ -386,13 +386,13 @@
    "Grain Wood": {
       "cost": 520,
       "composition": ["Cut Wood"],
-      "price": -1,
+      "price": 1770,
       "date": 1900
    },
    "Grapes": {
       "cost": 1000,
       "composition": [],
-      "price": -1,
+      "price": 6920,
       "date": 1900
    },
    "Gril": {
@@ -440,13 +440,13 @@
    "High Grade Steel": {
       "cost": 980,
       "composition": ["Precious Metals"],
-      "price": -1,
+      "price": 3930,
       "date": 1904
    },
    "Hops": {
       "cost": 200,
       "composition": [],
-      "price": -1,
+      "price": 390,
       "date": 1900
    },
    "Inflatable Boat": {
@@ -468,9 +468,9 @@
       "date": 1954
    },
    "Joke Articles": {
-      "cost": -1,
+      "cost": 680,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 8770,
       "date": 1909
    },
    "Juke Box": {
@@ -488,7 +488,7 @@
    "Leather": {
       "cost": 360,
       "composition": [],
-      "price": -1,
+      "price": 1930,
       "date": 1900
    },
    "Luxury Body": {
@@ -506,7 +506,7 @@
    "Meat": {
       "cost": 320,
       "composition": [],
-      "price": -1,
+      "price": 5230,
       "date": 1900
    },
    "Metal Cars": {
@@ -524,7 +524,7 @@
    "Milk": {
       "cost": 220,
       "composition": [],
-      "price": -1,
+      "price": 4540,
       "date": 1900
    },
    "Model Railroad": {
@@ -546,9 +546,9 @@
       "date": 1941
    },
    "Newspaper": {
-      "cost": -1,
+      "cost": 750,
       "composition": ["Paper"],
-      "price": -1,
+      "price": 8770,
       "date": 1900
    },
    "Nylon": {
@@ -590,7 +590,7 @@
    "Peanuts": {
       "cost": 140,
       "composition": [],
-      "price": -1,
+      "price": 300,
       "date": 1905
    },
    "Petroleum": {
@@ -632,7 +632,7 @@
    "Plastics": {
       "cost": 480,
       "composition": ["Petroleum"],
-      "price": -1,
+      "price": 2540,
       "date": 1900
    },
    "Posters": {
@@ -672,9 +672,9 @@
       "date": 1966
    },
    "Push Cart": {
-      "cost": -1,
+      "cost": 2190,
       "composition": ["Steel","Rubber"],
-      "price": -1,
+      "price": 22070,
       "date": 1906
    },
    "Quartz Sand": {
@@ -708,9 +708,9 @@
       "date": 1916
    },
    "Roasted Peanuts": {
-      "cost": -1,
+      "cost": 320,
       "composition": ["Peanuts"],
-      "price": -1,
+      "price": 10380,
       "date": 1905
    },
    "Roller Skates": {
@@ -722,13 +722,13 @@
    "Rubber": {
       "cost": 560,
       "composition": ["Petroleum"],
-      "price": -1,
+      "price": 2390,
       "date": 1900
    },
    "Shoes": {
-      "cost": -1,
+      "cost": 1400,
       "composition": ["Leather","Rubber"],
-      "price": -1,
+      "price": 16000,
       "date": 1900
    },
    "Skateboard": {
@@ -750,9 +750,9 @@
       "date": 1922
    },
    "Snow Shovel": {
-      "cost": -1,
+      "cost": 1190,
       "composition": ["Cut Wood","Steel"],
-      "price": -1,
+      "price": 18300,
       "date": 1910
    },
    "Sport Shoes": {
@@ -764,13 +764,13 @@
    "Steel": {
       "cost": 850,
       "composition": ["Iron Ore"],
-      "price": -1,
+      "price": 3000,
       "date": 1900
    },
    "Summer Clothes": {
-      "cost": -1,
+      "cost": 1230,
       "composition": ["Fabrics"],
-      "price": -1,
+      "price": 13690,
       "date": 1900
    },
    "Sun Protection": {
@@ -798,15 +798,15 @@
       "date": 1914
    },
    "Tools": {
-      "cost": -1,
+      "cost": 1760,
       "composition": ["Wooden Board","Steel"],
-      "price": -1,
+      "price": 17320,
       "date": 1900
    },
    "Tricycles": {
-      "cost": -1,
+      "cost": 1120,
       "composition": ["Steel"],
-      "price": -1,
+      "price": 6380,
       "date": 1900
    },
    "TV Set": {
@@ -842,25 +842,25 @@
    "Wheat": {
       "cost": 160,
       "composition": [],
-      "price": -1,
+      "price": 310,
       "date": 1900
    },
    "Whisky": {
-      "cost": -1,
+      "cost": 1090,
       "composition": ["Glass","Wheat"],
-      "price": -1,
+      "price": 17460,
       "date": 1900
    },
    "Wine": {
-      "cost": -1,
+      "cost": 1200,
       "composition": ["Glass","Grapes"],
-      "price": -1,
+      "price": 16840,
       "date": 1900
    },
    "Winter Clothes": {
-      "cost": -1,
+      "cost": 1570,
       "composition": ["Wool","Wool"],
-      "price": -1,
+      "price": 14460,
       "date": 1900
    },
    "Wood Instruments": {
@@ -872,7 +872,7 @@
    "Wooden Board": {
       "cost": 720,
       "composition": ["Cut Wood"],
-      "price": -1,
+      "price": 6500,
       "date": 1900
    },
    "Wooden Furniture": {
@@ -882,27 +882,27 @@
       "date": 1900
    },
    "Wooden Ladder": {
-      "cost": -1,
+      "cost": 1920,
       "composition": ["Wooden Board"],
-      "price": -1,
+      "price": 9540,
       "date": 1900
    },
    "Wooden Loco": {
-      "cost": -1,
+      "cost": 1280,
       "composition": ["Wooden Board"],
-      "price": -1,
+      "price": 6400,
       "date": 1900
    },
    "Wool": {
       "cost": 280,
       "composition": [],
-      "price": -1,
+      "price": 6070,
       "date": 1900
    },
    "Working Clothes": {
-      "cost": -1,
+      "cost": 2190,
       "composition": ["Fabrics","Leather"],
-      "price": -1,
+      "price": 28380,
       "date": 1907
    }
 }
