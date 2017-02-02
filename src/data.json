@@ -1,0 +1,908 @@
+{
+   "Accordion": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1958
+   },
+   "Action Heros": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1960
+   },
+   "Aluminum": {
+      "cost": -1,
+      "composition": ["Bauxite"],
+      "price": -1,
+      "date": 1923
+   },
+   "Aluminum Ladder": {
+      "cost": -1,
+      "composition": ["Aluminum"],
+      "price": -1,
+      "date": 1942
+   },
+   "Amplifier": {
+      "cost": -1,
+      "composition": ["Wooden Board","Steel","Electronic Components"],
+      "price": -1,
+      "date": 1947
+   },
+   "Baby Food": {
+      "cost": -1,
+      "composition": ["Milk"],
+      "price": -1,
+      "date": 1928
+   },
+   "Baby Nappies": {
+      "cost": -1,
+      "composition": ["Cotton"],
+      "price": -1,
+      "date": 1961
+   },
+   "Baker's Ware": {
+      "cost": -1,
+      "composition": ["Wheat"],
+      "price": -1,
+      "date": 1913
+   },
+   "Bauxite": {
+      "cost": 420,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Beer": {
+      "cost": -1,
+      "composition": ["Glass","Hops"],
+      "price": -1,
+      "date": 1900
+   },
+   "Bikes": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1922
+   },
+   "Board Games": {
+      "cost": -1,
+      "composition": ["Cardboard","Gambling Pieces"],
+      "price": -1,
+      "date": 1930
+   },
+   "Body": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1935
+   },
+   "Bowling Balls": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1922
+   },
+   "Brass Instruments": {
+      "cost": -1,
+      "composition": ["High Grade Steel"],
+      "price": -1,
+      "date": 1936
+   },
+   "Bread": {
+      "cost": -1,
+      "composition": ["Wheat"],
+      "price": -1,
+      "date": 1900
+   },
+   "Calendar": {
+      "cost": -1,
+      "composition": ["Cardboard","Paper"],
+      "price": -1,
+      "date": 1911
+   },
+   "Cans": {
+      "cost": 480,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1934
+   },
+   "Cardboard": {
+      "cost": 420,
+      "composition": ["Grain Wood"],
+      "price": 6980,
+      "date": 1900
+   },
+   "Cards": {
+      "cost": -1,
+      "composition": ["Cardboard"],
+      "price": -1,
+      "date": 1904
+   },
+   "Chairs": {
+      "cost": 2320,
+      "composition": ["Leather","Cut Wood"],
+      "price": 20300,
+      "date": 1908
+   },
+   "Christmas Trees": {
+      "cost": 140,
+      "composition": [],
+      "price": -1,
+      "date": 1913
+   },
+   "Colour TV": {
+      "cost": -1,
+      "composition": ["Plastics","Electronic Components","Glass"],
+      "price": -1,
+      "date": 1963
+   },
+   "Comics": {
+      "cost": -1,
+      "composition": ["Paper"],
+      "price": -1,
+      "date": 1941
+   },
+   "Copper Ore": {
+      "cost": 520,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Copper Wire": {
+      "cost": 760,
+      "composition": ["Copper Ore"],
+      "price": -1,
+      "date": 1925
+   },
+   "Copybooks": {
+      "cost": -1,
+      "composition": ["Paper"],
+      "price": -1,
+      "date": 1900
+   },
+   "Cotton": {
+      "cost": 180,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Crank Telephone": {
+      "cost": -1,
+      "composition": ["Wooden Board","Copper Wire"],
+      "price": -1,
+      "date": 1910
+   },
+   "Crocodile Handbag": {
+      "cost": -1,
+      "composition": ["Crocodile Leather"],
+      "price": -1,
+      "date": 1936
+   },
+   "Crocodile Leather": {
+      "cost": 560,
+      "composition": [],
+      "price": -1,
+      "date": 1936
+   },
+   "Cut Wood": {
+      "cost": 320,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Cutlery": {
+      "cost": -1,
+      "composition": ["High Grade Steel"],
+      "price": -1,
+      "date": 1904
+   },
+   "Dart Board": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1957
+   },
+   "Deep Freezer": {
+      "cost": -1,
+      "composition": ["Steel","Steel"],
+      "price": -1,
+      "date": 1909
+   },
+   "Designer Furniture": {
+      "cost": -1,
+      "composition": ["Leather","Aluminum","Aluminum"],
+      "price": -1,
+      "date": 1943
+   },
+   "Detergents": {
+      "cost": 670,
+      "composition": ["Petroleum"],
+      "price": 16840,
+      "date": 1938
+   },
+   "Disposable Cups": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1942
+   },
+   "Dolls": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1900
+   },
+   "Doughnuts": {
+      "cost": -1,
+      "composition": ["Wheat","Milk"],
+      "price": -1,
+      "date": 1903
+   },
+   "Drums": {
+      "cost": -1,
+      "composition": ["Leather","Steel"],
+      "price": -1,
+      "date": 1923
+   },
+   "Eggs": {
+      "cost": 180,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Electric Engines": {
+      "cost": -1,
+      "composition": ["Steel","Copper Wire"],
+      "price": -1,
+      "date": 1927
+   },
+   "Electric Guitar": {
+      "cost": -1,
+      "composition": ["Wooden Board","Steel"],
+      "price": -1,
+      "date": 1947
+   },
+   "Electric Tools": {
+      "cost": -1,
+      "composition": ["Plastics","Electrin Engines","Steel"],
+      "price": -1,
+      "date": 1938
+   },
+   "Electric Toothbrush": {
+      "cost": -1,
+      "composition": ["Plastics","Electric Engines"],
+      "price": -1,
+      "date": 1964
+   },
+   "Electronic Components": {
+      "cost": -1,
+      "composition": ["Plastics","Copper Wire"],
+      "price": -1,
+      "date": 1925
+   },
+   "Engines": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1935
+   },
+   "Fabrics": {
+      "cost": -1,
+      "composition": ["Cotton"],
+      "price": -1,
+      "date": 1900
+   },
+   "Fishing": {
+      "cost": -1,
+      "composition": ["Aluminum","Nylon"],
+      "price": -1,
+      "date": 1955
+   },
+   "Fitness Appliances": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1945
+   },
+   "Footballs": {
+      "cost": -1,
+      "composition": ["Leather"],
+      "price": -1,
+      "date": 1926
+   },
+   "Friction Train": {
+      "cost": -1,
+      "composition": ["High Grade Steel"],
+      "price": -1,
+      "date": 1928
+   },
+   "Fridge": {
+      "cost": -1,
+      "composition": ["Plastics","Electric Engines","Steel"],
+      "price": -1,
+      "date": 1927
+   },
+   "Frozen Foods": {
+      "cost": -1,
+      "composition": ["Meat","Plastics"],
+      "price": -1,
+      "date": 1954
+   },
+   "Fruit": {
+      "cost": 280,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Fruit Juice": {
+      "cost": -1,
+      "composition": ["Fruit","Fruit","Glass"],
+      "price": -1,
+      "date": 1900
+   },
+   "Furry Pets": {
+      "cost": -1,
+      "composition": ["Fabrics","Grain Wood"],
+      "price": -1,
+      "date": 1902
+   },
+   "Gambling Pieces": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1919
+   },
+   "Garden Furniture": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1962
+   },
+   "Garden Gnome": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1933
+   },
+   "Garden Houses": {
+      "cost": 840,
+      "composition": ["Wooden Board","Wooden Board","Wooden Board"],
+      "price": 18300,
+      "date": 1912
+   },
+   "Gift Wrapping": {
+      "cost": -1,
+      "composition": ["Paper"],
+      "price": -1,
+      "date": 1916
+   },
+   "Glass": {
+      "cost": 360,
+      "composition": ["Quartz Sand"],
+      "price": 10230,
+      "date": 1900
+   },
+   "Grain Wood": {
+      "cost": 520,
+      "composition": ["Cut Wood"],
+      "price": -1,
+      "date": 1900
+   },
+   "Grapes": {
+      "cost": 1000,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Gril": {
+      "cost": -1,
+      "composition": ["High Grade Steel"],
+      "price": -1,
+      "date": 1951
+   },
+   "Guitar": {
+      "cost": -1,
+      "composition": ["Wooden Board","Steel"],
+      "price": -1,
+      "date": 1918
+   },
+   "Hairdryer": {
+      "cost": -1,
+      "composition": ["Plastics","Electric Engines"],
+      "price": -1,
+      "date": 1933
+   },
+   "Hamburgers": {
+      "cost": -1,
+      "composition": ["Bread","Meat"],
+      "price": -1,
+      "date": 1924
+   },
+   "Hand Mower": {
+      "cost": -1,
+      "composition": ["Cut Wood","Steel"],
+      "price": -1,
+      "date": 1929
+   },
+   "Handbags": {
+      "cost": -1,
+      "composition": ["Leather"],
+      "price": -1,
+      "date": 1919
+   },
+   "HiFi Unit": {
+      "cost": -1,
+      "composition": ["Plastics","Electronic Components"],
+      "price": -1,
+      "date": 1956
+   },
+   "High Grade Steel": {
+      "cost": 980,
+      "composition": ["Precious Metals"],
+      "price": -1,
+      "date": 1904
+   },
+   "Hops": {
+      "cost": 200,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Inflatable Boat": {
+      "cost": -1,
+      "composition": ["Rubber"],
+      "price": -1,
+      "date": 1940
+   },
+   "Iron Ore": {
+      "cost": 400,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Jeans": {
+      "cost": -1,
+      "composition": ["Fabrics"],
+      "price": -1,
+      "date": 1954
+   },
+   "Joke Articles": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1909
+   },
+   "Juke Box": {
+      "cost": -1,
+      "composition": ["Plastics","Electronic Components","Steel"],
+      "price": -1,
+      "date": 1953
+   },
+   "Kitchen Device": {
+      "cost": -1,
+      "composition": ["Plastics","Electric Engines"],
+      "price": -1,
+      "date": 1955
+   },
+   "Leather": {
+      "cost": 360,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Luxury Body": {
+      "cost": -1,
+      "composition": ["Steel","Steel","Leather"],
+      "price": -1,
+      "date": 1944
+   },
+   "Luxury Motor Car": {
+      "cost": -1,
+      "composition": ["Luxury Body","Tyres","Engines"],
+      "price": -1,
+      "date": 1944
+   },
+   "Meat": {
+      "cost": 320,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Metal Cars": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1915
+   },
+   "Microwave": {
+      "cost": -1,
+      "composition": ["Aluminum","Electronic Components"],
+      "price": -1,
+      "date": 1968
+   },
+   "Milk": {
+      "cost": 220,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Model Railroad": {
+      "cost": -1,
+      "composition": ["Plastics","Electronic Components"],
+      "price": -1,
+      "date": 1952
+   },
+   "Motor Car": {
+      "cost": -1,
+      "composition": ["Body","Tyres","Engines"],
+      "price": -1,
+      "date": 1935
+   },
+   "Mouth Organ": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1941
+   },
+   "Newspaper": {
+      "cost": -1,
+      "composition": ["Paper"],
+      "price": -1,
+      "date": 1900
+   },
+   "Nylon": {
+      "cost": 720,
+      "composition": ["Petroleum"],
+      "price": -1,
+      "date": 1939
+   },
+   "Nylon Tights": {
+      "cost": -1,
+      "composition": ["Nylon"],
+      "price": -1,
+      "date": 1939
+   },
+   "Nylon Toothbrush": {
+      "cost": -1,
+      "composition": ["Plastics","Nylon"],
+      "price": -1,
+      "date": 1946
+   },
+   "Office Furniture": {
+      "cost": -1,
+      "composition": ["Wooden Board","Wooden Board","Steel"],
+      "price": -1,
+      "date": 1931
+   },
+   "Paper": {
+      "cost": 360,
+      "composition": ["Grain Wood"],
+      "price": 6070,
+      "date": 1900
+   },
+   "Peanut Butter": {
+      "cost": -1,
+      "composition": ["Peanuts","Milk"],
+      "price": -1,
+      "date": 1917
+   },
+   "Peanuts": {
+      "cost": 140,
+      "composition": [],
+      "price": -1,
+      "date": 1905
+   },
+   "Petroleum": {
+      "cost": 540,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Piano": {
+      "cost": -1,
+      "composition": ["Wooden Board","Steel"],
+      "price": -1,
+      "date": 1926
+   },
+   "Picture Frame": {
+      "cost": 480,
+      "composition": ["Wooden Board"],
+      "price": 7920,
+      "date": 1900
+   },
+   "Pinball Machine": {
+      "cost": -1,
+      "composition": ["Wooden Board","Steel","Plastics"],
+      "price": -1,
+      "date": 1949
+   },
+   "Plastic Boxes": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1950
+   },
+   "Plastic Cars": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1937
+   },
+   "Plastics": {
+      "cost": 480,
+      "composition": ["Petroleum"],
+      "price": -1,
+      "date": 1900
+   },
+   "Posters": {
+      "cost": -1,
+      "composition": ["Paper"],
+      "price": -1,
+      "date": 1924
+   },
+   "Power Mower": {
+      "cost": -1,
+      "composition": ["Steel","Engines","Rubber"],
+      "price": -1,
+      "date": 1960
+   },
+   "Precious Metals": {
+      "cost": 560,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Preserved Fruit": {
+      "cost": -1,
+      "composition": ["Fruit","Cans"],
+      "price": -1,
+      "date": 1934
+   },
+   "Preserved Meat": {
+      "cost": -1,
+      "composition": ["Meat","Cans"],
+      "price": -1,
+      "date": 1934
+   },
+   "Push Button Phone": {
+      "cost": -1,
+      "composition": ["Plastics","Electronic Components"],
+      "price": -1,
+      "date": 1966
+   },
+   "Push Cart": {
+      "cost": -1,
+      "composition": ["Steel","Rubber"],
+      "price": -1,
+      "date": 1906
+   },
+   "Quartz Sand": {
+      "cost": 260,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Radio": {
+      "cost": -1,
+      "composition": ["Wooden Board","Electronic Components"],
+      "price": -1,
+      "date": 1925
+   },
+   "Raincoat": {
+      "cost": -1,
+      "composition": ["Rubber"],
+      "price": -1,
+      "date": 1912
+   },
+   "RC Cars": {
+      "cost": -1,
+      "composition": ["Plastics","Electronic Components"],
+      "price": -1,
+      "date": 1968
+   },
+   "Recorder": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1916
+   },
+   "Roasted Peanuts": {
+      "cost": -1,
+      "composition": ["Peanuts"],
+      "price": -1,
+      "date": 1905
+   },
+   "Roller Skates": {
+      "cost": -1,
+      "composition": ["Leather","Steel"],
+      "price": -1,
+      "date": 1932
+   },
+   "Rubber": {
+      "cost": 560,
+      "composition": ["Petroleum"],
+      "price": -1,
+      "date": 1900
+   },
+   "Shoes": {
+      "cost": -1,
+      "composition": ["Leather","Rubber"],
+      "price": -1,
+      "date": 1900
+   },
+   "Skateboard": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1970
+   },
+   "Skies": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1950
+   },
+   "Sledge": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1922
+   },
+   "Snow Shovel": {
+      "cost": -1,
+      "composition": ["Cut Wood","Steel"],
+      "price": -1,
+      "date": 1910
+   },
+   "Sport Shoes": {
+      "cost": -1,
+      "composition": ["Fabrics","Leather","Rubber"],
+      "price": -1,
+      "date": 1947
+   },
+   "Steel": {
+      "cost": 850,
+      "composition": ["Iron Ore"],
+      "price": -1,
+      "date": 1900
+   },
+   "Summer Clothes": {
+      "cost": -1,
+      "composition": ["Fabrics"],
+      "price": -1,
+      "date": 1900
+   },
+   "Sun Protection": {
+      "cost": 720,
+      "composition": ["Petroleum"],
+      "price": -1,
+      "date": 1958
+   },
+   "Telephone": {
+      "cost": -1,
+      "composition": ["Plastics","Copper Wire"],
+      "price": -1,
+      "date": 1932
+   },
+   "Tennis Racket": {
+      "cost": -1,
+      "composition": ["Aluminum","Nylon"],
+      "price": -1,
+      "date": 1959
+   },
+   "Tissues": {
+      "cost": -1,
+      "composition": ["Grain Wood"],
+      "price": -1,
+      "date": 1914
+   },
+   "Tools": {
+      "cost": -1,
+      "composition": ["Wooden Board","Steel"],
+      "price": -1,
+      "date": 1900
+   },
+   "Tricycles": {
+      "cost": -1,
+      "composition": ["Steel"],
+      "price": -1,
+      "date": 1900
+   },
+   "TV Set": {
+      "cost": -1,
+      "composition": ["Wooden Board","Electronic Components","Glass"],
+      "price": -1,
+      "date": 1929
+   },
+   "Tyres": {
+      "cost": -1,
+      "composition": ["Steel","Rubber"],
+      "price": -1,
+      "date": 1935
+   },
+   "Wallpaper": {
+      "cost": -1,
+      "composition": ["Paper"],
+      "price": -1,
+      "date": 1921
+   },
+   "Washing Machine": {
+      "cost": -1,
+      "composition": ["Steel","Steel","Electric Engines"],
+      "price": -1,
+      "date": 1938
+   },
+   "Watering Can": {
+      "cost": -1,
+      "composition": ["Plastics"],
+      "price": -1,
+      "date": 1948
+   },
+   "Wheat": {
+      "cost": 160,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Whisky": {
+      "cost": -1,
+      "composition": ["Glass","Wheat"],
+      "price": -1,
+      "date": 1900
+   },
+   "Wine": {
+      "cost": -1,
+      "composition": ["Glass","Grapes"],
+      "price": -1,
+      "date": 1900
+   },
+   "Winter Clothes": {
+      "cost": -1,
+      "composition": ["Wool","Wool"],
+      "price": -1,
+      "date": 1900
+   },
+   "Wood Instruments": {
+      "cost": -1,
+      "composition": ["Wooden Board","High Grade Steel"],
+      "price": -1,
+      "date": 1931
+   },
+   "Wooden Board": {
+      "cost": 720,
+      "composition": ["Cut Wood"],
+      "price": -1,
+      "date": 1900
+   },
+   "Wooden Furniture": {
+      "cost": 2200,
+      "composition": ["Wooden Board","Wooden Board"],
+      "price": 12070,
+      "date": 1900
+   },
+   "Wooden Ladder": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1900
+   },
+   "Wooden Loco": {
+      "cost": -1,
+      "composition": ["Wooden Board"],
+      "price": -1,
+      "date": 1900
+   },
+   "Wool": {
+      "cost": 280,
+      "composition": [],
+      "price": -1,
+      "date": 1900
+   },
+   "Working Clothes": {
+      "cost": -1,
+      "composition": ["Fabrics","Leather"],
+      "price": -1,
+      "date": 1907
+   }
+}
