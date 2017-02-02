@@ -265,7 +265,7 @@
    },
    "Electric Tools": {
       "cost": -1,
-      "composition": ["Plastics","Electrin Engines","Steel"],
+      "composition": ["Plastics","Electric Engines","Steel"],
       "price": -1,
       "date": 1938
    },

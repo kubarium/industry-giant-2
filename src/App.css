@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+h2 {
+  text-align: center
 }
 
 .App-logo {
@@ -24,7 +24,40 @@
   to { transform: rotate(360deg); }
 }
 
-.input-group-addon{
-  min-width: 80px;
-  text-align: right
+#spring + .input-group-addon > svg{
+  color:#2f682e
+}
+#summer + .input-group-addon > svg{
+  color:#ff482e
+}
+#fall + .input-group-addon > svg{
+  color:#a0a0a0
+}
+#winter + .input-group-addon > svg{
+  color:#337ab7
+}
+
+.list-group-item:nth-child(2n){
+  background: #fcfcfc
+}
+
+.list-group-item h4{
+  float:left;
+  line-height: 34px;
+  padding: 0;
+  margin: 0
+}
+
+.list-group-item > div:first-child{
+  border-bottom: 1px dashed gainsboro;
+  overflow: hidden;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+.list-group-item div{
+  clear:both
+}
+
+.demand{
+  float: right;
 }

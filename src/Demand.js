@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {FormControl, FormGroup, InputGroup} from 'react-bootstrap'
+import {Form, FormControl, FormGroup, InputGroup} from 'react-bootstrap'
+import {TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy} from 'react-icons/lib/ti/'
 
 export default class Demand extends Component {
 
@@ -40,7 +41,7 @@ export default class Demand extends Component {
     }
     onChange = (event) => {
         let seasonalDemand = this.state.seasonalDemand
-        seasonalDemand[event.target.id] = parseInt(event.target.value,10)
+        seasonalDemand[event.target.id] = parseInt(event.target.value, 10)
         this.setState({seasonalDemand})
 
         this.calculateTotal()
@@ -48,56 +49,44 @@ export default class Demand extends Component {
     }
     render() {
         return (
-            <form>
+            <Form inline className="demand">
                 <FormGroup>
                     <InputGroup>
                         <FormControl
                             id="spring"
                             type="number"
                             min="0"
-                            max="50"
+                            max="150"
                             value={this.state.seasonalDemand.spring}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon>Spring</InputGroup.Addon>
-                    </InputGroup>
-                </FormGroup>
-                <FormGroup>
-                    <InputGroup>
+                        <InputGroup.Addon><TiLeaf/></InputGroup.Addon>
                         <FormControl
                             id="summer"
                             type="number"
                             min="0"
-                            max="50"
+                            max="150"
                             value={this.state.seasonalDemand.summer}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon>Summer</InputGroup.Addon>
-                    </InputGroup>
-                </FormGroup>
-                <FormGroup>
-                    <InputGroup>
+                        <InputGroup.Addon><TiWeatherSunny/></InputGroup.Addon>
                         <FormControl
                             id="fall"
                             type="number"
                             min="0"
-                            max="50"
+                            max="150"
                             value={this.state.seasonalDemand.fall}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon>Fall</InputGroup.Addon>
-                    </InputGroup>
-                </FormGroup>
-                <FormGroup>
-                    <InputGroup>
+                        <InputGroup.Addon><TiWeatherCloudy/></InputGroup.Addon>
                         <FormControl
                             id="winter"
                             type="number"
                             min="0"
-                            max="50"
+                            max="150"
                             value={this.state.seasonalDemand.winter}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon>Winter</InputGroup.Addon>
+                        <InputGroup.Addon><TiWeatherSnow/></InputGroup.Addon>
                     </InputGroup>
                 </FormGroup>
-            </form>
+            </Form>
         )
     }
 }

@@ -38,16 +38,16 @@ export default class App extends Component {
   }
 
   updateInformation = (product) => {
-    let totalCost = this.cost(product)
+    const totalCost = this.cost(product)
+    const profit = data[product].price - totalCost
+    const averageProfit = this.state.totalDemand === 0 ? profit * 0 : profit / this.state.totalDemand
 
     this.setState({
       name: product,
       product: Object.assign({}, data[product], {
-        profit: data[product].price - totalCost,
-        totalCost: totalCost,
-        averageProfit: this.state.totalDemand !== 0
-          ? parseInt((data[product].price - totalCost) / this.state.totalDemand,10)
-          : "N/A"
+        totalCost,
+        profit,
+        averageProfit
       })
     })
   }
@@ -67,19 +67,8 @@ export default class App extends Component {
         <Well>
           <Grid>
             <Row className="show-grid">
-              <Col xs={4} md={3}><Products onChange={this.onProductChange}/></Col>
-              <Col xs={4} md={5}>
-                <ListGroup>
-                  <ListGroupItem>Total Cost:{this.state.product.totalCost}</ListGroupItem>
-                  <ListGroupItem>Price:{this.state.product.price}</ListGroupItem>
-                  <ListGroupItem>Profit:{this.state.product.profit}</ListGroupItem>
-                  <ListGroupItem>Average Profit:{this.state.product.averageProfit}</ListGroupItem>
-                  <ListGroupItem>Date:{this.state.product.date}</ListGroupItem>
-                </ListGroup>
-              </Col>
-              <Col xs={4} md={4}>
-                <Seasonal onChange={this.onDemandChange}/>
-              </Col>
+              <Col xs={4} md={8} mdOffset={2}><Products onChange={this.onProductChange}/></Col>
+              
             </Row>
           </Grid>
         </Well>
