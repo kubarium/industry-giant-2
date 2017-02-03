@@ -20,12 +20,12 @@ export default class Demand extends Component {
     }
     componentWillMount() {
         this.calculateTotal()
-    }/*
+    }
     componentDidMount(){
         this
             .props
             .onChange(this.state.total)
-    }*/
+    }
     componentDidUpdate() {
         this
             .props
@@ -40,8 +40,10 @@ export default class Demand extends Component {
         })
     }
     onChange = (event) => {
+        const value = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
+
         let seasonalDemand = this.state.seasonalDemand
-        seasonalDemand[event.target.id] = parseInt(event.target.value, 10)
+        seasonalDemand[event.target.id] = parseInt(value, 10)
         this.setState({seasonalDemand})
 
         this.calculateTotal()
