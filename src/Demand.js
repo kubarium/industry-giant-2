@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Form, FormControl, FormGroup, InputGroup} from 'react-bootstrap'
-import {TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy} from 'react-icons/lib/ti/'
+import {TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy, TiChartLine} from 'react-icons/lib/ti/'
 
 export default class Demand extends Component {
 
@@ -49,11 +49,24 @@ export default class Demand extends Component {
         this.calculateTotal()
 
     }
+    onFluctuate = (event) => {
+        const total = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
+
+        this.setState({total})
+    }
     render() {
         return (
-            <Form inline className="demand">
+            <Form inline className="demand" bsSize="sm">
                 <FormGroup>
                     <InputGroup>
+                    <FormControl
+                            id="fluctuation"
+                            type="number"
+                            min="0"
+                            max="150"
+                            value={this.state.total}
+                            onChange={this.onFluctuate}/>
+                        <InputGroup.Addon><TiChartLine/></InputGroup.Addon>
                         <FormControl
                             id="spring"
                             type="number"
