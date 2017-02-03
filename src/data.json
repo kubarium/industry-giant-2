@@ -128,7 +128,7 @@
    "Christmas Trees": {
       "cost": 140,
       "composition": [],
-      "price": -1,
+      "price": 7920,
       "date": 1913
    },
    "Colour TV": {
@@ -794,7 +794,7 @@
    "Tissues": {
       "cost": -1,
       "composition": ["Grain Wood"],
-      "price": -1,
+      "price": 13840,
       "date": 1914
    },
    "Tools": {
