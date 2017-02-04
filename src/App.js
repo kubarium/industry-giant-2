@@ -14,7 +14,7 @@ export default class App extends Component {
         </div>
         <Grid>
           <Row>
-            <Col sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Products/></Col>
+            <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Products/></Col>
           </Row>
         </Grid>
       </div>
