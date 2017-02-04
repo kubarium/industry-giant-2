@@ -56,7 +56,7 @@ export default class Demand extends Component {
     }
     render() {
         return (
-            <Form inline className="demand" bsSize="sm">
+            <Form className="demand" bsSize="sm">
                 <FormGroup>
                     <InputGroup>
                     <FormControl
