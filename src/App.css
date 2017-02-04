@@ -34,7 +34,7 @@ h2 {
 }
 
 .list-group-item h4{
-  float:left;
+  display: inline;
   line-height: 34px;
   padding: 0;
   margin: 0
@@ -44,11 +44,15 @@ h2 {
   border-bottom: 1px dashed gainsboro;
   overflow: hidden;
   margin-bottom: 15px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
+}
+
+.ingredients{
+  font-size: smaller
 }
 
 .demand{
-  float: right;
+  margin:10px 0
 }
 
 .price{
