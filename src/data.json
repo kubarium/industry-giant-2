@@ -30,9 +30,9 @@
       "date": 1947
    },
    "Baby Food": {
-      "cost": -1,
+      "cost": 340,
       "composition": ["Milk"],
-      "price": -1,
+      "price": 14150,
       "date": 1928
    },
    "Baby Nappies": {
@@ -42,9 +42,9 @@
       "date": 1961
    },
    "Baker's Ware": {
-      "cost": -1,
+      "cost": 360,
       "composition": ["Wheat"],
-      "price": -1,
+      "price": 6000,
       "date": 1913
    },
    "Bauxite": {
@@ -174,9 +174,9 @@
       "date": 1910
    },
    "Crocodile Handbag": {
-      "cost": -1,
+      "cost": 1090,
       "composition": ["Crocodile Leather"],
-      "price": -1,
+      "price": 23770,
       "date": 1936
    },
    "Crocodile Leather": {
@@ -312,9 +312,9 @@
       "date": 1926
    },
    "Friction Train": {
-      "cost": -1,
+      "cost": 1890,
       "composition": ["High Grade Steel"],
-      "price": -1,
+      "price": 34300,
       "date": 1928
    },
    "Fridge": {
@@ -414,9 +414,9 @@
       "date": 1933
    },
    "Hamburgers": {
-      "cost": -1,
+      "cost": 560,
       "composition": ["Bread","Meat"],
-      "price": -1,
+      "price": 17150,
       "date": 1924
    },
    "Hand Mower": {
@@ -528,9 +528,9 @@
       "date": 1900
    },
    "Model Railroad": {
-      "cost": -1,
+      "cost": 2290,
       "composition": ["Plastics","Electronic Components"],
-      "price": -1,
+      "price": 40380,
       "date": 1952
    },
    "Motor Car": {
@@ -554,13 +554,13 @@
    "Nylon": {
       "cost": 720,
       "composition": ["Petroleum"],
-      "price": -1,
+      "price": 2770,
       "date": 1939
    },
    "Nylon Tights": {
-      "cost": -1,
+      "cost": 780,
       "composition": ["Nylon"],
-      "price": -1,
+      "price": 19070,
       "date": 1939
    },
    "Nylon Toothbrush": {
