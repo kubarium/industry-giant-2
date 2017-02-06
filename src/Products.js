@@ -9,12 +9,12 @@ export default class Products extends Component {
 
     render() {
         let products = Utils.filterByDate(this.props.dateRange)
-
+/*
         if (this.props.ingredients.length){
             console.log(this.props.ingredients.length)
             products = Utils.filterByIngredients(products, this.props.ingredients)
 Utils.RawIngredients()
-        }
+        }*/
 
 
         products = products.map(product => <Product key={product.name} data={product}/>)
