@@ -3,11 +3,6 @@ import Utils from './Utils'
 import {Checkbox, Grid, Row, Col} from 'react-bootstrap'
 
 export default class Ingredients extends Component {
-    constructor(props) {
-        super(props)
-
-    }
-
     componentWillMount() {
         this.state = {
             ingredients: Utils.RawIngredients()
