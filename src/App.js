@@ -3,7 +3,7 @@ import './App.css';
 import Products from './Products'
 import Ingredients from './Ingredients'
 
-import {Range, Handle} from 'rc-slider'
+import Slider, {Handle} from 'rc-slider'
 import Tooltip from 'rc-tooltip'
 import 'rc-slider/assets/index.css';
 import 'rc-tooltip/assets/bootstrap.css';
@@ -33,10 +33,10 @@ export default class App extends Component {
     super(props)
     this.state = {
       ingredients: [],
-      dateRange: [1900, 1970]
+      date: 1970
     }
   }
-  onDateRangeChange = (dateRange) => this.setState({dateRange})
+  onDateChange = (date) => this.setState({date})
   onIngredientsChange = (ingredients) => this.setState({ingredients})
 
   render() {
@@ -47,17 +47,15 @@ export default class App extends Component {
         </div>
         <Grid>
           <Row className="filter">
-            <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Range
-              ref="dateRange"
+            <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Slider
+              ref="date"
               step={1}
               min={1900}
               max={1970}
               marks={marks}
-              count={1}
               handle={handle}
-              defaultValue={this.state.dateRange}
-              allowCross={false}
-              onChange={this.onDateRangeChange}/></Col>
+              defaultValue={this.state.date}
+              onChange={this.onDateChange}/></Col>
           </Row>
           <Row className="filter">
             <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}>
@@ -67,7 +65,7 @@ export default class App extends Component {
           <Row>
             <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Products
               ingredients={this.state.ingredients}
-              dateRange={this.state.dateRange}/></Col>
+              dateRange={[1900,this.state.date]}/></Col>
           </Row>
         </Grid>
       </div>
