@@ -129,7 +129,8 @@
       "cost": 140,
       "composition": [],
       "price": 7920,
-      "date": 1913
+      "date": 1913,
+      "final":true
    },
    "Colour TV": {
       "cost": 2240,
