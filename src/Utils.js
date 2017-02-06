@@ -35,9 +35,19 @@ export default class Utils {
         .filter(product => product.date >= range[0] && product.date <= range[1])
 
     static filterByIngredients = (products, ingredients) => products.filter(product => {
-        return ingredients.filter(ingredient => product.composition.indexOf(ingredient) > -1).length
+
+        return ingredients.filter(ingredient => Utils.fullCompositionList(product.name).indexOf(ingredient) > -1).length
     })
-/*
+
+    static fullCompositionList = (product) => data[product]
+        .composition
+        .map(ingredient => Utils.fullCompositionList(ingredient))
+        .reduce((lastIngredient, newIngredient) => newIngredient.length
+            ? [lastIngredient, newIngredient]
+            : [lastIngredient], data[product].composition)
+        .toString()
+
+    /*
     static filterByIngredients = (product, ingredient) => {
         return products.map[product=>product.composition.]
     }
