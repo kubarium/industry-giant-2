@@ -59,6 +59,7 @@ export default class Demand extends Component {
             <Form className="demand" bsSize="sm">
                 <FormGroup>
                     <InputGroup>
+                        <InputGroup.Addon><TiChartLine/></InputGroup.Addon>
                     <FormControl
                             id="fluctuation"
                             type="number"
@@ -66,7 +67,7 @@ export default class Demand extends Component {
                             max="150"
                             value={this.state.total}
                             onChange={this.onFluctuate}/>
-                        <InputGroup.Addon><TiChartLine/></InputGroup.Addon>
+                        <InputGroup.Addon><TiLeaf/></InputGroup.Addon>
                         <FormControl
                             id="spring"
                             type="number"
@@ -74,7 +75,7 @@ export default class Demand extends Component {
                             max="150"
                             value={this.state.seasonalDemand.spring}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon><TiLeaf/></InputGroup.Addon>
+                        <InputGroup.Addon><TiWeatherSunny/></InputGroup.Addon>
                         <FormControl
                             id="summer"
                             type="number"
@@ -82,7 +83,7 @@ export default class Demand extends Component {
                             max="150"
                             value={this.state.seasonalDemand.summer}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon><TiWeatherSunny/></InputGroup.Addon>
+                        <InputGroup.Addon><TiWeatherCloudy/></InputGroup.Addon>
                         <FormControl
                             id="fall"
                             type="number"
@@ -90,7 +91,7 @@ export default class Demand extends Component {
                             max="150"
                             value={this.state.seasonalDemand.fall}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon><TiWeatherCloudy/></InputGroup.Addon>
+                        <InputGroup.Addon><TiWeatherSnow/></InputGroup.Addon>
                         <FormControl
                             id="winter"
                             type="number"
@@ -98,7 +99,6 @@ export default class Demand extends Component {
                             max="150"
                             value={this.state.seasonalDemand.winter}
                             onChange={this.onChange}/>
-                        <InputGroup.Addon><TiWeatherSnow/></InputGroup.Addon>
                     </InputGroup>
                 </FormGroup>
             </Form>
