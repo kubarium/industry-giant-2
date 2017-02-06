@@ -47,6 +47,13 @@ export default class Utils {
             : [lastIngredient], data[product].composition)
         .toString()
 
+    static breakdownToRawIngredients = (product) => product
+        .split(',')
+        .filter(product => data[product].composition.length === 0)
+        .reduce((result, current)=>result.indexOf(current)===-1 ? result.concat(current) : result,[])
+        /*.reduce((prevIngredient, nextIngredient, curIndex, filteredArray) => filteredArray.indexOf(nextIngredient) > -1
+            ? [prevIngredient, nextIngredient]
+            : ["c"], product)*/
     /*
     static filterByIngredients = (product, ingredient) => {
         return products.map[product=>product.composition.]
