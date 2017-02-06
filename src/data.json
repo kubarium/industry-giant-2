@@ -132,9 +132,9 @@
       "date": 1913
    },
    "Colour TV": {
-      "cost": -1,
-      "composition": ["Plastics","Electronic Components","Glass"],
-      "price": -1,
+      "cost": 2240,
+      "composition": ["Plastics","Electronic Components","Electronic Components","Glass"],
+      "price": 51460,
       "date": 1963
    },
    "Comics": {
@@ -276,9 +276,9 @@
       "date": 1964
    },
    "Electronic Components": {
-      "cost": -1,
+      "cost": 890,
       "composition": ["Plastics","Copper Wire"],
-      "price": -1,
+      "price": 17700,
       "date": 1925
    },
    "Engines": {
@@ -432,9 +432,9 @@
       "date": 1919
    },
    "HiFi Unit": {
-      "cost": -1,
+      "cost": 1670,
       "composition": ["Plastics","Electronic Components"],
-      "price": -1,
+      "price": 46840,
       "date": 1956
    },
    "High Grade Steel": {
@@ -474,9 +474,9 @@
       "date": 1909
    },
    "Juke Box": {
-      "cost": -1,
+      "cost": 2190,
       "composition": ["Plastics","Electronic Components","Steel"],
-      "price": -1,
+      "price": 48000,
       "date": 1953
    },
    "Kitchen Device": {
@@ -612,9 +612,9 @@
       "date": 1900
    },
    "Pinball Machine": {
-      "cost": -1,
+      "cost": 1430,
       "composition": ["Wooden Board","Steel","Plastics"],
-      "price": -1,
+      "price": 31540,
       "date": 1949
    },
    "Plastic Boxes": {
@@ -666,9 +666,9 @@
       "date": 1934
    },
    "Push Button Phone": {
-      "cost": -1,
+      "cost": 1470,
       "composition": ["Plastics","Electronic Components"],
-      "price": -1,
+      "price": 48000,
       "date": 1966
    },
    "Push Cart": {
@@ -684,9 +684,9 @@
       "date": 1900
    },
    "Radio": {
-      "cost": -1,
+      "cost": 1850,
       "composition": ["Wooden Board","Electronic Components"],
-      "price": -1,
+      "price": 30770,
       "date": 1925
    },
    "Raincoat": {
@@ -780,9 +780,9 @@
       "date": 1958
    },
    "Telephone": {
-      "cost": -1,
+      "cost": 2030,
       "composition": ["Plastics","Copper Wire"],
-      "price": -1,
+      "price": 34300,
       "date": 1932
    },
    "Tennis Racket": {
@@ -810,9 +810,9 @@
       "date": 1900
    },
    "TV Set": {
-      "cost": -1,
+      "cost": 2460,
       "composition": ["Wooden Board","Electronic Components","Glass"],
-      "price": -1,
+      "price": 38380,
       "date": 1929
    },
    "Tyres": {
