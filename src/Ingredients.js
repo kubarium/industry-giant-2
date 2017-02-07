@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
-import Utils from './Utils'
 import {Checkbox, Grid, Row, Col} from 'react-bootstrap'
+import Utils from './Utils'
 
 export default class Ingredients extends Component {
     componentWillMount() {
         this.state = {
-            ingredients: Utils.RawIngredients()
+            ingredients:Utils.RawIngredients()
         }
 
         this
@@ -22,15 +22,15 @@ export default class Ingredients extends Component {
             ? ingredients.push(ingredient)
             : ingredients.splice(ingredients.indexOf(ingredient), 1)
 
-        this.setState({ingredients})
+        //this.setState({ingredients})
 
         this
             .props
             .onChange(ingredients)
     }
     render() {
-        const ingredients = Utils
-            .RawIngredients()
+        console.log("rendered again")
+        const ingredients = this.state.ingredients
             .map(ingredient => <Col
                 key={ingredient}
                 xs={6}
