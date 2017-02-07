@@ -1,18 +1,18 @@
 import data from './data.json'
 
-export default class Utils {
-    static RawIngredients = () => Object
-        .keys(data)
-        .filter(item => data[item].composition.length === 0)
+const products = Object.keys(data)
 
+export default class Utils {
+    static RawIngredients = () => products
+        .filter(product => data[product].composition.length === 0)
+/*
     isBigEnough(product) {
         return product >= 15;
     }
 
     static ImmediateBuildList = () => {
-        const simpleItems = Object
-            .keys(data)
-            .filter(item => data[item].composition.length === 1)
+        const simpleItems = products
+            .filter(product => data[product].composition.length === 1)
             .map(item => {
                 return {item: item, composition: data[item].composition}
             })
@@ -25,14 +25,13 @@ export default class Utils {
             .map(ingredient => {
                 return simpleItems.filter(item => item.composition.indexOf(ingredient) > -1)
             })
-    }
+    }*/
 
-    static filterByDate = (range) => Object
-        .keys(data)
+    static filterByDate = (date) => products
         .map(product => Object.assign({}, {
             name: product
         }, data[product]))
-        .filter(product => product.date >= range[0] && product.date <= range[1])
+        .filter(product => product.date <= date)
 
     static filterByIngredients = (products, ingredients) => products.filter(product => {
 
@@ -50,8 +49,10 @@ export default class Utils {
     static breakdownToRawIngredients = (product) => product
         .split(',')
         .filter(product => data[product].composition.length === 0)
-        .reduce((result, current)=>result.indexOf(current)===-1 ? result.concat(current) : result,[])
-        /*.reduce((prevIngredient, nextIngredient, curIndex, filteredArray) => filteredArray.indexOf(nextIngredient) > -1
+        .reduce((result, current) => result.indexOf(current) === -1
+            ? result.concat(current)
+            : result, [])
+    /*.reduce((prevIngredient, nextIngredient, curIndex, filteredArray) => filteredArray.indexOf(nextIngredient) > -1
             ? [prevIngredient, nextIngredient]
             : ["c"], product)*/
     /*
