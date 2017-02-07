@@ -6,19 +6,18 @@ export default class Products extends Component {
 
     render() {
 
-        const products = this
-            .props
-            .products
-            .map(product => <Product key={product.name} data={product}/>)
-
-        console.log("how many",products.length)
+        //console.log("how many",this.props.products.length)
+        
         /*const item =  "Push Button Phone"
 console.log(Utils.fullCompositionList(item))
 console.log(Utils.breakdownToRawIngredients(Utils.fullCompositionList(item)))
         */
         return (
             <ListGroup>
-                {products}
+                {this
+            .props
+            .products
+            .map(product => <Product key={product.name} data={product}/>)}
             </ListGroup>
         )
     }
