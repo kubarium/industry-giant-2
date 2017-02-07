@@ -5,13 +5,16 @@ import Utils from './Utils'
 export default class Ingredients extends Component {
     componentWillMount() {
         this.state = {
-            ingredients:Utils.RawIngredients()
+            ingredients: Utils.rawIngredients
         }
 
         this
             .props
-            .onChange(this.state.ingredients)
+            .onChange(Utils.rawIngredients)
 
+    }
+    shouldComponentUpdate(nextProps, nextState) {
+        return nextState.ingredients !== this.state.ingredients
     }
 
     onChange = (event) => {
@@ -22,15 +25,14 @@ export default class Ingredients extends Component {
             ? ingredients.push(ingredient)
             : ingredients.splice(ingredients.indexOf(ingredient), 1)
 
-        //this.setState({ingredients})
-
         this
             .props
             .onChange(ingredients)
     }
     render() {
-        console.log("rendered again")
-        const ingredients = this.state.ingredients
+        const ingredients = this
+            .state
+            .ingredients
             .map(ingredient => <Col
                 key={ingredient}
                 xs={6}
