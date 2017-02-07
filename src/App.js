@@ -42,33 +42,22 @@ export default class App extends Component {
 
     this.filterProducts(Object.assign({}, {
       ...this.refs.ingredients.state
-    }, {
-      date
-    }, {sik: false}))
+    }, {date}))
   }
   onIngredientsChange = (ingredients) => this.filterProducts(Object.assign({}, {
     ingredients
-  }, {
-    date: this.state.date
-  }, {sik: true}))
+  }, {date: this.state.date}))
 
   shouldComponentUpdate(nextProps, nextState) {
     return nextState.date === this.state.date
   }
 
   filterProducts = (filter) => {
-    console.log(filter)
+    const products = Utils.Filter(filter)
+    console.log(Utils.filteredProducts)
 
-    this.setState({
-      products: Utils.filterByDate(filter.date)
-    })
-    /*
+    this.setState({products})
 
-    if (this.props.filter.ingredients.length) {
-      products = Utils.filterByIngredients(products, this.props.filter.ingredients)
-      // products = products.filter(product =>
-      // Utils.breakdownToRawIngredients(product))
-    }*/
   }
 
   render() {
