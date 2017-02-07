@@ -250,7 +250,8 @@
       "cost": 180,
       "composition": [],
       "price": 4150,
-      "date": 1900
+      "date": 1900,
+      "final":true
    },
    "Electric Engines": {
       "cost": 980,
