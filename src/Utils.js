@@ -1,11 +1,20 @@
 import data from './data.json'
 
-const products = Object.keys(data)
+const products = Object
+    .keys(data)
+    .map(product => Object.assign({}, {
+        name: product
+    }, data[product]))
 
 export default class Utils {
-    static RawIngredients = () => products
-        .filter(product => data[product].composition.length === 0)
-/*
+    static filteredProducts = []
+
+    static get rawIngredients() {
+        return products
+            .filter(product => product.composition.length === 0 && product.final !== true)
+            .map(product => product.name)
+    }
+    /*
     isBigEnough(product) {
         return product >= 15;
     }
@@ -27,37 +36,29 @@ export default class Utils {
             })
     }*/
 
-    static filterByDate = (date) => products
-        .map(product => Object.assign({}, {
-            name: product
-        }, data[product]))
-        .filter(product => product.date <= date)
+    static Filter = (filter) => {
+        Utils.filteredProducts = Utils.FilterByIngredients(filter.ingredients)
+        
+        return Utils.FilterByDate(filter.date)
+    }
 
-    static filterByIngredients = (products, ingredients) => products.filter(product => {
+    static FilterByDate = (date) => Utils.filteredProducts.filter(product => product.date <= date)
 
-        return ingredients.filter(ingredient => Utils.fullCompositionList(product.name).indexOf(ingredient) > -1).length
-    })
+    static FilterByIngredients = (ingredients) => products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || product.final)
 
-    static fullCompositionList = (product) => data[product]
+    static FullCompositionList = (product) => data[product]
         .composition
-        .map(ingredient => Utils.fullCompositionList(ingredient))
+        .map(ingredient => Utils.FullCompositionList(ingredient))
         .reduce((lastIngredient, newIngredient) => newIngredient.length
             ? [lastIngredient, newIngredient]
             : [lastIngredient], data[product].composition)
         .toString()
 
-    static breakdownToRawIngredients = (product) => product
+    static BreakdownToRawIngredients = (product) => product
         .split(',')
         .filter(product => data[product].composition.length === 0)
         .reduce((result, current) => result.indexOf(current) === -1
             ? result.concat(current)
             : result, [])
-    /*.reduce((prevIngredient, nextIngredient, curIndex, filteredArray) => filteredArray.indexOf(nextIngredient) > -1
-            ? [prevIngredient, nextIngredient]
-            : ["c"], product)*/
-    /*
-    static filterByIngredients = (product, ingredient) => {
-        return products.map[product=>product.composition.]
-    }
-*/
+
 }
