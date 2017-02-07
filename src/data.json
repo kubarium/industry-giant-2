@@ -223,9 +223,9 @@
       "date": 1938
    },
    "Disposable Cups": {
-      "cost": -1,
+      "cost": 1120,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 18920,
       "date": 1942
    },
    "Dolls": {
@@ -253,9 +253,9 @@
       "date": 1900
    },
    "Electric Engines": {
-      "cost": -1,
+      "cost": 980,
       "composition": ["Steel","Copper Wire"],
-      "price": -1,
+      "price": 15390,
       "date": 1927
    },
    "Electric Guitar": {
@@ -319,9 +319,9 @@
       "date": 1928
    },
    "Fridge": {
-      "cost": -1,
+      "cost": 4890,
       "composition": ["Plastics","Electric Engines","Steel"],
-      "price": -1,
+      "price": 41000,
       "date": 1927
    },
    "Frozen Foods": {
@@ -409,9 +409,9 @@
       "date": 1918
    },
    "Hairdryer": {
-      "cost": -1,
+      "cost": 980,
       "composition": ["Plastics","Electric Engines"],
-      "price": -1,
+      "price": 29840,
       "date": 1933
    },
    "Hamburgers": {
@@ -565,9 +565,9 @@
       "date": 1939
    },
    "Nylon Toothbrush": {
-      "cost": -1,
+      "cost": 720,
       "composition": ["Plastics","Nylon"],
-      "price": -1,
+      "price": 19920,
       "date": 1946
    },
    "Office Furniture": {
@@ -619,9 +619,9 @@
       "date": 1949
    },
    "Plastic Boxes": {
-      "cost": -1,
+      "cost": 1280,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 23770,
       "date": 1950
    },
    "Plastic Cars": {
@@ -829,9 +829,9 @@
       "date": 1921
    },
    "Washing Machine": {
-      "cost": -1,
+      "cost": 3370,
       "composition": ["Steel","Steel","Electric Engines"],
-      "price": -1,
+      "price": 46610,
       "date": 1938
    },
    "Watering Can": {
