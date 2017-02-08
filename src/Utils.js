@@ -7,6 +7,11 @@ const products = Object
     }, data[product]))
 
 export default class Utils {
+    static DESCENDING = -1
+    static ASCENDING = 1
+    static NAME = "name"
+    static PRICE = "price"
+    static DATE = "date"
     static filteredProducts = []
 
     static get rawIngredients() {
@@ -35,11 +40,21 @@ export default class Utils {
                 return simpleItems.filter(item => item.composition.indexOf(ingredient) > -1)
             })
     }*/
+    
+    static Sort = (by, order) => {
+        return Utils
+            .filteredProducts
+            .sort((product_a, product_b) => product_a[by] < product_b[by]
+                ? -1 * order
+                : product_a[by] > product_b[by]
+                    ? 1 * order
+                    : 0)
+    }
 
     static Filter = (filter) => {
         Utils.filteredProducts = Utils.FilterByIngredients(filter.ingredients)
         Utils.filteredProducts = Utils.FilterByDate(filter.date)
-        return Utils.filteredProducts
+        return Utils.Sort(Utils.NAME,Utils.ASCENDING)
     }
 
     static FilterByDate = (date) => Utils
