@@ -49,16 +49,12 @@ export default class App extends Component {
   }, {date: this.state.date}))
 
   shouldComponentUpdate(nextProps, nextState) {
-    return nextState.date === this.state.date
+    return nextState.date === this.state.date || nextState.products !== this.state.products
   }
 
-  filterProducts = (filter) => {
-    const products = Utils.Filter(filter)
-    console.log(Utils.filteredProducts)
-
-    this.setState({products})
-
-  }
+  filterProducts = (filter) => this.setState({
+    products: Utils.Filter(filter)
+  })
 
   render() {
     return (
@@ -75,7 +71,7 @@ export default class App extends Component {
               marks={marks}
               handle={handle}
               defaultValue={this.state.date}
-              onChange={this.onDateChange}/></Col>
+              onAfterChange={this.onDateChange}/></Col>
           </Row>
           <Row className="filter">
             <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}>
@@ -83,7 +79,7 @@ export default class App extends Component {
             </Col>
           </Row>
           <Row>
-            <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Products products={this.state.products}/></Col>
+            <Col xs={12} sm={12} lg={10} lgOffset={1} md={10} mdOffset={1}><Products ref="products" products={this.state.products}/></Col>
           </Row>
         </Grid>
       </div>
