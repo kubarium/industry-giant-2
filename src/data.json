@@ -1,14 +1,14 @@
 {
    "Accordion": {
-      "cost": -1,
+      "cost": 640,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 22150,
       "date": 1958
    },
    "Action Heroes": {
-      "cost": -1,
+      "cost": 1770,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 27300,
       "date": 1960
    },
    "Aluminum": {
@@ -18,9 +18,9 @@
       "date": 1923
    },
    "Aluminum Ladder": {
-      "cost": -1,
+      "cost": 2560,
       "composition": ["Aluminum"],
-      "price": -1,
+      "price": 25000,
       "date": 1942
    },
    "Amplifier": {
@@ -60,15 +60,15 @@
       "date": 1900
    },
    "Bikes": {
-      "cost": -1,
+      "cost": 3360,
       "composition": ["Steel"],
-      "price": -1,
+      "price": 23000,
       "date": 1922
    },
    "Board Games": {
-      "cost": -1,
+      "cost": 890,
       "composition": ["Cardboard","Gambling Pieces"],
-      "price": -1,
+      "price": 33000,
       "date": 1930
    },
    "Body": {
@@ -78,15 +78,15 @@
       "date": 1935
    },
    "Bowling Balls": {
-      "cost": -1,
+      "cost": 1280,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 15380,
       "date": 1922
    },
    "Brass Instruments": {
-      "cost": -1,
+      "cost": 1450,
       "composition": ["High Grade Steel"],
-      "price": -1,
+      "price": 29070,
       "date": 1936
    },
    "Bread": {
@@ -96,9 +96,9 @@
       "date": 1900
    },
    "Calendar": {
-      "cost": -1,
+      "cost": 980,
       "composition": ["Cardboard","Paper"],
-      "price": -1,
+      "price": 16740,
       "date": 1911
    },
    "Cans": {
@@ -139,9 +139,9 @@
       "date": 1963
    },
    "Comics": {
-      "cost": -1,
+      "cost": 780,
       "composition": ["Paper"],
-      "price": -1,
+      "price": 24460,
       "date": 1941
    },
    "Copper Ore": {
@@ -199,9 +199,9 @@
       "date": 1904
    },
    "Dart Board": {
-      "cost": -1,
+      "cost": 570,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 13000,
       "date": 1957
    },
    "Deep Freezer": {
@@ -296,15 +296,15 @@
       "date": 1900
    },
    "Fishing": {
-      "cost": -1,
+      "cost": 1190,
       "composition": ["Aluminum","Nylon"],
-      "price": -1,
+      "price": 37460,
       "date": 1955
    },
    "Fitness Appliances": {
-      "cost": -1,
+      "cost": 3840,
       "composition": ["Steel"],
-      "price": -1,
+      "price": 28150,
       "date": 1945
    },
    "Footballs": {
@@ -350,9 +350,9 @@
       "date": 1902
    },
    "Gambling Pieces": {
-      "cost": -1,
+      "cost": 460,
       "composition": ["Wooden Board"],
-      "price": -1,
+      "price": 0,
       "date": 1919
    },
    "Garden Furniture": {
@@ -362,9 +362,9 @@
       "date": 1962
    },
    "Garden Gnome": {
-      "cost": -1,
+      "cost": 990,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 21300,
       "date": 1933
    },
    "Garden Houses": {
@@ -374,9 +374,9 @@
       "date": 1912
    },
    "Gift Wrapping": {
-      "cost": -1,
+      "cost": 600,
       "composition": ["Paper"],
-      "price": -1,
+      "price": 12500,
       "date": 1916
    },
    "Glass": {
@@ -398,9 +398,9 @@
       "date": 1900
    },
    "Gril": {
-      "cost": -1,
+      "cost": 1290,
       "composition": ["High Grade Steel"],
-      "price": -1,
+      "price": 38460,
       "date": 1951
    },
    "Guitar": {
@@ -422,9 +422,9 @@
       "date": 1924
    },
    "Hand Mower": {
-      "cost": -1,
+      "cost": 1890,
       "composition": ["Cut Wood","Steel"],
-      "price": -1,
+      "price": 34300,
       "date": 1929
    },
    "Handbags": {
@@ -452,9 +452,9 @@
       "date": 1900
    },
    "Inflatable Boat": {
-      "cost": -1,
+      "cost": 1440,
       "composition": ["Rubber"],
-      "price": -1,
+      "price": 26690,
       "date": 1940
    },
    "Iron Ore": {
@@ -512,9 +512,9 @@
       "date": 1900
    },
    "Metal Cars": {
-      "cost": -1,
+      "cost": 720,
       "composition": ["Steel"],
-      "price": -1,
+      "price": 10840,
       "date": 1915
    },
    "Microwave": {
@@ -542,9 +542,9 @@
       "date": 1935
    },
    "Mouth Organ": {
-      "cost": -1,
+      "cost": 780,
       "composition": ["Steel"],
-      "price": -1,
+      "price": 14610,
       "date": 1941
    },
    "Newspaper": {
@@ -602,9 +602,9 @@
       "date": 1900
    },
    "Piano": {
-      "cost": -1,
+      "cost": 3250,
       "composition": ["Wooden Board","Steel"],
-      "price": -1,
+      "price": 41150,
       "date": 1926
    },
    "Picture Frame": {
@@ -626,9 +626,9 @@
       "date": 1950
    },
    "Plastic Cars": {
-      "cost": -1,
+      "cost": 720,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 13840,
       "date": 1937
    },
    "Plastics": {
@@ -638,9 +638,9 @@
       "date": 1900
    },
    "Posters": {
-      "cost": -1,
+      "cost": 700,
       "composition": ["Paper"],
-      "price": -1,
+      "price": 16000,
       "date": 1924
    },
    "Power Mower": {
@@ -704,9 +704,9 @@
       "date": 1968
    },
    "Recorder": {
-      "cost": -1,
+      "cost": 690,
       "composition": ["Wooden Board"],
-      "price": -1,
+      "price": 11380,
       "date": 1916
    },
    "Roasted Peanuts": {
@@ -739,16 +739,16 @@
       "price": -1,
       "date": 1970
    },
-   "Skies": {
-      "cost": -1,
+   "Skis": {
+      "cost": 1520,
       "composition": ["Wooden Board"],
-      "price": -1,
+      "price": 29150,
       "date": 1950
    },
    "Sledge": {
-      "cost": -1,
+      "cost": 960,
       "composition": ["Wooden Board"],
-      "price": -1,
+      "price": 15690,
       "date": 1922
    },
    "Snow Shovel": {
@@ -788,9 +788,9 @@
       "date": 1932
    },
    "Tennis Racket": {
-      "cost": -1,
+      "cost": 1290,
       "composition": ["Aluminum","Nylon"],
-      "price": -1,
+      "price": 43690,
       "date": 1959
    },
    "Tissues": {
@@ -824,9 +824,9 @@
       "date": 1935
    },
    "Wallpaper": {
-      "cost": -1,
+      "cost": 1390,
       "composition": ["Paper"],
-      "price": -1,
+      "price": 14610,
       "date": 1921
    },
    "Washing Machine": {
@@ -836,9 +836,9 @@
       "date": 1938
    },
    "Watering Can": {
-      "cost": -1,
+      "cost": 890,
       "composition": ["Plastics"],
-      "price": -1,
+      "price": 19840,
       "date": 1948
    },
    "Wheat": {
@@ -866,9 +866,9 @@
       "date": 1900
    },
    "Wood Instruments": {
-      "cost": -1,
+      "cost": 1670,
       "composition": ["Wooden Board","High Grade Steel"],
-      "price": -1,
+      "price": 32920,
       "date": 1931
    },
    "Wooden Board": {
