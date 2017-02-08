@@ -5,13 +5,6 @@ import Product from './Product'
 export default class Products extends Component {
 
     render() {
-
-        //console.log("how many",this.props.products.length)
-        
-        /*const item =  "Push Button Phone"
-console.log(Utils.fullCompositionList(item))
-console.log(Utils.breakdownToRawIngredients(Utils.fullCompositionList(item)))
-        */
         return (
             <ListGroup>
                 {this
