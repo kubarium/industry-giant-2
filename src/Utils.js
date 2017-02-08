@@ -38,11 +38,13 @@ export default class Utils {
 
     static Filter = (filter) => {
         Utils.filteredProducts = Utils.FilterByIngredients(filter.ingredients)
-        
-        return Utils.FilterByDate(filter.date)
+        Utils.filteredProducts = Utils.FilterByDate(filter.date)
+        return Utils.filteredProducts
     }
 
-    static FilterByDate = (date) => Utils.filteredProducts.filter(product => product.date <= date)
+    static FilterByDate = (date) => Utils
+        .filteredProducts
+        .filter(product => product.date <= date)
 
     static FilterByIngredients = (ingredients) => products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || product.final)
 
@@ -60,5 +62,4 @@ export default class Utils {
         .reduce((result, current) => result.indexOf(current) === -1
             ? result.concat(current)
             : result, [])
-
 }
