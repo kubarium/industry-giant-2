@@ -3,6 +3,9 @@ import {ListGroup} from 'react-bootstrap'
 import Product from './Product'
 
 export default class Products extends Component {
+componentDidUpdate(prevProps, prevState) {
+    console.log(this)
+}
 
     render() {
         return (
