@@ -6,7 +6,7 @@ import {TiStarFullOutline, TiStarOutline} from 'react-icons/lib/ti/'
 
 import Demand from './Demand'
 import Slider from 'rc-slider'
-import Space from './Space'
+import Space from 'react-nbsp'
 import Utils from './Utils'
 
 const marks = {
