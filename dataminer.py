@@ -39,5 +39,5 @@ def get(name):
         if product["name"] == name:
             return product
 
-with open("src/dataminer.json", "w") as file:
+with open("src/data.json", "w") as file:
     json.dump(products, file, indent="\t")
