@@ -1,12 +1,15 @@
+import 'rc-slider/assets/index.css';
+
+import {Clearfix, Col, Grid, ListGroupItem, Row} from 'react-bootstrap'
 import React, {Component} from 'react';
-import {ListGroupItem, Grid, Row, Col, Clearfix} from 'react-bootstrap'
-import Demand from './Demand'
-import Space from './Space'
-import data from './data.json'
-import Slider from 'rc-slider'
 import {TiStarFullOutline, TiStarOutline} from 'react-icons/lib/ti/'
 
-import 'rc-slider/assets/index.css';
+import Demand from './Demand'
+import Slider from 'rc-slider'
+import Space from './Space'
+import Utils from './Utils'
+
+//import products from './dataminer.json'
 
 const marks = {
     .5: "50%",
@@ -34,19 +37,19 @@ export default class Product extends Component {
         }
     }
 
-    ingredientsWorth = (product) => data[product]
+    ingredientsWorth = (product) => Utils.GetProduct(product)
         .composition
-        .map(item => data[item].price)
+        .map(item => Utils.GetProduct(item).price)
         .reduce((lastPrice, newPrice) => lastPrice + newPrice, 0)
 
-    ingredients = (product) => data[product]
+    ingredients = (product) => Utils.GetProduct(product)
         .composition
         .join(', ')
 
-    cost = (product) => data[product]
+    cost = (product) => Utils.GetProduct(product)
         .composition
         .map(item => this.cost(item))
-        .reduce((lastCost, newCost) => lastCost + newCost, data[product].cost)
+        .reduce((lastCost, newCost) => lastCost + newCost, Utils.GetProduct(product).cost)
 
     decimalFormatter = (number) => number > 1000000
         ? (number / 1000000).toFixed(2) + "M"
