@@ -1,11 +1,12 @@
-import data from './data.json'
+import products from './dataminer.json'
 
+/*
 const products = Object
     .keys(data)
     .map(product => Object.assign({}, {
         name: product
     }, data[product]))
-
+*/
 export default class Utils {
     static DESCENDING = -1
     static ASCENDING = 1
@@ -57,24 +58,28 @@ export default class Utils {
         return Utils.Sort(Utils.NAME,Utils.ASCENDING)
     }
 
+    static GetProduct = (name) => products.filter(product=>product.name===name)[0]
+
     static FilterByDate = (date) => Utils
         .filteredProducts
         .filter(product => product.date <= date)
 
     static FilterByIngredients = (ingredients) => products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || product.final)
 
-    static FullCompositionList = (product) => data[product]
+    static FullCompositionList = (product) => Utils.GetProduct(product)
         .composition
         .map(ingredient => Utils.FullCompositionList(ingredient))
         .reduce((lastIngredient, newIngredient) => newIngredient.length
             ? [lastIngredient, newIngredient]
-            : [lastIngredient], data[product].composition)
+            : [lastIngredient], Utils.GetProduct(product).composition)
         .toString()
 
     static BreakdownToRawIngredients = (product) => product
         .split(',')
-        .filter(product => data[product].composition.length === 0)
+        .filter(product => products[product].composition.length === 0)
         .reduce((result, current) => result.indexOf(current) === -1
             ? result.concat(current)
             : result, [])
 }
+
+window.Utils = Utils
