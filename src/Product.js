@@ -9,8 +9,6 @@ import Slider from 'rc-slider'
 import Space from './Space'
 import Utils from './Utils'
 
-//import products from './dataminer.json'
-
 const marks = {
     .5: "50%",
     .6: "60%",
