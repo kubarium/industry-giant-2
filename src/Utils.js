@@ -1,4 +1,4 @@
-import products from './dataminer.json'
+import products from './data.json'
 
 /*
 const products = Object
