@@ -1,0 +1,165 @@
+name	cost	ingredient_1	ingredient_2	ingredient_3	ingredient_4	price	date	final
+Accordion	640	Plastics				22150	1958	FALSE
+Action Heroes	1770	Plastics				27300	1960	FALSE
+Aluminum	-1	Bauxite				-1	1923	FALSE
+Aluminum Ladder	2560	Aluminum				25000	1942	FALSE
+Amplifier	-1	Wooden Board	Steel	Electronic Components		-1	1947	FALSE
+Baby Food	340	Milk				14150	1928	FALSE
+Baby Nappies	640	Cotton				21230	1961	FALSE
+Baker's Ware	360	Wheat				6000	1913	FALSE
+Bauxite	420					-1	1900	FALSE
+Beer	690	Glass	Hops			13610	1900	FALSE
+Bikes	3360	Steel				23000	1922	FALSE
+Board Games	890	Cardboard	Gambling Pieces			33000	1930	FALSE
+Body	-1	Steel				-1	1935	FALSE
+Bowling Balls	1280	Plastics				15380	1922	FALSE
+Brass Instruments	1450	High Grade Steel				29070	1936	FALSE
+Bread	240	Wheat				4540	1900	FALSE
+Calendar	980	Cardboard	Paper			16740	1911	FALSE
+Cans	480	Steel				4240	1934	FALSE
+Cardboard	420	Grain Wood				6980	1900	FALSE
+Cards	670	Cardboard				11540	1904	FALSE
+Chairs	2320	Leather	Cut Wood			20300	1908	FALSE
+Christmas Trees	140					7920	1913	TRUE
+Colour TV	2240	Plastics	Electronic Components	Electronic Components	Glass	51460	1963	FALSE
+Comics	780	Paper				24460	1941	FALSE
+Copper Ore	520					-1	1900	FALSE
+Copper Wire	760	Copper Ore				-1	1925	FALSE
+Copybooks	540	Paper				8690	1900	FALSE
+Cotton	180					350	1900	FALSE
+Crank Telephone	-1	Wooden Board	Copper Wire			-1	1910	FALSE
+Crocodile Handbag	1090	Crocodile Leather				23770	1936	FALSE
+Crocodile Leather	560					-1	1936	FALSE
+Cut Wood	320					-1	1900	FALSE
+Cutlery	2560	High Grade Steel				19070	1904	FALSE
+Dart Board	570	Plastics				13000	1957	FALSE
+Deep Freezer	3290	Steel	Steel			29770	1909	FALSE
+Designer Furniture	-1	Leather	Aluminum	Aluminum		-1	1943	FALSE
+Detergents	670	Petroleum				16840	1938	FALSE
+Disposable Cups	1120	Plastics				18920	1942	FALSE
+Dolls	720	Plastics				6300	1900	FALSE
+Doughnuts	420	Wheat	Milk			12070	1903	FALSE
+Drums	-1	Leather	Steel			-1	1923	FALSE
+Eggs	180					4150	1900	TRUE
+Electric Engines	980	Steel	Copper Wire			15390	1927	FALSE
+Electric Guitar	-1	Wooden Board	Steel			-1	1947	FALSE
+Electric Tools	-1	Plastics	Electric Engines	Steel		-1	1938	FALSE
+Electric Toothbrush	-1	Plastics	Electric Engines			-1	1964	FALSE
+Electronic Components	890	Plastics	Copper Wire			17700	1925	FALSE
+Engines	-1	Steel				-1	1935	FALSE
+Fabrics	840	Cotton				7920	1900	FALSE
+Fashion Jewellery	3700	Aluminum	Glass			23080	1955	FALSE
+Fish	490					6970	1955	FALSE
+Fishing	1190	Aluminum	Nylon			37460	1955	FALSE
+Fitness Appliances	3840	Steel				28150	1945	FALSE
+Footballs	-1	Leather				-1	1926	FALSE
+Friction Train	1890	High Grade Steel				34300	1928	FALSE
+Fridge	4890	Plastics	Electric Engines	Steel		41000	1927	FALSE
+Frozen Foods	-1	Meat	Plastics			-1	1954	FALSE
+Fruit	280					6000	1900	FALSE
+Fruit Juice	540	Fruit	Fruit	Glass		9920	1900	FALSE
+Furry Pets	870	Fabrics	Grain Wood			15690	1902	FALSE
+Gambling Pieces	460	Wooden Board				0	1919	FALSE
+Garden Furniture	-1	Plastics				-1	1962	FALSE
+Garden Gnome	990	Plastics				21300	1933	FALSE
+Garden Houses	840	Wooden Board	Wooden Board	Wooden Board		18300	1912	FALSE
+Gift Wrapping	600	Paper				12500	1916	FALSE
+Glass	360	Quartz Sand				10230	1900	FALSE
+Gold	6708					-1	1955	FALSE
+Gold Jewellery	6500	Gold				30770	1955	FALSE
+Grain Wood	520	Cut Wood				1770	1900	FALSE
+Grapes	1000					6920	1900	FALSE
+Gril	1290	High Grade Steel				38460	1951	FALSE
+Guitar	-1	Wooden Board	Steel			-1	1918	FALSE
+Hairdryer	980	Plastics	Electric Engines			29840	1933	FALSE
+Hamburgers	560	Bread	Meat			17150	1924	FALSE
+Hand Mower	1890	Cut Wood	Steel			34300	1929	FALSE
+Handbags	980	Leather				12160	1919	FALSE
+HiFi Unit	1670	Plastics	Electronic Components			46840	1956	FALSE
+High Grade Steel	980	Precious Metals				3930	1904	FALSE
+Hops	200					390	1900	FALSE
+Inflatable Boat	1440	Rubber				26690	1940	FALSE
+Iron Ore	400					-1	1900	FALSE
+Jeans	1300	Fabrics				28460	1954	FALSE
+Joke Articles	680	Plastics				8770	1909	FALSE
+Juke Box	2190	Plastics	Electronic Components	Steel		48000	1953	FALSE
+Kitchen Device	1290	Plastics	Electric Engines			42320	1955	FALSE
+Leather	360					1930	1900	FALSE
+Luxury Body	-1	Steel	Steel	Leather		-1	1944	FALSE
+Luxury Motor Car	-1	Luxury Body	Tyres	Engines		-1	1944	FALSE
+Maize	380					7740	1900	FALSE
+Meat	320					5230	1900	TRUE
+Metal Cars	720	Steel				10840	1915	FALSE
+Microwave	-1	Aluminum	Electronic Components			-1	1968	FALSE
+Milk	220					4540	1900	TRUE
+Model Railroad	2290	Plastics	Electronic Components			40380	1952	FALSE
+Motor Car	-1	Body	Tyres	Engines		-1	1935	FALSE
+Mouth Organ	780	Steel				14610	1941	FALSE
+Newspaper	750	Paper				8770	1900	FALSE
+Nylon	720	Petroleum				2770	1939	FALSE
+Nylon Tights	780	Nylon				19070	1939	FALSE
+Nylon Toothbrush	720	Plastics	Nylon			19920	1946	FALSE
+Office Furniture	-1	Wooden Board	Wooden Board	Steel		-1	1931	FALSE
+Paper	360	Grain Wood				6070	1900	FALSE
+Peanut Butter	-1	Peanuts	Milk			-1	1917	FALSE
+Peanuts	140					300	1905	FALSE
+Petroleum	540					-1	1900	FALSE
+Piano	3250	Wooden Board	Steel			41150	1926	FALSE
+Picture Frame	480	Wooden Board				7920	1900	FALSE
+Pinball Machine	1430	Wooden Board	Steel	Plastics		31540	1949	FALSE
+Plastic Boxes	1280	Plastics				23770	1950	FALSE
+Plastic Cars	720	Plastics				13840	1937	FALSE
+Plastics	480	Petroleum				2540	1900	FALSE
+Popcorn	660	Maize				6930	1900	FALSE
+Posters	700	Paper				16000	1924	FALSE
+Potatoes	360					7840	1900	TRUE
+Power Mower	-1	Steel	Engines	Rubber		-1	1960	FALSE
+Precious Metals	560					-1	1900	FALSE
+Preserved Fish	920	Fish	Cans			24920	1955	FALSE
+Preserved Fruit	-1	Fruit	Cans			-1	1934	FALSE
+Preserved Meat	-1	Meat	Cans			-1	1934	FALSE
+Push Button Phone	1470	Plastics	Electronic Components			48000	1966	FALSE
+Push Cart	2190	Steel	Rubber			22070	1906	FALSE
+Quartz Sand	260					-1	1900	FALSE
+Radio	1850	Wooden Board	Electronic Components			30770	1925	FALSE
+Raincoat	-1	Rubber				-1	1912	FALSE
+RC Cars	-1	Plastics	Electronic Components			-1	1968	FALSE
+Recorder	690	Wooden Board				11380	1916	FALSE
+Roasted Peanuts	320	Peanuts				10380	1905	FALSE
+Roller Skates	-1	Leather	Steel			-1	1932	FALSE
+Rubber	560	Petroleum				2390	1900	FALSE
+Shoes	1400	Leather	Rubber			16000	1900	FALSE
+Silver	5748					-1	1955	FALSE
+Silver Jewellery	6200	Silver				26930	1955	FALSE
+Skateboard	-1	Wooden Board				-1	1970	FALSE
+Skis	1520	Wooden Board				29150	1950	FALSE
+Sledge	960	Wooden Board				15690	1922	FALSE
+Snow Shovel	1190	Cut Wood	Steel			18300	1910	FALSE
+Sport Shoes	800	Fabrics	Leather	Rubber		42150	1947	FALSE
+Steel	850	Iron Ore				3000	1900	FALSE
+Summer Clothes	1230	Fabrics				13690	1900	FALSE
+Sun Glasses	1780	High Grade Steel	Glass			38470	1955	FALSE
+Sun Protection	720	Petroleum				19770	1958	FALSE
+Telephone	2030	Plastics	Copper Wire			34300	1932	FALSE
+Tennis Racket	1290	Aluminum	Nylon			43690	1959	FALSE
+Tissues	-1	Grain Wood				13840	1914	FALSE
+Tomatoes	320					7680	1900	TRUE
+Tools	1760	Wooden Board	Steel			17320	1900	FALSE
+Tricycles	1120	Steel				6380	1900	FALSE
+TV Set	2460	Wooden Board	Electronic Components	Glass		38380	1929	FALSE
+Tyres	-1	Steel	Rubber			-1	1935	FALSE
+Wallpaper	1390	Paper				14610	1921	FALSE
+Washing Machine	3370	Steel	Steel	Electric Engines		46610	1938	FALSE
+Watch	1900	High Grade Steel	Leather	Glass		49240	1955	FALSE
+Watering Can	890	Plastics				19840	1948	FALSE
+Wheat	160					310	1900	FALSE
+Whisky	1090	Glass	Wheat			17460	1900	FALSE
+Wine	1200	Glass	Grapes			16840	1900	FALSE
+Winter Clothes	1570	Wool	Wool			14460	1900	FALSE
+Wood Instruments	1670	Wooden Board	High Grade Steel			32920	1931	FALSE
+Wooden Board	720	Cut Wood				6500	1900	FALSE
+Wooden Furniture	2200	Wooden Board	Wooden Board			12070	1900	FALSE
+Wooden Ladder	1920	Wooden Board				9540	1900	FALSE
+Wooden Loco	1280	Wooden Board				6400	1900	FALSE
+Wool	280					6070	1900	FALSE
+Working Clothes	2190	Fabrics	Leather			28380	1907	FALSE
