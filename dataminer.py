@@ -1,6 +1,7 @@
 from pandas import read_csv
 from collections import OrderedDict
 import json
+from functools import reduce
 
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
@@ -30,14 +31,24 @@ for product in products:
         product.pop(ingredient, None)
 
 
-def cost(product):
-    pass
-
-
 def get(name):
     for product in products:
         if product["name"] == name:
             return product
+
+numbers = [1, 2, 3]
+
+
+def cost(product):
+    #global numbers
+    # return list(map(lambda item : item + 1, numbers))
+    return reduce((lambda lastCost, newCost: lastCost + newCost), map(lambda item: get(item)["cost"], get(product)["composition"]), get(product)["cost"])
+    # print(get(product)["composition"])
+
+item = "Garden Houses"
+print(get(item)["composition"])
+print(cost(item))
+
 
 with open("src/data.json", "w") as file:
     json.dump(products, file, indent="\t")
