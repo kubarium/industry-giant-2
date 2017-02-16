@@ -1,24 +1,24 @@
+import {Checkbox, Col, Grid, Row} from 'react-bootstrap'
 import React, {Component} from 'react';
-import {Checkbox, Grid, Row, Col} from 'react-bootstrap'
-import Utils from './Utils'
+
+import Utils from '../Utils'
+import {store} from '../Store'
 
 export default class Ingredients extends Component {
     componentWillMount() {
-        this.state = {
-            ingredients: Utils.rawIngredients
-        }
 
-        this
+//console.log(store.getState())
+        /*this
             .props
-            .onChange(Utils.rawIngredients)
+            .onChange(Utils.rawIngredients)*/
 
     }
-    shouldComponentUpdate(nextProps, nextState) {
+    /*shouldComponentUpdate(nextProps, nextState) {
         return nextState.ingredients !== this.state.ingredients
-    }
+    }*/
 
     onChange = (event) => {
-        let ingredients = this.state.ingredients
+        /*let ingredients = this.state.ingredients
         const ingredient = event.target.value
 
         event.target.checked
@@ -27,12 +27,10 @@ export default class Ingredients extends Component {
 
         this
             .props
-            .onChange(ingredients)
+            .onChange(ingredients)*/
     }
     render() {
-        const ingredients = this
-            .state
-            .ingredients
+        const ingredients = store.getState().filter(product => product.raw).map(product=>product.name)
             .map(ingredient => <Col
                 key={ingredient}
                 xs={6}

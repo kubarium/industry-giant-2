@@ -1,15 +1,15 @@
-import React, {Component} from 'react';
 import './App.css';
-import Products from './Products'
-import Ingredients from './Ingredients'
-import Utils from './Utils'
-
-import Slider, {Handle} from 'rc-slider'
-import Tooltip from 'rc-tooltip'
 import 'rc-slider/assets/index.css';
 import 'rc-tooltip/assets/bootstrap.css';
 
-import {Grid, Row, Col} from 'react-bootstrap'
+import {Col, Grid, Row} from 'react-bootstrap'
+import React, {Component} from 'react';
+import Slider, {Handle} from 'rc-slider'
+
+import Ingredients from './views/Ingredients'
+import Products from './Products'
+import Tooltip from 'rc-tooltip'
+import Utils from './Utils'
 
 const marks = {
   1900: 1900,

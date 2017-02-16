@@ -1,17 +1,15 @@
 import './index.css';
 
 import App from './App';
-import Ingredients from './Ingredients';
+import Ingredients from './views/Ingredients';
+import {Provider} from 'react-redux'
 import React from 'react';
 import ReactDOM from 'react-dom';
-import products from './data.json'
-
-store = 
+import {store} from './Store'
 
 window.store = store
 
-
 ReactDOM.render(
-  <Ingredients />,
-  document.getElementById('root')
-);
+  <Provider store={store}>
+  <Ingredients/>
+</Provider>, document.getElementById('root'));
