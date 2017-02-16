@@ -1,9 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
 import './index.css';
 
+import App from './App';
+import Ingredients from './Ingredients';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import products from './data.json'
+
+store = 
+
+window.store = store
+
+
 ReactDOM.render(
-  <App />,
+  <Ingredients />,
   document.getElementById('root')
 );

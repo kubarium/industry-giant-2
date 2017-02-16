@@ -1,1675 +1,2331 @@
 [
 	{
-		"final": false,
-		"price": 22150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1958,
+		"profit": 20490,
+		"merchandisable": true,
+		"price": 22150,
 		"name": "Accordion",
+		"cost": 640,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 640
+		]
 	},
 	{
-		"final": false,
-		"price": 27300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1960,
+		"profit": 24510,
+		"merchandisable": true,
+		"price": 27300,
 		"name": "Action Heroes",
+		"cost": 1770,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 1770
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1923,
+		"profit": -420,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Aluminum",
+		"cost": -1,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Bauxite"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 25000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1942,
+		"profit": 22021,
+		"merchandisable": true,
+		"price": 25000,
 		"name": "Aluminum Ladder",
+		"cost": 2560,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Aluminum"
-		],
-		"cost": 2560
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1947,
+		"profit": -5480,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Amplifier",
+		"cost": -1,
+		"ingredientsWorth": 27200,
 		"composition": [
 			"Wooden Board",
 			"Steel",
 			"Electronic Components"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 14150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1928,
+		"profit": 13590,
+		"merchandisable": true,
+		"price": 14150,
 		"name": "Baby Food",
+		"cost": 340,
+		"ingredientsWorth": 4540,
 		"composition": [
 			"Milk"
-		],
-		"cost": 340
+		]
 	},
 	{
-		"final": false,
-		"price": 21230,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1961,
+		"profit": 20410,
+		"merchandisable": true,
+		"price": 21230,
 		"name": "Baby Nappies",
+		"cost": 640,
+		"ingredientsWorth": 350,
 		"composition": [
 			"Cotton"
-		],
-		"cost": 640
+		]
 	},
 	{
-		"final": false,
-		"price": 6000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1913,
+		"profit": 5480,
+		"merchandisable": true,
+		"price": 6000,
 		"name": "Baker's Ware",
+		"cost": 360,
+		"ingredientsWorth": 310,
 		"composition": [
 			"Wheat"
-		],
-		"cost": 360
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": false,
+		"date": 1900,
+		"profit": -421,
+		"merchandisable": false,
 		"price": -1,
-		"date": 1900,
 		"name": "Bauxite",
-		"composition": [],
-		"cost": 420
+		"cost": 420,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 13610,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 12100,
+		"merchandisable": true,
+		"price": 13610,
 		"name": "Beer",
+		"cost": 690,
+		"ingredientsWorth": 10620,
 		"composition": [
 			"Glass",
 			"Hops"
-		],
-		"cost": 690
+		]
 	},
 	{
-		"final": false,
-		"price": 23000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1922,
+		"profit": 18390,
+		"merchandisable": true,
+		"price": 23000,
 		"name": "Bikes",
+		"cost": 3360,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": 3360
+		]
 	},
 	{
-		"final": false,
-		"price": 33000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1930,
+		"profit": 29350,
+		"merchandisable": true,
+		"price": 33000,
 		"name": "Board Games",
+		"cost": 890,
+		"ingredientsWorth": 6980,
 		"composition": [
 			"Cardboard",
 			"Gambling Pieces"
-		],
-		"cost": 890
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1935,
+		"profit": -1250,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Body",
+		"cost": -1,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 15380,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1922,
+		"profit": 13080,
+		"merchandisable": true,
+		"price": 15380,
 		"name": "Bowling Balls",
+		"cost": 1280,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 1280
+		]
 	},
 	{
-		"final": false,
-		"price": 29070,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1936,
+		"profit": 26080,
+		"merchandisable": true,
+		"price": 29070,
 		"name": "Brass Instruments",
+		"cost": 1450,
+		"ingredientsWorth": 3930,
 		"composition": [
 			"High Grade Steel"
-		],
-		"cost": 1450
+		]
 	},
 	{
-		"final": false,
-		"price": 4540,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 4140,
+		"merchandisable": true,
+		"price": 4540,
 		"name": "Bread",
+		"cost": 240,
+		"ingredientsWorth": 310,
 		"composition": [
 			"Wheat"
-		],
-		"cost": 240
+		]
 	},
 	{
-		"final": false,
-		"price": 16740,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1911,
+		"profit": 13300,
+		"merchandisable": true,
+		"price": 16740,
 		"name": "Calendar",
+		"cost": 980,
+		"ingredientsWorth": 13050,
 		"composition": [
 			"Cardboard",
 			"Paper"
-		],
-		"cost": 980
+		]
 	},
 	{
-		"final": false,
-		"price": 4240,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1934,
+		"profit": 2510,
+		"merchandisable": true,
+		"price": 4240,
 		"name": "Cans",
+		"cost": 480,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": 480
+		]
 	},
 	{
-		"final": false,
-		"price": 6980,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 5720,
+		"merchandisable": true,
+		"price": 6980,
 		"name": "Cardboard",
+		"cost": 420,
+		"ingredientsWorth": 1770,
 		"composition": [
 			"Grain Wood"
-		],
-		"cost": 420
+		]
 	},
 	{
-		"final": false,
-		"price": 11540,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1904,
+		"profit": 9610,
+		"merchandisable": true,
+		"price": 11540,
 		"name": "Cards",
+		"cost": 670,
+		"ingredientsWorth": 6980,
 		"composition": [
 			"Cardboard"
-		],
-		"cost": 670
+		]
 	},
 	{
-		"final": false,
-		"price": 20300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1908,
+		"profit": 17300,
+		"merchandisable": true,
+		"price": 20300,
 		"name": "Chairs",
+		"cost": 2320,
+		"ingredientsWorth": 1929,
 		"composition": [
 			"Leather",
 			"Cut Wood"
-		],
-		"cost": 2320
+		]
 	},
 	{
-		"final": true,
-		"price": 7920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1913,
+		"profit": 7780,
+		"merchandisable": true,
+		"price": 7920,
 		"name": "Christmas Trees",
-		"composition": [],
-		"cost": 140
+		"cost": 140,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 51460,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1963,
+		"profit": 41200,
+		"merchandisable": true,
+		"price": 51460,
 		"name": "Colour TV",
+		"cost": 2240,
+		"ingredientsWorth": 48170,
 		"composition": [
 			"Plastics",
 			"Electronic Components",
 			"Electronic Components",
 			"Glass"
-		],
-		"cost": 2240
+		]
 	},
 	{
-		"final": false,
-		"price": 24460,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1941,
+		"profit": 22480,
+		"merchandisable": true,
+		"price": 24460,
 		"name": "Comics",
+		"cost": 780,
+		"ingredientsWorth": 6070,
 		"composition": [
 			"Paper"
-		],
-		"cost": 780
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": -521,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Copper Ore",
-		"composition": [],
-		"cost": 520
+		"cost": 520,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1925,
+		"profit": -1281,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Copper Wire",
+		"cost": 760,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Copper Ore"
-		],
-		"cost": 760
+		]
 	},
 	{
-		"final": false,
-		"price": 8690,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 6950,
+		"merchandisable": true,
+		"price": 8690,
 		"name": "Copybooks",
+		"cost": 540,
+		"ingredientsWorth": 6070,
 		"composition": [
 			"Paper"
-		],
-		"cost": 540
+		]
 	},
 	{
-		"final": false,
-		"price": 350,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 170,
+		"merchandisable": false,
+		"price": 350,
 		"name": "Cotton",
-		"composition": [],
-		"cost": 180
+		"cost": 180,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1910,
+		"profit": -2320,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Crank Telephone",
+		"cost": -1,
+		"ingredientsWorth": 6499,
 		"composition": [
 			"Wooden Board",
 			"Copper Wire"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 23770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1936,
+		"profit": 22120,
+		"merchandisable": true,
+		"price": 23770,
 		"name": "Crocodile Handbag",
+		"cost": 1090,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Crocodile Leather"
-		],
-		"cost": 1090
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1936,
-		"name": "Crocodile Leather",
-		"composition": [],
-		"cost": 560
-	},
-	{
-		"final": false,
+		"profit": -561,
+		"merchandisable": false,
 		"price": -1,
-		"date": 1900,
-		"name": "Cut Wood",
-		"composition": [],
-		"cost": 320
+		"name": "Crocodile Leather",
+		"cost": 560,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 19070,
+		"demand": 0,
+		"isWorthIt": false,
+		"date": 1900,
+		"profit": -321,
+		"merchandisable": false,
+		"price": -1,
+		"name": "Cut Wood",
+		"cost": 320,
+		"ingredientsWorth": 0,
+		"composition": []
+	},
+	{
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1904,
+		"profit": 14970,
+		"merchandisable": true,
+		"price": 19070,
 		"name": "Cutlery",
+		"cost": 2560,
+		"ingredientsWorth": 3930,
 		"composition": [
 			"High Grade Steel"
-		],
-		"cost": 2560
+		]
 	},
 	{
-		"final": false,
-		"price": 13000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1957,
+		"profit": 11410,
+		"merchandisable": true,
+		"price": 13000,
 		"name": "Dart Board",
+		"cost": 570,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 570
+		]
 	},
 	{
-		"final": false,
-		"price": 29770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1909,
+		"profit": 23980,
+		"merchandisable": true,
+		"price": 29770,
 		"name": "Deep Freezer",
+		"cost": 3290,
+		"ingredientsWorth": 6000,
 		"composition": [
 			"Steel",
 			"Steel"
-		],
-		"cost": 3290
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1943,
+		"profit": -1198,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Designer Furniture",
+		"cost": -1,
+		"ingredientsWorth": 1928,
 		"composition": [
 			"Leather",
 			"Aluminum",
 			"Aluminum"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 16840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1938,
+		"profit": 15630,
+		"merchandisable": true,
+		"price": 16840,
 		"name": "Detergents",
+		"cost": 670,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Petroleum"
-		],
-		"cost": 670
+		]
 	},
 	{
-		"final": false,
-		"price": 18920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1942,
+		"profit": 16780,
+		"merchandisable": true,
+		"price": 18920,
 		"name": "Disposable Cups",
+		"cost": 1120,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 1120
+		]
 	},
 	{
-		"final": false,
-		"price": 6300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 4560,
+		"merchandisable": true,
+		"price": 6300,
 		"name": "Dolls",
+		"cost": 720,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": 12070,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1903,
+		"profit": 11270,
+		"merchandisable": true,
+		"price": 12070,
 		"name": "Doughnuts",
+		"cost": 420,
+		"ingredientsWorth": 4850,
 		"composition": [
 			"Wheat",
 			"Milk"
-		],
-		"cost": 420
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1923,
+		"profit": -1610,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Drums",
+		"cost": -1,
+		"ingredientsWorth": 4930,
 		"composition": [
 			"Leather",
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": true,
-		"price": 4150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 3970,
+		"merchandisable": true,
+		"price": 4150,
 		"name": "Eggs",
-		"composition": [],
-		"cost": 180
+		"cost": 180,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 15390,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1927,
+		"profit": 11880,
+		"merchandisable": false,
+		"price": 15390,
 		"name": "Electric Engines",
+		"cost": 980,
+		"ingredientsWorth": 2999,
 		"composition": [
 			"Steel",
 			"Copper Wire"
-		],
-		"cost": 980
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1947,
+		"profit": -2290,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Electric Guitar",
+		"cost": -1,
+		"ingredientsWorth": 9500,
 		"composition": [
 			"Wooden Board",
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1938,
+		"profit": -5780,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Electric Tools",
+		"cost": -1,
+		"ingredientsWorth": 20930,
 		"composition": [
 			"Plastics",
 			"Electric Engines",
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1964,
+		"profit": -4530,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Electric Toothbrush",
+		"cost": -1,
+		"ingredientsWorth": 17930,
 		"composition": [
 			"Plastics",
 			"Electric Engines"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 17700,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1925,
+		"profit": 14510,
+		"merchandisable": false,
+		"price": 17700,
 		"name": "Electronic Components",
+		"cost": 890,
+		"ingredientsWorth": 2539,
 		"composition": [
 			"Plastics",
 			"Copper Wire"
-		],
-		"cost": 890
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1935,
+		"profit": -1250,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Engines",
+		"cost": -1,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 7920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 6900,
+		"merchandisable": true,
+		"price": 7920,
 		"name": "Fabrics",
+		"cost": 840,
+		"ingredientsWorth": 350,
 		"composition": [
 			"Cotton"
-		],
-		"cost": 840
+		]
 	},
 	{
-		"final": false,
-		"price": 23080,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 18341,
+		"merchandisable": false,
+		"price": 23080,
 		"name": "Fashion Jewellery",
+		"cost": 3700,
+		"ingredientsWorth": 10229,
 		"composition": [
 			"Aluminum",
 			"Glass"
-		],
-		"cost": 3700
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": true,
+		"date": 1955,
+		"profit": 6480,
+		"merchandisable": true,
 		"price": 6970,
-		"date": 1955,
 		"name": "Fish",
-		"composition": [],
-		"cost": 490
+		"cost": 490,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 37460,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 34591,
+		"merchandisable": true,
+		"price": 37460,
 		"name": "Fishing",
+		"cost": 1190,
+		"ingredientsWorth": 2769,
 		"composition": [
 			"Aluminum",
 			"Nylon"
-		],
-		"cost": 1190
+		]
 	},
 	{
-		"final": false,
-		"price": 28150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1945,
+		"profit": 23060,
+		"merchandisable": true,
+		"price": 28150,
 		"name": "Fitness Appliances",
+		"cost": 3840,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": 3840
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1926,
+		"profit": -360,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Footballs",
+		"cost": -1,
+		"ingredientsWorth": 1930,
 		"composition": [
 			"Leather"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 34300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1928,
+		"profit": 30870,
+		"merchandisable": true,
+		"price": 34300,
 		"name": "Friction Train",
+		"cost": 1890,
+		"ingredientsWorth": 3930,
 		"composition": [
 			"High Grade Steel"
-		],
-		"cost": 1890
+		]
 	},
 	{
-		"final": false,
-		"price": 41000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1927,
+		"profit": 30330,
+		"merchandisable": true,
+		"price": 41000,
 		"name": "Fridge",
+		"cost": 4890,
+		"ingredientsWorth": 20930,
 		"composition": [
 			"Plastics",
 			"Electric Engines",
 			"Steel"
-		],
-		"cost": 4890
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1954,
+		"profit": -1340,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Frozen Foods",
+		"cost": -1,
+		"ingredientsWorth": 7770,
 		"composition": [
 			"Meat",
 			"Plastics"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": true,
+		"date": 1900,
+		"profit": 5720,
+		"merchandisable": true,
 		"price": 6000,
-		"date": 1900,
 		"name": "Fruit",
-		"composition": [],
-		"cost": 280
+		"cost": 280,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 9920,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": 8200,
+		"merchandisable": true,
+		"price": 9920,
 		"name": "Fruit Juice",
+		"cost": 540,
+		"ingredientsWorth": 22230,
 		"composition": [
 			"Fruit",
 			"Fruit",
 			"Glass"
-		],
-		"cost": 540
+		]
 	},
 	{
-		"final": false,
-		"price": 15690,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1902,
+		"profit": 12960,
+		"merchandisable": true,
+		"price": 15690,
 		"name": "Furry Pets",
+		"cost": 870,
+		"ingredientsWorth": 9690,
 		"composition": [
 			"Fabrics",
 			"Grain Wood"
-		],
-		"cost": 870
+		]
 	},
 	{
-		"final": false,
-		"price": 0,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1919,
+		"profit": -1500,
+		"merchandisable": false,
+		"price": 0,
 		"name": "Gambling Pieces",
+		"cost": 460,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 460
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1962,
+		"profit": -1020,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Garden Furniture",
+		"cost": -1,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 21300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1933,
+		"profit": 19290,
+		"merchandisable": true,
+		"price": 21300,
 		"name": "Garden Gnome",
+		"cost": 990,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 990
+		]
 	},
 	{
-		"final": false,
-		"price": 18300,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1912,
+		"profit": 14340,
+		"merchandisable": true,
+		"price": 18300,
 		"name": "Garden Houses",
+		"cost": 840,
+		"ingredientsWorth": 19500,
 		"composition": [
 			"Wooden Board",
 			"Wooden Board",
 			"Wooden Board"
-		],
-		"cost": 840
+		]
 	},
 	{
-		"final": false,
-		"price": 12500,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1916,
+		"profit": 10700,
+		"merchandisable": true,
+		"price": 12500,
 		"name": "Gift Wrapping",
+		"cost": 600,
+		"ingredientsWorth": 6070,
 		"composition": [
 			"Paper"
-		],
-		"cost": 600
+		]
 	},
 	{
-		"final": false,
-		"price": 10230,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 9610,
+		"merchandisable": true,
+		"price": 10230,
 		"name": "Glass",
+		"cost": 360,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Quartz Sand"
-		],
-		"cost": 360
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": false,
+		"date": 1955,
+		"profit": -6709,
+		"merchandisable": false,
 		"price": -1,
-		"date": 1955,
 		"name": "Gold",
-		"composition": [],
-		"cost": 6708
+		"cost": 6708,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 30770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 17562,
+		"merchandisable": false,
+		"price": 30770,
 		"name": "Gold Jewellery",
+		"cost": 6500,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Gold"
-		],
-		"cost": 6500
+		]
 	},
 	{
-		"final": false,
-		"price": 1770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 930,
+		"merchandisable": false,
+		"price": 1770,
 		"name": "Grain Wood",
+		"cost": 520,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Cut Wood"
-		],
-		"cost": 520
+		]
 	},
 	{
-		"final": false,
-		"price": 6920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 5920,
+		"merchandisable": true,
+		"price": 6920,
 		"name": "Grapes",
-		"composition": [],
-		"cost": 1000
+		"cost": 1000,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 38460,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1951,
+		"profit": 35630,
+		"merchandisable": true,
+		"price": 38460,
 		"name": "Gril",
+		"cost": 1290,
+		"ingredientsWorth": 3930,
 		"composition": [
 			"High Grade Steel"
-		],
-		"cost": 1290
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1918,
+		"profit": -2290,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Guitar",
+		"cost": -1,
+		"ingredientsWorth": 9500,
 		"composition": [
 			"Wooden Board",
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 29840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1933,
+		"profit": 24330,
+		"merchandisable": true,
+		"price": 29840,
 		"name": "Hairdryer",
+		"cost": 980,
+		"ingredientsWorth": 17930,
 		"composition": [
 			"Plastics",
 			"Electric Engines"
-		],
-		"cost": 980
+		]
 	},
 	{
-		"final": false,
-		"price": 17150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1924,
+		"profit": 15870,
+		"merchandisable": true,
+		"price": 17150,
 		"name": "Hamburgers",
+		"cost": 560,
+		"ingredientsWorth": 9770,
 		"composition": [
 			"Bread",
 			"Meat"
-		],
-		"cost": 560
+		]
 	},
 	{
-		"final": false,
-		"price": 34300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1929,
+		"profit": 30840,
+		"merchandisable": true,
+		"price": 34300,
 		"name": "Hand Mower",
+		"cost": 1890,
+		"ingredientsWorth": 2999,
 		"composition": [
 			"Cut Wood",
 			"Steel"
-		],
-		"cost": 1890
+		]
 	},
 	{
-		"final": false,
-		"price": 12160,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1919,
+		"profit": 10820,
+		"merchandisable": true,
+		"price": 12160,
 		"name": "Handbags",
+		"cost": 980,
+		"ingredientsWorth": 1930,
 		"composition": [
 			"Leather"
-		],
-		"cost": 980
+		]
 	},
 	{
-		"final": false,
-		"price": 46840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1956,
+		"profit": 40960,
+		"merchandisable": true,
+		"price": 46840,
 		"name": "HiFi Unit",
+		"cost": 1670,
+		"ingredientsWorth": 20240,
 		"composition": [
 			"Plastics",
 			"Electronic Components"
-		],
-		"cost": 1670
+		]
 	},
 	{
-		"final": false,
-		"price": 3930,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1904,
+		"profit": 2390,
+		"merchandisable": false,
+		"price": 3930,
 		"name": "High Grade Steel",
+		"cost": 980,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Precious Metals"
-		],
-		"cost": 980
+		]
 	},
 	{
-		"final": false,
-		"price": 390,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 190,
+		"merchandisable": false,
+		"price": 390,
 		"name": "Hops",
-		"composition": [],
-		"cost": 200
+		"cost": 200,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 26690,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1940,
+		"profit": 24150,
+		"merchandisable": true,
+		"price": 26690,
 		"name": "Inflatable Boat",
+		"cost": 1440,
+		"ingredientsWorth": 2390,
 		"composition": [
 			"Rubber"
-		],
-		"cost": 1440
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": -401,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Iron Ore",
-		"composition": [],
-		"cost": 400
+		"cost": 400,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 28460,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1954,
+		"profit": 26140,
+		"merchandisable": true,
+		"price": 28460,
 		"name": "Jeans",
+		"cost": 1300,
+		"ingredientsWorth": 7920,
 		"composition": [
 			"Fabrics"
-		],
-		"cost": 1300
+		]
 	},
 	{
-		"final": false,
-		"price": 8770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1909,
+		"profit": 7070,
+		"merchandisable": true,
+		"price": 8770,
 		"name": "Joke Articles",
+		"cost": 680,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 680
+		]
 	},
 	{
-		"final": false,
-		"price": 48000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1953,
+		"profit": 40350,
+		"merchandisable": true,
+		"price": 48000,
 		"name": "Juke Box",
+		"cost": 2190,
+		"ingredientsWorth": 23240,
 		"composition": [
 			"Plastics",
 			"Electronic Components",
 			"Steel"
-		],
-		"cost": 2190
+		]
 	},
 	{
-		"final": false,
-		"price": 42320,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 36500,
+		"merchandisable": true,
+		"price": 42320,
 		"name": "Kitchen Device",
+		"cost": 1290,
+		"ingredientsWorth": 17930,
 		"composition": [
 			"Plastics",
 			"Electric Engines"
-		],
-		"cost": 1290
+		]
 	},
 	{
-		"final": false,
-		"price": 1930,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 1570,
+		"merchandisable": false,
+		"price": 1930,
 		"name": "Leather",
-		"composition": [],
-		"cost": 360
+		"cost": 360,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1944,
+		"profit": -2860,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Luxury Body",
+		"cost": -1,
+		"ingredientsWorth": 7930,
 		"composition": [
 			"Steel",
 			"Steel",
 			"Leather"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1944,
+		"profit": -6457,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Luxury Motor Car",
+		"cost": -1,
+		"ingredientsWorth": -3,
 		"composition": [
 			"Luxury Body",
 			"Tyres",
 			"Engines"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": true,
+		"date": 1900,
+		"profit": 7360,
+		"merchandisable": true,
 		"price": 7740,
-		"date": 1900,
 		"name": "Maize",
-		"composition": [],
-		"cost": 380
+		"cost": 380,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": true,
-		"price": 5230,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 4910,
+		"merchandisable": true,
+		"price": 5230,
 		"name": "Meat",
-		"composition": [],
-		"cost": 320
+		"cost": 320,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 10840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1915,
+		"profit": 8870,
+		"merchandisable": true,
+		"price": 10840,
 		"name": "Metal Cars",
+		"cost": 720,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1968,
+		"profit": -3609,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Microwave",
+		"cost": -1,
+		"ingredientsWorth": 17699,
 		"composition": [
 			"Aluminum",
 			"Electronic Components"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": true,
-		"price": 4540,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 4320,
+		"merchandisable": true,
+		"price": 4540,
 		"name": "Milk",
-		"composition": [],
-		"cost": 220
+		"cost": 220,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 40380,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1952,
+		"profit": 33880,
+		"merchandisable": true,
+		"price": 40380,
 		"name": "Model Railroad",
+		"cost": 2290,
+		"ingredientsWorth": 20240,
 		"composition": [
 			"Plastics",
 			"Electronic Components"
-		],
-		"cost": 2290
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1935,
+		"profit": -4847,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Motor Car",
+		"cost": -1,
+		"ingredientsWorth": -3,
 		"composition": [
 			"Body",
 			"Tyres",
 			"Engines"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 14610,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1941,
+		"profit": 12580,
+		"merchandisable": true,
+		"price": 14610,
 		"name": "Mouth Organ",
+		"cost": 780,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": 780
+		]
 	},
 	{
-		"final": false,
-		"price": 8770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 6820,
+		"merchandisable": true,
+		"price": 8770,
 		"name": "Newspaper",
+		"cost": 750,
+		"ingredientsWorth": 6070,
 		"composition": [
 			"Paper"
-		],
-		"cost": 750
+		]
 	},
 	{
-		"final": false,
-		"price": 2770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1939,
+		"profit": 1510,
+		"merchandisable": false,
+		"price": 2770,
 		"name": "Nylon",
+		"cost": 720,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Petroleum"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": 19070,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1939,
+		"profit": 17030,
+		"merchandisable": true,
+		"price": 19070,
 		"name": "Nylon Tights",
+		"cost": 780,
+		"ingredientsWorth": 2770,
 		"composition": [
 			"Nylon"
-		],
-		"cost": 780
+		]
 	},
 	{
-		"final": false,
-		"price": 19920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1946,
+		"profit": 16920,
+		"merchandisable": true,
+		"price": 19920,
 		"name": "Nylon Toothbrush",
+		"cost": 720,
+		"ingredientsWorth": 5310,
 		"composition": [
 			"Plastics",
 			"Nylon"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1931,
+		"profit": -3330,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Office Furniture",
+		"cost": -1,
+		"ingredientsWorth": 16000,
 		"composition": [
 			"Wooden Board",
 			"Wooden Board",
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 6070,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 4870,
+		"merchandisable": true,
+		"price": 6070,
 		"name": "Paper",
+		"cost": 360,
+		"ingredientsWorth": 1770,
 		"composition": [
 			"Grain Wood"
-		],
-		"cost": 360
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1917,
+		"profit": -360,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Peanut Butter",
+		"cost": -1,
+		"ingredientsWorth": 4840,
 		"composition": [
 			"Peanuts",
 			"Milk"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1905,
+		"profit": 160,
+		"merchandisable": false,
+		"price": 300,
 		"name": "Peanuts",
-		"composition": [],
-		"cost": 140
+		"cost": 140,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": -541,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Petroleum",
-		"composition": [],
-		"cost": 540
+		"cost": 540,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 41150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1926,
+		"profit": 35610,
+		"merchandisable": true,
+		"price": 41150,
 		"name": "Piano",
+		"cost": 3250,
+		"ingredientsWorth": 9500,
 		"composition": [
 			"Wooden Board",
 			"Steel"
-		],
-		"cost": 3250
+		]
 	},
 	{
-		"final": false,
-		"price": 7920,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": 6400,
+		"merchandisable": true,
+		"price": 7920,
 		"name": "Picture Frame",
+		"cost": 480,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 480
+		]
 	},
 	{
-		"final": false,
-		"price": 31540,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1949,
+		"profit": 26800,
+		"merchandisable": true,
+		"price": 31540,
 		"name": "Pinball Machine",
+		"cost": 1430,
+		"ingredientsWorth": 12040,
 		"composition": [
 			"Wooden Board",
 			"Steel",
 			"Plastics"
-		],
-		"cost": 1430
+		]
 	},
 	{
-		"final": false,
-		"price": 23770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1950,
+		"profit": 21470,
+		"merchandisable": true,
+		"price": 23770,
 		"name": "Plastic Boxes",
+		"cost": 1280,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 1280
+		]
 	},
 	{
-		"final": false,
-		"price": 13840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1937,
+		"profit": 12100,
+		"merchandisable": true,
+		"price": 13840,
 		"name": "Plastic Cars",
+		"cost": 720,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": 2540,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 1520,
+		"merchandisable": false,
+		"price": 2540,
 		"name": "Plastics",
+		"cost": 480,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Petroleum"
-		],
-		"cost": 480
+		]
 	},
 	{
-		"final": false,
-		"price": 6930,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": 5890,
+		"merchandisable": true,
+		"price": 6930,
 		"name": "Popcorn",
+		"cost": 660,
+		"ingredientsWorth": 7740,
 		"composition": [
 			"Maize"
-		],
-		"cost": 660
+		]
 	},
 	{
-		"final": false,
-		"price": 16000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1924,
+		"profit": 14100,
+		"merchandisable": true,
+		"price": 16000,
 		"name": "Posters",
+		"cost": 700,
+		"ingredientsWorth": 6070,
 		"composition": [
 			"Paper"
-		],
-		"cost": 700
+		]
 	},
 	{
-		"final": true,
-		"price": 7840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 7480,
+		"merchandisable": true,
+		"price": 7840,
 		"name": "Potatoes",
-		"composition": [],
-		"cost": 360
+		"cost": 360,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1960,
+		"profit": -3599,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Power Mower",
+		"cost": -1,
+		"ingredientsWorth": 5389,
 		"composition": [
 			"Steel",
 			"Engines",
 			"Rubber"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": -561,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Precious Metals",
-		"composition": [],
-		"cost": 560
+		"cost": 560,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 24920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 21780,
+		"merchandisable": true,
+		"price": 24920,
 		"name": "Preserved Fish",
+		"cost": 920,
+		"ingredientsWorth": 11210,
 		"composition": [
 			"Fish",
 			"Cans"
-		],
-		"cost": 920
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1934,
+		"profit": -2010,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Preserved Fruit",
+		"cost": -1,
+		"ingredientsWorth": 10240,
 		"composition": [
 			"Fruit",
 			"Cans"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1934,
+		"profit": -2050,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Preserved Meat",
+		"cost": -1,
+		"ingredientsWorth": 9470,
 		"composition": [
 			"Meat",
 			"Cans"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 48000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1966,
+		"profit": 42320,
+		"merchandisable": true,
+		"price": 48000,
 		"name": "Push Button Phone",
+		"cost": 1470,
+		"ingredientsWorth": 20240,
 		"composition": [
 			"Plastics",
 			"Electronic Components"
-		],
-		"cost": 1470
+		]
 	},
 	{
-		"final": false,
-		"price": 22070,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1906,
+		"profit": 17530,
+		"merchandisable": true,
+		"price": 22070,
 		"name": "Push Cart",
+		"cost": 2190,
+		"ingredientsWorth": 5390,
 		"composition": [
 			"Steel",
 			"Rubber"
-		],
-		"cost": 2190
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": -261,
+		"merchandisable": false,
+		"price": -1,
 		"name": "Quartz Sand",
-		"composition": [],
-		"cost": 260
+		"cost": 260,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 30770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1925,
+		"profit": 24690,
+		"merchandisable": true,
+		"price": 30770,
 		"name": "Radio",
+		"cost": 1850,
+		"ingredientsWorth": 24200,
 		"composition": [
 			"Wooden Board",
 			"Electronic Components"
-		],
-		"cost": 1850
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1912,
+		"profit": -1100,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Raincoat",
+		"cost": -1,
+		"ingredientsWorth": 2390,
 		"composition": [
 			"Rubber"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1968,
+		"profit": -4210,
+		"merchandisable": true,
+		"price": -1,
 		"name": "RC Cars",
+		"cost": -1,
+		"ingredientsWorth": 20240,
 		"composition": [
 			"Plastics",
 			"Electronic Components"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 11380,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1916,
+		"profit": 9650,
+		"merchandisable": true,
+		"price": 11380,
 		"name": "Recorder",
+		"cost": 690,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 690
+		]
 	},
 	{
-		"final": false,
-		"price": 10380,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1905,
+		"profit": 9920,
+		"merchandisable": true,
+		"price": 10380,
 		"name": "Roasted Peanuts",
+		"cost": 320,
+		"ingredientsWorth": 300,
 		"composition": [
 			"Peanuts"
-		],
-		"cost": 320
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1932,
+		"profit": -1610,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Roller Skates",
+		"cost": -1,
+		"ingredientsWorth": 4930,
 		"composition": [
 			"Leather",
 			"Steel"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 2390,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 1290,
+		"merchandisable": false,
+		"price": 2390,
 		"name": "Rubber",
+		"cost": 560,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Petroleum"
-		],
-		"cost": 560
+		]
 	},
 	{
-		"final": false,
-		"price": 16000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 13140,
+		"merchandisable": true,
+		"price": 16000,
 		"name": "Shoes",
+		"cost": 1400,
+		"ingredientsWorth": 4320,
 		"composition": [
 			"Leather",
 			"Rubber"
-		],
-		"cost": 1400
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": false,
+		"date": 1955,
+		"profit": -5749,
+		"merchandisable": false,
 		"price": -1,
-		"date": 1955,
 		"name": "Silver",
-		"composition": [],
-		"cost": 5748
+		"cost": 5748,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 26930,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 14982,
+		"merchandisable": false,
+		"price": 26930,
 		"name": "Silver Jewellery",
+		"cost": 6200,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Silver"
-		],
-		"cost": 6200
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1970,
+		"profit": -1040,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Skateboard",
+		"cost": -1,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 29150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1950,
+		"profit": 26590,
+		"merchandisable": true,
+		"price": 29150,
 		"name": "Skis",
+		"cost": 1520,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 1520
+		]
 	},
 	{
-		"final": false,
-		"price": 15690,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1922,
+		"profit": 13690,
+		"merchandisable": true,
+		"price": 15690,
 		"name": "Sledge",
+		"cost": 960,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 960
+		]
 	},
 	{
-		"final": false,
-		"price": 18300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1910,
+		"profit": 15540,
+		"merchandisable": true,
+		"price": 18300,
 		"name": "Snow Shovel",
+		"cost": 1190,
+		"ingredientsWorth": 2999,
 		"composition": [
 			"Cut Wood",
 			"Steel"
-		],
-		"cost": 1190
+		]
 	},
 	{
-		"final": false,
-		"price": 42150,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1947,
+		"profit": 38870,
+		"merchandisable": true,
+		"price": 42150,
 		"name": "Sport Shoes",
+		"cost": 800,
+		"ingredientsWorth": 12240,
 		"composition": [
 			"Fabrics",
 			"Leather",
 			"Rubber"
-		],
-		"cost": 800
+		]
 	},
 	{
-		"final": false,
-		"price": 3000,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 1750,
+		"merchandisable": false,
+		"price": 3000,
 		"name": "Steel",
+		"cost": 850,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Iron Ore"
-		],
-		"cost": 850
+		]
 	},
 	{
-		"final": false,
-		"price": 13690,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 11440,
+		"merchandisable": true,
+		"price": 13690,
 		"name": "Summer Clothes",
+		"cost": 1230,
+		"ingredientsWorth": 7920,
 		"composition": [
 			"Fabrics"
-		],
-		"cost": 1230
+		]
 	},
 	{
-		"final": false,
-		"price": 38470,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 34530,
+		"merchandisable": true,
+		"price": 38470,
 		"name": "Sun Glasses",
+		"cost": 1780,
+		"ingredientsWorth": 14160,
 		"composition": [
 			"High Grade Steel",
 			"Glass"
-		],
-		"cost": 1780
+		]
 	},
 	{
-		"final": false,
-		"price": 19770,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1958,
+		"profit": 18510,
+		"merchandisable": true,
+		"price": 19770,
 		"name": "Sun Protection",
+		"cost": 720,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Petroleum"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": 34300,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1932,
+		"profit": 29970,
+		"merchandisable": true,
+		"price": 34300,
 		"name": "Telephone",
+		"cost": 2030,
+		"ingredientsWorth": 2539,
 		"composition": [
 			"Plastics",
 			"Copper Wire"
-		],
-		"cost": 2030
+		]
 	},
 	{
-		"final": false,
-		"price": 43690,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1959,
+		"profit": 40721,
+		"merchandisable": true,
+		"price": 43690,
 		"name": "Tennis Racket",
+		"cost": 1290,
+		"ingredientsWorth": 2769,
 		"composition": [
 			"Aluminum",
 			"Nylon"
-		],
-		"cost": 1290
+		]
 	},
 	{
-		"final": false,
-		"price": 13840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1914,
+		"profit": 13001,
+		"merchandisable": true,
+		"price": 13840,
 		"name": "Tissues",
+		"cost": -1,
+		"ingredientsWorth": 1770,
 		"composition": [
 			"Grain Wood"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": true,
+		"demand": 0,
+		"isWorthIt": true,
+		"date": 1900,
+		"profit": 7360,
+		"merchandisable": true,
 		"price": 7680,
-		"date": 1900,
 		"name": "Tomatoes",
-		"composition": [],
-		"cost": 320
+		"cost": 320,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 17320,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 13270,
+		"merchandisable": true,
+		"price": 17320,
 		"name": "Tools",
+		"cost": 1760,
+		"ingredientsWorth": 9500,
 		"composition": [
 			"Wooden Board",
 			"Steel"
-		],
-		"cost": 1760
+		]
 	},
 	{
-		"final": false,
-		"price": 6380,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 4010,
+		"merchandisable": true,
+		"price": 6380,
 		"name": "Tricycles",
+		"cost": 1120,
+		"ingredientsWorth": 3000,
 		"composition": [
 			"Steel"
-		],
-		"cost": 1120
+		]
 	},
 	{
-		"final": false,
-		"price": 38380,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1929,
+		"profit": 31070,
+		"merchandisable": true,
+		"price": 38380,
 		"name": "TV Set",
+		"cost": 2460,
+		"ingredientsWorth": 34430,
 		"composition": [
 			"Wooden Board",
 			"Electronic Components",
 			"Glass"
-		],
-		"cost": 2460
+		]
 	},
 	{
-		"final": false,
-		"price": -1,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1935,
+		"profit": -2350,
+		"merchandisable": true,
+		"price": -1,
 		"name": "Tyres",
+		"cost": -1,
+		"ingredientsWorth": 5390,
 		"composition": [
 			"Steel",
 			"Rubber"
-		],
-		"cost": -1
+		]
 	},
 	{
-		"final": false,
-		"price": 14610,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1921,
+		"profit": 12020,
+		"merchandisable": true,
+		"price": 14610,
 		"name": "Wallpaper",
+		"cost": 1390,
+		"ingredientsWorth": 6070,
 		"composition": [
 			"Paper"
-		],
-		"cost": 1390
+		]
 	},
 	{
-		"final": false,
-		"price": 46610,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1938,
+		"profit": 37230,
+		"merchandisable": true,
+		"price": 46610,
 		"name": "Washing Machine",
+		"cost": 3370,
+		"ingredientsWorth": 21390,
 		"composition": [
 			"Steel",
 			"Steel",
 			"Electric Engines"
-		],
-		"cost": 3370
+		]
 	},
 	{
-		"final": false,
-		"price": 49240,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1955,
+		"profit": 44820,
+		"merchandisable": true,
+		"price": 49240,
 		"name": "Watch",
+		"cost": 1900,
+		"ingredientsWorth": 16090,
 		"composition": [
 			"High Grade Steel",
 			"Leather",
 			"Glass"
-		],
-		"cost": 1900
+		]
 	},
 	{
-		"final": false,
-		"price": 19840,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1948,
+		"profit": 17930,
+		"merchandisable": true,
+		"price": 19840,
 		"name": "Watering Can",
+		"cost": 890,
+		"ingredientsWorth": 2540,
 		"composition": [
 			"Plastics"
-		],
-		"cost": 890
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": true,
+		"date": 1900,
+		"profit": 150,
+		"merchandisable": false,
 		"price": 310,
-		"date": 1900,
 		"name": "Wheat",
-		"composition": [],
-		"cost": 160
+		"cost": 160,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 17460,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 15590,
+		"merchandisable": true,
+		"price": 17460,
 		"name": "Whisky",
+		"cost": 1090,
+		"ingredientsWorth": 10540,
 		"composition": [
 			"Glass",
 			"Wheat"
-		],
-		"cost": 1090
+		]
 	},
 	{
-		"final": false,
-		"price": 16840,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": 14020,
+		"merchandisable": true,
+		"price": 16840,
 		"name": "Wine",
+		"cost": 1200,
+		"ingredientsWorth": 17150,
 		"composition": [
 			"Glass",
 			"Grapes"
-		],
-		"cost": 1200
+		]
 	},
 	{
-		"final": false,
-		"price": 14460,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 12330,
+		"merchandisable": true,
+		"price": 14460,
 		"name": "Winter Clothes",
+		"cost": 1570,
+		"ingredientsWorth": 12140,
 		"composition": [
 			"Wool",
 			"Wool"
-		],
-		"cost": 1570
+		]
 	},
 	{
-		"final": false,
-		"price": 32920,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1931,
+		"profit": 28670,
+		"merchandisable": true,
+		"price": 32920,
 		"name": "Wood Instruments",
+		"cost": 1670,
+		"ingredientsWorth": 10430,
 		"composition": [
 			"Wooden Board",
 			"High Grade Steel"
-		],
-		"cost": 1670
+		]
 	},
 	{
-		"final": false,
-		"price": 6500,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 5460,
+		"merchandisable": true,
+		"price": 6500,
 		"name": "Wooden Board",
+		"cost": 720,
+		"ingredientsWorth": -1,
 		"composition": [
 			"Cut Wood"
-		],
-		"cost": 720
+		]
 	},
 	{
-		"final": false,
-		"price": 12070,
+		"demand": 0,
+		"isWorthIt": false,
 		"date": 1900,
+		"profit": 7790,
+		"merchandisable": true,
+		"price": 12070,
 		"name": "Wooden Furniture",
+		"cost": 2200,
+		"ingredientsWorth": 13000,
 		"composition": [
 			"Wooden Board",
 			"Wooden Board"
-		],
-		"cost": 2200
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": true,
+		"date": 1900,
+		"profit": 6580,
+		"merchandisable": true,
 		"price": 9540,
-		"date": 1900,
 		"name": "Wooden Ladder",
+		"cost": 1920,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 1920
+		]
 	},
 	{
-		"final": false,
+		"demand": 0,
+		"isWorthIt": false,
+		"date": 1900,
+		"profit": 4080,
+		"merchandisable": true,
 		"price": 6400,
-		"date": 1900,
 		"name": "Wooden Loco",
+		"cost": 1280,
+		"ingredientsWorth": 6500,
 		"composition": [
 			"Wooden Board"
-		],
-		"cost": 1280
+		]
 	},
 	{
-		"final": false,
-		"price": 6070,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1900,
+		"profit": 5790,
+		"merchandisable": true,
+		"price": 6070,
 		"name": "Wool",
-		"composition": [],
-		"cost": 280
+		"cost": 280,
+		"ingredientsWorth": 0,
+		"composition": []
 	},
 	{
-		"final": false,
-		"price": 28380,
+		"demand": 0,
+		"isWorthIt": true,
 		"date": 1907,
+		"profit": 24810,
+		"merchandisable": true,
+		"price": 28380,
 		"name": "Working Clothes",
+		"cost": 2190,
+		"ingredientsWorth": 9850,
 		"composition": [
 			"Fabrics",
 			"Leather"
-		],
-		"cost": 2190
+		]
 	}
 ]
