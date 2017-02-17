@@ -18,6 +18,7 @@ class ProductProperty:
     NAME = "name"
     PROFIT = "profit"
     PRICE = "price"
+    TOTAL_COST = "totalCost"
 
 products = []
 
@@ -52,13 +53,19 @@ def prepareProducts():
 
     # Ingredients have been consolidated into an array so we can calculate
     # price points
-    for product in products:
+
+    for index, product in enumerate(products):
+        product["index"] = index
+    
+        product[ProductProperty.TOTAL_COST] = totalCost(product[ProductProperty.NAME])
         product[ProductProperty.PROFIT] = product[
             ProductProperty.PRICE] - totalCost(product[ProductProperty.NAME])
         product[ProductProperty.INGREDIENTS_WORTH] = ingredientsWorth(
             product[ProductProperty.NAME])
         product[ProductProperty.IS_WORTH_IT] = isWorthIt(
             product[ProductProperty.NAME])
+
+        index+=1
 
     with open("src/data.json", "w") as file:
         json.dump(products, file, indent="\t")

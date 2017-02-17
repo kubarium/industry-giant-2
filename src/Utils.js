@@ -8,7 +8,7 @@ const products = Object
     }, data[product]))
 */
 export default class Utils {
-    static DESCENDING = -1
+    static DESCENDING =-1
     static ASCENDING = 1
     static NAME = "name"
     static PRICE = "price"
@@ -41,7 +41,7 @@ export default class Utils {
                 return simpleItems.filter(item => item.composition.indexOf(ingredient) > -1)
             })
     }*/
-    
+
     static Sort = (by, order) => {
         return Utils
             .filteredProducts
@@ -55,16 +55,15 @@ export default class Utils {
     static Filter = (filter) => {
         Utils.filteredProducts = Utils.FilterByIngredients(filter.ingredients)
         Utils.filteredProducts = Utils.FilterByDate(filter.date)
-        return Utils.Sort(Utils.NAME,Utils.ASCENDING)
+        return Utils.Sort(Utils.NAME, Utils.ASCENDING)
     }
 
-    static GetProduct = (name) => products.filter(product=>product.name===name)[0]
-
+    static GetProduct = (name) => products.filter(product => product.name === name)[0]
     static FilterByDate = (date) => Utils
         .filteredProducts
         .filter(product => product.date <= date)
 
-    static FilterByIngredients = (ingredients) => products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || product.final)
+    static FilterByIngredients = (ingredients) => products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || (product.merchandisable && product.composition.length === 0))
 
     static FullCompositionList = (product) => Utils.GetProduct(product)
         .composition

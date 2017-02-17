@@ -1,44 +1,14 @@
-import React, {Component} from 'react';
 import {Form, FormControl, FormGroup, InputGroup} from 'react-bootstrap'
-import {TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy, TiChartLine} from 'react-icons/lib/ti/'
+import React, {Component} from 'react';
+
+import ActionTypes from '../ActionTypes';
+import {TiChartLine} from 'react-icons/lib/ti/'
+import { store } from '../Store'
+
+//TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy, 
 
 export default class Demand extends Component {
-
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            seasonalDemand: {
-                spring: 5,
-                summer: 5,
-                fall: 5,
-                winter: 5
-            },
-            total: 0
-        }
-
-    }
-    componentWillMount() {
-        this.calculateTotal()
-    }
-    componentDidMount(){
-        this
-            .props
-            .onChange(this.state.total)
-    }
-    componentDidUpdate() {
-        this
-            .props
-            .onChange(this.state.total)
-    }
-    calculateTotal = () => {
-        this.setState({
-            total: Object
-                .keys(this.state.seasonalDemand)
-                .map(season => this.state.seasonalDemand[season])
-                .reduce((old, current) => old + current, 0)
-        })
-    }
+/*
     onChange = (event) => {
         const value = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
 
@@ -48,11 +18,15 @@ export default class Demand extends Component {
 
         this.calculateTotal()
 
-    }
+    }*/
+    
     onFluctuate = (event) => {
-        const total = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
+        const demand = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
 
-        this.setState({total})
+        store.dispatch({
+            type: ActionTypes.DEMAND_CHANGE,
+            product:Object.assign({},this.props.product,{demand})
+        })
     }
     render() {
         return (
@@ -65,9 +39,9 @@ export default class Demand extends Component {
                             type="number"
                             min="0"
                             max="150"
-                            value={this.state.total}
+                            value={this.props.product.demand}
                             onChange={this.onFluctuate}/>
-                        <InputGroup.Addon><TiLeaf/></InputGroup.Addon>
+                        {/*<InputGroup.Addon><TiLeaf/></InputGroup.Addon>
                         <FormControl
                             id="spring"
                             type="number"
@@ -98,7 +72,7 @@ export default class Demand extends Component {
                             min="0"
                             max="150"
                             value={this.state.seasonalDemand.winter}
-                            onChange={this.onChange}/>
+                            onChange={this.onChange}/>*/}
                     </InputGroup>
                 </FormGroup>
             </Form>

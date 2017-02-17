@@ -4,10 +4,9 @@ import {Clearfix, Col, Grid, ListGroupItem, Row} from 'react-bootstrap'
 import React, {Component} from 'react';
 import {TiStarFullOutline, TiStarOutline} from 'react-icons/lib/ti/'
 
-import Demand from './Demand'
+import Demand from './views/Demand'
 import Slider from 'rc-slider'
 import Space from 'react-nbsp'
-import Utils from './Utils'
 
 const marks = {
     .5: "50%",
@@ -25,59 +24,17 @@ const marks = {
 
 export default class Product extends Component {
 
-    constructor(props) {
-        super(props)
-
-        this.state = {
-            ...this.props.data,
-            priceAdjustment: 1,
-            isWorthIt: false
-        }
-    }
-
-    ingredientsWorth = (product) => Utils.GetProduct(product)
-        .composition
-        .map(item => Utils.GetProduct(item).price)
-        .reduce((lastPrice, newPrice) => lastPrice + newPrice, 0)
-
-    ingredients = (product) => Utils.GetProduct(product)
-        .composition
-        .join(', ')
-
-    cost = (product) => Utils.GetProduct(product)
-        .composition
-        .map(item => this.cost(item))
-        .reduce((lastCost, newCost) => lastCost + newCost, Utils.GetProduct(product).cost)
-
     decimalFormatter = (number) => number > 1000000
         ? (number / 1000000).toFixed(2) + "M"
         : number > 1000
             ? (number / 1000).toFixed(2) + "K"
             : number
 
-    updateInformation = (totalDemand) => {
-        const totalCost = this.cost(this.state.name)
-        const adjustedPrice = parseInt(this.state.price * this.state.priceAdjustment, 10)
-        const profit = adjustedPrice - totalCost
-        const totalProfit = profit * totalDemand
-        const isWorthIt = adjustedPrice > this.ingredientsWorth(this.state.name)
-
-        this.setState({
-            totalCost,
-            profit,
-            totalProfit,
-            totalDemand,
-            adjustedPrice,
-            isWorthIt
-        })
-
-    }
-
     onPriceChange = (priceAdjustment) => this.setState({priceAdjustment})
-
+/*
     shouldComponentUpdate(nextProps, nextState) {
         return this.state.totalDemand === undefined || nextState.totalDemand !== this.state.totalDemand || nextState.priceAdjustment !== this.state.priceAdjustment || nextState.adjustedPrice !== this.state.adjustedPrice
-    }
+    }*/
 
     render() {
         return (
@@ -85,23 +42,22 @@ export default class Product extends Component {
                 <Grid fluid>
                     <Row>
                         <Col md={12} lg={4} sm={12}>
-
-                            <h4>{this.state.name}<Space/>
-                                ({this.state.date})
-                            </h4><Space/><Clearfix visibleLgBlock/> {this.state.isWorthIt
+                            <h4>{this.props.product.name}<Space/>
+                                ({this.props.product.date})
+                            </h4><Space/><Clearfix visibleLgBlock/> {this.props.product.isWorthIt
                                 ? <TiStarFullOutline/>
                                 : <TiStarOutline/>}<Space/>
-                            <span className="ingredients">{this.ingredients(this.state.name)}</span>
+                            <span className="ingredients">{this.props.product.composition.join(',')}</span>
                         </Col>
                         <Clearfix visibleSmBlock visibleMdBlock/>
                         <Col md={12} lg={8} sm={12}>
-                            <Demand onChange={this.updateInformation}/></Col>
+                            <Demand product={this.props.product}/></Col>
                     </Row>
                 </Grid>
                 <Grid fluid className="price">
                     <Row>
                         <Col md={3} lg={3} sm={3} xs={3}>
-                            <strong>Price:</strong><Space/>{this.decimalFormatter(this.state.adjustedPrice)}
+                            <strong>Price:</strong><Space/>{this.decimalFormatter(this.props.product.price)}
                         </Col>
                         <Col md={9} lg={9} sm={9} xs={9}>
                             <Slider
@@ -110,7 +66,7 @@ export default class Product extends Component {
                                 step={.1}
                                 min={.5}
                                 max={1.5}
-                                defaultValue={this.state.priceAdjustment}
+                                defaultValue={1}
                                 marks={marks}
                                 onChange={this.onPriceChange}/>
                         </Col>
@@ -119,11 +75,11 @@ export default class Product extends Component {
                 <Grid fluid>
                     <Row>
                         <Col md={3} lg={3} sm={3} xs={3}>
-                            <strong>Total Cost:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.state.totalCost)}</Col>
+                            <strong>Total Cost:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.totalCost)}</Col>
                         <Col md={2} lg={2} sm={2} xs={2}>
-                            <strong>Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.state.profit)}</Col>
+                            <strong>Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.profit)}</Col>
                         <Col md={4} lg={4} sm={4} xs={4}>
-                            <strong>Total Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.state.totalProfit)}</Col>
+                            <strong>Total Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.profit * this.props.product.demand)}</Col>
                         <Col md={3} lg={3} sm={3} xs={3}></Col>
                     </Row>
                 </Grid>
