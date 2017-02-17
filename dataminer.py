@@ -2,7 +2,6 @@ from pandas import read_csv
 from collections import OrderedDict
 import json
 from functools import reduce
-from enum import Enum
 
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
@@ -34,7 +33,10 @@ def prepareProducts():
                   "ingredient_2": str,
                   "ingredient_3": str,
                   "ingredient_4": str,
-                  "price": int
+                  "price": int,
+                  "demand": int,
+                  "manufacturedAt": str,
+                  "soldAt": str
                   }
 
     products = read_csv("src/data.csv", delimiter='\t',
@@ -57,17 +59,19 @@ def prepareProducts():
 
     for index, product in enumerate(products):
         product["index"] = index
-    
-        product[ProductProperty.TOTAL_COST] = totalCost(product[ProductProperty.NAME])
+
+        product[ProductProperty.TOTAL_COST] = totalCost(
+            product[ProductProperty.NAME])
         product[ProductProperty.PROFIT] = product[
-            ProductProperty.PRICE] - totalCost(product[ProductProperty.NAME])
-        product[ProductProperty.TOTAL_PROFIT] = product[ProductProperty.PROFIT] * product["demand"]
+            ProductProperty.PRICE] - product[ProductProperty.TOTAL_COST]
+        product[ProductProperty.TOTAL_PROFIT] = product[
+            ProductProperty.PROFIT] * product["demand"]
         product[ProductProperty.INGREDIENTS_WORTH] = ingredientsWorth(
             product[ProductProperty.NAME])
         product[ProductProperty.IS_WORTH_IT] = isWorthIt(
             product[ProductProperty.NAME])
 
-        index+=1
+        index += 1
 
     with open("src/data.json", "w") as file:
         json.dump(products, file, indent="\t")
