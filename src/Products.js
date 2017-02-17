@@ -17,9 +17,12 @@ export default class Products extends Component {
         }
     }
 
+    sortByTotalProfit = (a,b) => {
+        return a.totalProfit < b.totalProfit ? 1 : a.totalProfit > b.totalProfit ? -1 : 0
+    }
     render() {
 
-        let products = Utils.FilterByIngredients(store.getState().ingredients).filter(product => product.date <= store.getState().date)
+        let products = Utils.FilterByIngredients(store.getState().ingredients).filter(product => product.date <= store.getState().date).sort(this.sortByTotalProfit)
         return (
             <ListGroup>
               { products

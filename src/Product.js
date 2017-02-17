@@ -77,9 +77,9 @@ export default class Product extends Component {
                         <Col md={3} lg={3} sm={3} xs={3}>
                             <strong>Total Cost:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.totalCost)}</Col>
                         <Col md={2} lg={2} sm={2} xs={2}>
-                            <strong>Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.profit)}</Col>
+                            <strong>Unit Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.profit)}</Col>
                         <Col md={4} lg={4} sm={4} xs={4}>
-                            <strong>Total Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.profit * this.props.product.demand)}</Col>
+                            <strong>Total Profit:</strong><Space/><Clearfix visibleXsBlock/>{this.decimalFormatter(this.props.product.totalProfit)}</Col>
                         <Col md={3} lg={3} sm={3} xs={3}></Col>
                     </Row>
                 </Grid>

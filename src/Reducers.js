@@ -21,7 +21,10 @@ const reducers = (state, action) => {
             })
         case ActionTypes.DEMAND_CHANGE:
             let products = state.products            
-            products[action.product.index].demand = action.product.demand
+            let product = products[action.product.index]
+            product.demand = action.product.demand
+            product.totalProfit = product.profit * action.product.demand 
+
             
             return Object.assign({}, 
                 state

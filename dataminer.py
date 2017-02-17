@@ -19,6 +19,7 @@ class ProductProperty:
     PROFIT = "profit"
     PRICE = "price"
     TOTAL_COST = "totalCost"
+    TOTAL_PROFIT = "totalProfit"
 
 products = []
 
@@ -60,6 +61,7 @@ def prepareProducts():
         product[ProductProperty.TOTAL_COST] = totalCost(product[ProductProperty.NAME])
         product[ProductProperty.PROFIT] = product[
             ProductProperty.PRICE] - totalCost(product[ProductProperty.NAME])
+        product[ProductProperty.TOTAL_PROFIT] = product[ProductProperty.PROFIT] * product["demand"]
         product[ProductProperty.INGREDIENTS_WORTH] = ingredientsWorth(
             product[ProductProperty.NAME])
         product[ProductProperty.IS_WORTH_IT] = isWorthIt(
