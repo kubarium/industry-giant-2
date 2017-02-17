@@ -1,5 +1,4 @@
 from pandas import read_csv
-from collections import OrderedDict
 import json
 from functools import reduce
 
@@ -23,92 +22,85 @@ class ProductProperty:
 products = []
 
 
-def prepareProducts():
-    global products
-    max_ingredients = 4
+class Products:
 
-    converters = {"cost": int,
-                  "date": int,
-                  "ingredient_1": str,
-                  "ingredient_2": str,
-                  "ingredient_3": str,
-                  "ingredient_4": str,
-                  "price": int,
-                  "demand": int,
-                  "manufacturedAt": str,
-                  "soldAt": str
-                  }
+    def prepareProducts(self):
+        global products
+        max_ingredients = 4
 
-    products = read_csv("src/data.csv", delimiter='\t',
-                        converters=converters).to_dict(orient="records")
+        converters = {"cost": int,
+                      "date": int,
+                      "ingredient_1": str,
+                      "ingredient_2": str,
+                      "ingredient_3": str,
+                      "ingredient_4": str,
+                      "price": int,
+                      "demand": int,
+                      "manufacturedAt": str,
+                      "soldAt": str
+                      }
 
-    for product in products:
-        product[ProductProperty.COMPOSITION] = list()
+        csv = read_csv("src/data.csv", delimiter='\t', converters=converters)
+        products = csv.to_dict(orient="records")
 
-        for i in range(1, max_ingredients + 1):
-            ingredient = "ingredient_" + str(i)
+        for product in products:
+            product[ProductProperty.COMPOSITION] = list()
 
-            if product[ingredient] is not "":
-                product[ProductProperty.COMPOSITION].append(
-                    product[ingredient])
+            for i in range(1, max_ingredients + 1):
+                ingredient = "ingredient_" + str(i)
 
-            product.pop(ingredient, None)
+                if product[ingredient] is not "":
+                    product[ProductProperty.COMPOSITION].append(
+                        product[ingredient])
 
-    # Ingredients have been consolidated into an array so we can calculate
-    # price points
+                product.pop(ingredient, None)
 
-    for index, product in enumerate(products):
-        product["index"] = index
+        # Ingredients have been consolidated into an array so we can calculate
+        # price points
 
-        product[ProductProperty.TOTAL_COST] = totalCost(
-            product[ProductProperty.NAME])
-        product[ProductProperty.PROFIT] = product[
-            ProductProperty.PRICE] - product[ProductProperty.TOTAL_COST]
-        product[ProductProperty.TOTAL_PROFIT] = product[
-            ProductProperty.PROFIT] * product["demand"]
-        product[ProductProperty.INGREDIENTS_WORTH] = ingredientsWorth(
-            product[ProductProperty.NAME])
-        product[ProductProperty.IS_WORTH_IT] = isWorthIt(
-            product[ProductProperty.NAME])
+        for index, product in enumerate(products):
+            product["index"] = index
 
-        index += 1
+            product[ProductProperty.TOTAL_COST] = self.totalCost(
+                product[ProductProperty.NAME])
+            product[ProductProperty.PROFIT] = product[
+                ProductProperty.PRICE] - product[ProductProperty.TOTAL_COST]
+            product[ProductProperty.TOTAL_PROFIT] = product[
+                ProductProperty.PROFIT] * product["demand"]
+            product[ProductProperty.INGREDIENTS_WORTH] = self.ingredientsWorth(
+                product[ProductProperty.NAME])
+            product[ProductProperty.IS_WORTH_IT] = self.isWorthIt(
+                product[ProductProperty.NAME])
 
-    with open("src/data.json", "w") as file:
-        json.dump(products, file, indent="\t")
+            index += 1
 
+        with open("src/data.json", "w") as file:
+            json.dump(products, file, indent="\t")
 
-def getComposition(name):
-    return getProperty(name, ProductProperty.COMPOSITION)
+    def getComposition(self, name):
+        return self.getProperty(name, ProductProperty.COMPOSITION)
 
+    def getCost(self, name):
+        return self.getProperty(name, ProductProperty.COST)
 
-def getCost(name):
-    return getProperty(name, ProductProperty.COST)
+    def getPrice(self, name):
+        return self.getProperty(name, ProductProperty.PRICE)
 
+    def getProperty(self, name, property):
+        return self.getProduct(name)[property]
 
-def getPrice(name):
-    return getProperty(name, ProductProperty.PRICE)
+    def getProduct(self, name):
+        for product in products:
+            if product["name"] == name:
+                return product
 
+    def totalCost(self, name):
+        return reduce(lambda lastCost, newCost: lastCost + newCost, map(lambda ingredient: self.totalCost(ingredient), self.getComposition(name)), self.getCost(name))
 
-def getProperty(name, property):
-    return getProduct(name)[property]
+    def ingredientsWorth(self, name):
+        return reduce(lambda lastPrice, newPrice: lastPrice + newPrice, map(lambda ingredient: self.getPrice(ingredient), self.getComposition(name)), 0)
 
+    def isWorthIt(self, name):
+        return self.getProperty(name, ProductProperty.PROFIT) >= self.ingredientsWorth(name)
 
-def getProduct(name):
-    for product in products:
-        if product["name"] == name:
-            return product
-
-
-def totalCost(name):
-    return reduce(lambda lastCost, newCost: lastCost + newCost, map(lambda ingredient: totalCost(ingredient), getComposition(name)), getCost(name))
-
-
-def ingredientsWorth(name):
-    return reduce(lambda lastPrice, newPrice: lastPrice + newPrice, map(lambda ingredient: getPrice(ingredient), getComposition(name)), 0)
-
-
-def isWorthIt(name):
-    return getProperty(name, ProductProperty.PROFIT) >= ingredientsWorth(name)
-
-
-prepareProducts()
+Products.prepareProducts()
