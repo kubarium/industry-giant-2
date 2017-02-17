@@ -31,10 +31,6 @@ export default class Product extends Component {
             : number
 
     onPriceChange = (priceAdjustment) => this.setState({priceAdjustment})
-/*
-    shouldComponentUpdate(nextProps, nextState) {
-        return this.state.totalDemand === undefined || nextState.totalDemand !== this.state.totalDemand || nextState.priceAdjustment !== this.state.priceAdjustment || nextState.adjustedPrice !== this.state.adjustedPrice
-    }*/
 
     render() {
         return (
@@ -42,16 +38,20 @@ export default class Product extends Component {
                 <Grid fluid>
                     <Row>
                         <Col md={12} lg={4} sm={12}>
-                            <h4>{this.props.product.name}<Space/>
-                                ({this.props.product.date})
-                            </h4><Space/><Clearfix visibleLgBlock/> {this.props.product.isWorthIt
+                            <h4>{this.props.product.isWorthIt
                                 ? <TiStarFullOutline/>
-                                : <TiStarOutline/>}<Space/>
-                            <span className="ingredients">{this.props.product.composition.join(',')}</span>
+                                : <TiStarOutline/>}<Space/>{this.props.product.name}<Space/>
+                                ({this.props.product.date})
+                            </h4><Space/><Clearfix visibleLgBlock/>
+                            <span className="ingredients">{this.props.product.composition.join(', ')}</span>
                         </Col>
                         <Clearfix visibleSmBlock visibleMdBlock/>
-                        <Col md={12} lg={8} sm={12}>
-                            <Demand product={this.props.product}/></Col>
+                        <Col md={2} lg={2} sm={4}>
+                            <Demand product={this.props.product} /></Col>
+                        <Col md={5} lg={5} sm={4}>Manufactured At 
+                            <img src={`icons/${this.props.product.manufacturedAt}.png`} title={this.props.product.manufacturedAt} alt={this.props.product.manufacturedAt}/></Col>
+                        <Col md={5} lg={5} sm={4}>Sold At 
+                            <img src={`icons/${this.props.product.soldAt}.png`} title={this.props.product.soldAt} alt={this.props.product.soldAt}/></Col>
                     </Row>
                 </Grid>
                 <Grid fluid className="price">
