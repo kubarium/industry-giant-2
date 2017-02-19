@@ -8,15 +8,6 @@ import ActionTypes from '../ActionTypes';
 import Tooltip from 'rc-tooltip'
 import { store } from '../Store'
 
-const marks = {
-  1900: 1900,
-  1914: 1914,
-  1928: 1928,
-  1942: 1942,
-  1956: 1956,
-  1970: 1970
-}
-
 const handle = (props) => {
   const {value, dragging, index} = props;
   return (
@@ -26,7 +17,27 @@ const handle = (props) => {
     );
 };
 export default class Date extends Component {
-
+  constructor(props){
+    super(props)
+    this.state = {
+      min:1900,
+      max:2019,
+      divider:8
+    }
+  }
+  marks = () => {
+  const max = this.state.max
+  const min = this.state.min
+  let divider = this.state.divider
+  const interval =  Math.floor((max-min)/(divider-1))
+  let output = {}
+  while(divider){
+    const date = min+(--divider*interval)
+    output[date] = date
+  }
+  output[max] = max
+  return output
+  }
   onChange = (date) => {
     store.dispatch({
       type: ActionTypes.DATE_CHANGE,
@@ -35,7 +46,7 @@ export default class Date extends Component {
   }
   render() {
     return (
-      <Slider ref="date" min={ 1900 } max={ 1970 } marks={ marks } handle={ handle } defaultValue={ store.getState().date } onAfterChange={ this.onChange }
+      <Slider ref="date" min={ this.state.min} max={ this.state.max } marks={ this.marks() } handle={ handle } defaultValue={ store.getState().date } onAfterChange={ this.onChange }
       />
     )
   }
