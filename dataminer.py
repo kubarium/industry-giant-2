@@ -1,16 +1,22 @@
-from pandas import read_csv
+# pylint: disable=no-member
+"""Ultimately prepares data.json with a few utility classes"""
+
 import json
 from functools import reduce
+
+from pandas import read_csv
 
 print(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>")
 
 
 class ProductProperty:
+    """Enum values."""
+
     COMPOSITION = "composition"
     COST = "cost"
     DATE = "date"
     DEMAND = "demand"
-    INGREDIENTS_WORTH = "ingredientsWorth"
+    INGREDIENTS_wORTH = "ingredientsWorth"
     IS_WORTH_IT = "isWorthIt"
     MERCHANDISABLE = "merchandisable"
     NAME = "name"
@@ -20,28 +26,32 @@ class ProductProperty:
     TOTAL_PROFIT = "totalProfit"
 
 products = []
+max_ingredients = 4
 
 
 class Products:
+    """A utility class to prepare data.json from data.csv file."""
 
-    def prepareProducts(self):
+    @staticmethod
+    def prepare_products():
+        """Prepares products from a csv file."""
         global products
-        max_ingredients = 4
+        global max_ingredients
 
-        converters = {"cost": int,
-                      "date": int,
-                      "ingredient_1": str,
-                      "ingredient_2": str,
-                      "ingredient_3": str,
-                      "ingredient_4": str,
-                      "price": int,
-                      "demand": int,
-                      "manufacturedAt": str,
-                      "soldAt": str
-                      }
+        converters = {
+            "cost": int,
+            "date": int,
+            "ingredient_1": str,
+            "ingredient_2": str,
+            "ingredient_3": str,
+            "ingredient_4": str,
+            "price": int,
+            "manufacturedAt": str,
+            "soldAt": str
+        }
 
-        csv = read_csv("src/data.csv", delimiter='\t', converters=converters)
-        products = csv.to_dict(orient="records")
+        products = read_csv("src/data.csv", delimiter='\t',
+                            converters=converters).to_dict(orient="records")
 
         for product in products:
             product[ProductProperty.COMPOSITION] = list()
@@ -60,16 +70,17 @@ class Products:
 
         for index, product in enumerate(products):
             product["index"] = index
+            product[ProductProperty.DEMAND] = 1
 
-            product[ProductProperty.TOTAL_COST] = self.totalCost(
+            product[ProductProperty.TOTAL_COST] = Products.total_cost(
                 product[ProductProperty.NAME])
             product[ProductProperty.PROFIT] = product[
                 ProductProperty.PRICE] - product[ProductProperty.TOTAL_COST]
             product[ProductProperty.TOTAL_PROFIT] = product[
-                ProductProperty.PROFIT] * product["demand"]
-            product[ProductProperty.INGREDIENTS_WORTH] = self.ingredientsWorth(
+                ProductProperty.PROFIT] * product[ProductProperty.DEMAND]
+            product[ProductProperty.INGREDIENTS_wORTH] = Products.ingredients_worth(
                 product[ProductProperty.NAME])
-            product[ProductProperty.IS_WORTH_IT] = self.isWorthIt(
+            product[ProductProperty.IS_WORTH_IT] = Products.is_worth_it(
                 product[ProductProperty.NAME])
 
             index += 1
@@ -77,30 +88,51 @@ class Products:
         with open("src/data.json", "w") as file:
             json.dump(products, file, indent="\t")
 
-    def getComposition(self, name):
-        return self.getProperty(name, ProductProperty.COMPOSITION)
+    @staticmethod
+    def get_composition(name):
+        """Returns the composition list of a product."""
 
-    def getCost(self, name):
-        return self.getProperty(name, ProductProperty.COST)
+        return Products.get_property(name, ProductProperty.COMPOSITION)
 
-    def getPrice(self, name):
-        return self.getProperty(name, ProductProperty.PRICE)
+    @staticmethod
+    def get_cost(name):
+        """Returns the bare cost of manufacturing a product."""
 
-    def getProperty(self, name, property):
-        return self.getProduct(name)[property]
+        return Products.get_property(name, ProductProperty.COST)
 
-    def getProduct(self, name):
+    @staticmethod
+    def get_price(name):
+        """Returns the price of a product."""
+
+        return Products.get_property(name, ProductProperty.PRICE)
+
+    @staticmethod
+    def get_property(name, prop):
+        """Returns the value of a given property for a product."""
+
+        return Products.get_product(name)[prop]
+
+    @staticmethod
+    def get_product(name):
+        """Returns a product object from a name."""
+
         for product in products:
             if product["name"] == name:
                 return product
 
-    def totalCost(self, name):
-        return reduce(lambda lastCost, newCost: lastCost + newCost, map(lambda ingredient: self.totalCost(ingredient), self.getComposition(name)), self.getCost(name))
+    @staticmethod
+    def total_cost(name):
+        """Returns the total cost of manufacturing a product."""
+        return reduce(lambda lastCost, newCost: lastCost + newCost, map(Products.total_cost, Products.get_composition(name)), Products.get_cost(name))
 
-    def ingredientsWorth(self, name):
-        return reduce(lambda lastPrice, newPrice: lastPrice + newPrice, map(lambda ingredient: self.getPrice(ingredient), self.getComposition(name)), 0)
+    @staticmethod
+    def ingredients_worth(name):
+        """Returns the total price of the ingredients of a product."""
+        return reduce(lambda lastPrice, newPrice: lastPrice + newPrice, map(Products.get_price, Products.get_composition(name)), 0)
 
-    def isWorthIt(self, name):
-        return self.getProperty(name, ProductProperty.PROFIT) >= self.ingredientsWorth(name)
+    @staticmethod
+    def is_worth_it(name):
+        """Returns if a product is worth the cost of its ingredients."""
+        return Products.get_property(name, ProductProperty.PROFIT) >= Products.ingredients_worth(name)
 
-Products.prepareProducts()
+Products.prepare_products()
