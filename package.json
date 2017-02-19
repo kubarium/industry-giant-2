@@ -9,6 +9,7 @@
     "react-scripts": "0.8.5"
   },
   "dependencies": {
+    "classnames": "^2.2.5",
     "google-auth-library": "^0.10.0",
     "googleapis": "^16.1.0",
     "rc-slider": "^6.0.1",
