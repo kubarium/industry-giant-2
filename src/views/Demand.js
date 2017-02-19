@@ -1,11 +1,10 @@
-import {Form, FormControl, FormGroup, InputGroup} from 'react-bootstrap'
 import React, {Component} from 'react';
-
-import ActionTypes from '../ActionTypes';
+import {Form, FormControl, FormGroup, InputGroup} from 'react-bootstrap'
 import {TiChartLine} from 'react-icons/lib/ti/'
-import { store } from '../Store'
-
 //TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy, 
+import { store } from '../Store'
+import ActionTypes from '../ActionTypes';
+
 
 export default class Demand extends Component {
 /*
@@ -19,7 +18,6 @@ export default class Demand extends Component {
         this.calculateTotal()
 
     }*/
-    
     onFluctuate = (event) => {
         const demand = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
 
