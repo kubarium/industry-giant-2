@@ -1,4 +1,5 @@
 import products from './data.json'
+import { store } from './Store'
 
 /*
 const products = Object
@@ -63,7 +64,7 @@ export default class Utils {
         .filteredProducts
         .filter(product => product.date <= date)
 
-    static FilterByIngredients = (ingredients) => products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || (product.merchandisable && product.composition.length === 0))
+    static FilterByIngredients = (ingredients) => store.getState().products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || (product.merchandisable && product.composition.length === 0))
 
     static FullCompositionList = (product) => Utils.GetProduct(product)
         .composition
@@ -75,7 +76,7 @@ export default class Utils {
 
     static BreakdownToRawIngredients = (product) => product
         .split(',')
-        .filter(product => products[product].composition.length === 0)
+        .filter(product => Utils.GetProduct(product).composition.length === 0)
         .reduce((result, current) => result.indexOf(current) === -1
             ? result.concat(current)
             : result, [])
