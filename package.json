@@ -19,6 +19,7 @@
     "react-dom": "^15.4.2",
     "react-icons": "^2.2.3",
     "react-nbsp": "^1.1.0",
+    "react-numeric-input": "^2.0.7",
     "react-redux": "^5.0.2",
     "redux": "^3.6.0"
   },
