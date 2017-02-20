@@ -1,7 +1,8 @@
 import ActionTypes from './ActionTypes';
 
 const reducers = (state, action) => {
-    //let ingredients = []
+    let products = []
+    let product = {}
 
     switch (action.type) {
         case ActionTypes.TOGGLE_INGREDIENT:
@@ -19,6 +20,12 @@ const reducers = (state, action) => {
                 , {
                     date: action.date
                 })
+        case ActionTypes.SORT_CHANGE:
+            return Object.assign({},
+                state
+                , {
+                    sort: action.sort
+                })
         case ActionTypes.STORE_CHANGE:
             let stores = state.stores
             const storeIndex = stores.indexOf(action.store)
@@ -29,10 +36,24 @@ const reducers = (state, action) => {
                     stores
                 })
         case ActionTypes.DEMAND_CHANGE:
-            let products = state.products
-            let product = products[action.product.index]
+            products = state.products
+
+            product = products[action.product.index]
             product.demand = parseInt(action.product.demand, 10)
-            product.totalProfit = product.profit * action.product.demand
+            product.totalProfit = (product.price - product.totalCost) * product.priceAdjustment / 100 * action.product.demand
+            localStorage["products"] = JSON.stringify(products)
+
+            return Object.assign({},
+                state
+                , {
+                    products
+                })
+        case ActionTypes.ADJUST_PRICE:
+            products = state.products
+
+            product = products[action.product.index]
+            product.priceAdjustment = parseInt(action.product.priceAdjustment, 10)
+            product.totalProfit = (product.price - product.totalCost) * action.product.priceAdjustment / 100 * product.demand
             localStorage["products"] = JSON.stringify(products)
 
             return Object.assign({},
