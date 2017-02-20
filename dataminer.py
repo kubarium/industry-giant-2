@@ -24,6 +24,7 @@ class ProductProperty:
     PRICE = "price"
     TOTAL_COST = "totalCost"
     TOTAL_PROFIT = "totalProfit"
+    PRICE_ADJUSTMENT = "priceAdjustment"
 
 products = []
 max_ingredients = 4
@@ -71,6 +72,7 @@ class Products:
         for index, product in enumerate(products):
             product["index"] = index
             product[ProductProperty.DEMAND] = 1
+            product[ProductProperty.PRICE_ADJUSTMENT] = 100
 
             product[ProductProperty.TOTAL_COST] = Products.total_cost(
                 product[ProductProperty.NAME])
