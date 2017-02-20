@@ -22,7 +22,7 @@ export default class Ingredients extends Component {
   render() {
     const stores = store.getState().stores.map(store => <Button active value={ store } key={ store } onClick={ this.onChange }><img src={ `icons/${store}.png` } alt={store} /></Button>)
     return (
-      <ButtonGroup>
+      <ButtonGroup  bsSize="small">
         { stores }
       </ButtonGroup>
     )
