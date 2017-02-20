@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import { ListGroup } from 'react-bootstrap'
-import Product from './Product'
+import Product from './views/Product'
 import Utils from './Utils'
 import { store } from './Store'
 
@@ -22,17 +22,10 @@ export default class Products extends Component {
         }))
     }
 
-
-    sortByTotalProfit = (a, b) => {
-        return a.totalProfit < b.totalProfit
-            ? 1
-            : a.totalProfit > b.totalProfit
-                ? -1
-                : 0
-    } /*
-    sortByStore = (a,b) =>{
-        return a.soldAt
-    }*/
+    sortBy = (a, b) => {
+        const sortBy = store.getState().sort
+        return a[sortBy] < b[sortBy] ? 1 : a[sortBy] > b[sortBy] ? -1 : 0
+    }
 
     render() {
         //console.log(Utils.GetProduct("Digital Decoder"))
@@ -41,10 +34,10 @@ export default class Products extends Component {
             .filter(product => product.merchandisable === true)
             .filter(product => product.date <= store.getState().date)
 
-        if(store.getState().stores)
+        if (store.getState().stores)
             products = products.filter(product => store.getState().stores.includes(product.soldAt))
-        
-        products.sort(this.sortByTotalProfit)
+
+        products.sort(this.sortBy)
 
         return (
             <ListGroup>
