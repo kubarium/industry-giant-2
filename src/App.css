@@ -71,7 +71,6 @@ h2 {
 
 .react-numeric-input {
     display:none;
-    /*width:50% !important;*/
   }
 
 
@@ -91,8 +90,6 @@ h2 {
 }
 
 @media (min-width:361px){
-  .price-adjuster-slider {
-  }
   .react-numeric-input {
     display:none !important
   }
