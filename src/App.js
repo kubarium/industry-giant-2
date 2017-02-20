@@ -1,12 +1,12 @@
 import './App.css';
 
-import { Col, Grid, Row } from 'react-bootstrap'
+import { Clearfix, Col, Grid, Row } from 'react-bootstrap'
 import React, { Component } from 'react';
 
 import Date from './views/Date'
 import Ingredients from './views/Ingredients'
 import Products from './Products'
-import Space from 'react-nbsp'
+import Sort from './views/Sort'
 import Stores from './views/Stores'
 
 export default class App extends Component {
@@ -15,7 +15,7 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2 onClick={()=>localStorage.removeItem("products")}>Industry Giant 2 Profit Calculator</h2>
+          <h2 onClick={ () => localStorage.removeItem("products") }>Industry Giant 2 Profit Calculator</h2>
         </div>
         <Grid>
           <Row className="filter">
@@ -29,9 +29,18 @@ export default class App extends Component {
             </Col>
           </Row>
           <Row className="filter">
-            <Col xs={ 12 } sm={ 12 } lg={ 10 } lgOffset={ 1 } md={ 10 } mdOffset={ 1 }> Sold At
-            <Space/>
-            <Stores />
+            <Col xs={ 12 } sm={ 12 } lg={ 10 } lgOffset={ 1 } md={ 10 } mdOffset={ 1 }>
+            <Row>
+              <Col lg={ 10 } xs={ 12 } md={ 9 }>
+              <p>Sold At</p>
+              <Stores />
+              </Col>
+              <Clearfix visibleXsBlock />
+              <Col lg={ 2 } xs={ 12 } md={ 3 }>
+              <p>Sort</p>
+              <Sort />
+              </Col>
+            </Row>
             </Col>
           </Row>
           <Row>
