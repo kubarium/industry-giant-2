@@ -62,5 +62,38 @@ h2 {
 
 .filter {
   padding: 15px 0;
-  margin: 25px 0;
+  margin: 15px 0;
+}
+
+.btn-group{
+  margin: 5px 0 15px 0
+}
+
+.react-numeric-input {
+    display:none;
+    /*width:50% !important;*/
+  }
+
+
+@media (max-width:360px) {
+  .product-title {
+    width: 100%;
+  }
+  .demand-form {
+    width: 100%;
+  }
+  .price-adjuster-slider {
+    display:none;
+  }
+  .react-numeric-input {
+    display:inline-block !important
+  }
+}
+
+@media (min-width:361px){
+  .price-adjuster-slider {
+  }
+  .react-numeric-input {
+    display:none !important
+  }
 }
