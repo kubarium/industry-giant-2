@@ -136,7 +136,7 @@ Quartz Sand	260					0	1900	FALSE	TRUE	Mine	NOPE
 Radio	1850	Wooden Board	Electronic Components			30770	1925	TRUE	FALSE	Electronics	Electronics
 Raincoat	-1	Rubber				-1	1912	TRUE	FALSE	Clothing	Clothing
 Rape	510					0	1000	FALSE	TRUE	Farm	NOPE
-RC Cars	-1	Plastics	Electronic Components			-1	1968	TRUE	FALSE	NOPE	Toys
+RC Cars	1980	Plastics	Electronic Components			48300	1968	TRUE	FALSE	Toys	Toys
 Record	1050	Petroleum				22380	1948	TRUE	FALSE	Instruments	Instruments
 Recorder	690	Wooden Board				11380	1916	TRUE	FALSE	Instruments	Instruments
 Roasted Peanuts	320	Peanuts				10380	1905	TRUE	FALSE	Grocery	Grocery
@@ -181,3 +181,7 @@ Wooden Ladder	1920	Wooden Board				9540	1900	TRUE	FALSE	Home Hardware	Home Hardw
 Wooden Loco	1280	Wooden Board				6400	1900	TRUE	FALSE	Toys	Toys
 Wool	280					6070	1900	TRUE	TRUE	Sheep Farm	Clothing
 Working Clothes	2190	Fabrics	Leather			28380	1907	TRUE	FALSE	Clothing	Clothing
+Gamatotchi	1200	Plastics	Electronic Components			53850	1000	TRUE	FALSE	Toys	Toys
+Gamegirl	2100	Plastics	Electronic Components			61540	1000	TRUE	FALSE	Toys	Toys
+Electronic Pet	3140	Plastics	Electronic Components	Electric Engines		91610	1000	TRUE	FALSE	Toys	Toys
+Plastic Bricks	500	Plastics				27000	1000	TRUE	FALSE	Toys	Toys
