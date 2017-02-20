@@ -24,7 +24,8 @@ export default class Products extends Component {
 
     sortBy = (a, b) => {
         const sortBy = store.getState().sort
-        return a[sortBy] < b[sortBy] ? 1 : a[sortBy] > b[sortBy] ? -1 : 0
+        const sign = sortBy === "name" ? -1 : 1
+        return a[sortBy] < b[sortBy] ? 1 * sign : a[sortBy] > b[sortBy] ? -1 * sign : 0
     }
 
     render() {
