@@ -1,31 +1,29 @@
 import 'rc-slider/assets/index.css';
 
-import { Clearfix, Col,  Grid, Image, ListGroupItem, Row } from 'react-bootstrap'
+import { Clearfix, Col, Grid, Image, ListGroupItem, Row } from 'react-bootstrap'
 import React, { Component } from 'react';
 import { TiStarFullOutline, TiStarOutline } from 'react-icons/lib/ti/'
 
 import ActionTypes from '../ActionTypes';
 import Demand from './Demand'
+import NumericInput from 'react-numeric-input';
 import Slider from 'rc-slider'
 import Space from 'react-nbsp'
 import { store } from '../Store'
-import NumericInput from 'react-numeric-input';
 
 export default class Product extends Component {
-  
-
   marks = () => {
-  const max = 150
-  const min = 50
-  let divider = 11
-  const interval =  Math.floor((max-min)/(divider-1))
-  let output = {}
-  while(divider){
-    const mark = min+(--divider*interval)
-    output[mark] = mark + "%"
-  }
-  output[max] = max
-  return output
+    const max = 150
+    const min = 50
+    let divider = 11
+    const interval = Math.floor((max - min) / (divider - 1))
+    let output = {}
+    while (divider) {
+      const mark = min + (--divider * interval)
+      output[mark] = mark + "%"
+    }
+    output[max] = max
+    return output
   }
   decimalFormatter = (number) => number > 1000000
     ? (number / 1000000).toFixed(2) + "M"
@@ -35,10 +33,12 @@ export default class Product extends Component {
 
   onPriceChange = (priceAdjustment) => {
     store.dispatch({
-            type: ActionTypes.ADJUST_PRICE,
-            product:Object.assign({},this.props.product,{priceAdjustment})
-            
-        })
+      type: ActionTypes.ADJUST_PRICE,
+      product: Object.assign({}, this.props.product, {
+        priceAdjustment
+      })
+
+    })
   }
   render() {
     return (
@@ -49,13 +49,13 @@ export default class Product extends Component {
             <h4>{ this.props.product.isWorthIt
                   ? <TiStarFullOutline/>
                   : <TiStarOutline/> }
-                                                <Space/>
-                                                <Image circle src={ `icons/${this.props.product.name}.png` } title={ this.props.product.name } alt={ this.props.product.name } />
-                                                <Space/>
-                                                { this.props.product.name }
-                                                <Space/>
-                                                ({ this.props.product.date })
-                                                </h4>
+                                                      <Space/>
+                                                      <Image circle src={ `icons/${this.props.product.name}.png` } title={ this.props.product.name } alt={ this.props.product.name } />
+                                                      <Space/>
+                                                      { this.props.product.name }
+                                                      <Space/>
+                                                      ({ this.props.product.date })
+                                                      </h4>
             <Space/>
             <Clearfix visibleXsBlock/>
             <span className="ingredients">{ this.props.product.composition.join(', ') }</span>
@@ -68,18 +68,20 @@ export default class Product extends Component {
         <Grid fluid className="price">
           <Row>
             <Col md={ 3 } lg={ 3 } sm={ 3 } xs={ 12 }>
-              <Row>
-                <Col md={12} lg={12} sm={12} xs={ 5 }>
-                  <strong>Price Adjuster:</strong><Space/>
-                </Col>
-                <Col xs={ 6 } xsOffset={1}>
-                  <NumericInput readOnly mobile className="price-adjuster-numeric form-control" min={50} max={150} step={10} format={(num)=>num+"%"} value={this.props.product.priceAdjustment}  onChange={ this.onPriceChange } />
-                </Col>
-              </Row>
+            <Row>
+              <Col md={ 12 } lg={ 12 } sm={ 12 } xs={ 5 }>
+              <strong>Price Adjuster:</strong>
+              <Space/>
+              </Col>
+              <Col xs={ 6 } xsOffset={ 1 }>
+              <NumericInput readOnly mobile className="price-adjuster-numeric form-control" min={ 50 } max={ 150 } step={ 10 } format={ (num) => num + "%" }
+                value={ this.props.product.priceAdjustment } onChange={ this.onPriceChange } />
+              </Col>
+            </Row>
             </Col>
-            <Col md={ 9 } lg={ 9 } sm={ 9 } xs={12} >
-                <Slider  className="price-adjuster-slider" dots min={ 50 } max={ 150 } step={ 10 } value={this.props.product.priceAdjustment} marks={ this.marks() }
-                onChange={ this.onPriceChange } />
+            <Col md={ 9 } lg={ 9 } sm={ 9 } xs={ 12 }>
+            <Slider className="price-adjuster-slider" dots min={ 50 } max={ 150 } step={ 10 } value={ this.props.product.priceAdjustment } marks={ this.marks() }
+              onChange={ this.onPriceChange } />
             </Col>
           </Row>
         </Grid>
