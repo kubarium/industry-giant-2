@@ -31,11 +31,11 @@ export default class App extends Component {
           <Row className="filter">
             <Col xs={ 12 } sm={ 12 } lg={ 10 } lgOffset={ 1 } md={ 10 } mdOffset={ 1 }>
             <Row>
-              <Col lg={ 10 } xs={ 12 } md={ 9 }>
+              <Col lg={ 10 } xs={ 12 } md={ 10 }>
               <p>Sold At</p>
               <Stores />
               </Col>
-              <Clearfix visibleXsBlock />
+              <Clearfix visibleXsBlock visibleMdBlock />
               <Col lg={ 2 } xs={ 12 } md={ 3 }>
               <p>Sort</p>
               <Sort />
