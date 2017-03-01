@@ -1,5 +1,5 @@
 import products from './data.json'
-import { store } from './Store'
+import {store} from './Store'
 
 /*
 const products = Object
@@ -9,7 +9,7 @@ const products = Object
     }, data[product]))
 */
 export default class Utils {
-    static DESCENDING =-1
+    static DESCENDING = -1
     static ASCENDING = 1
     static NAME = "name"
     static PRICE = "price"
@@ -64,9 +64,13 @@ export default class Utils {
         .filteredProducts
         .filter(product => product.date <= date)
 
-    static FilterByIngredients = (ingredients) => store.getState().products.filter(product => ingredients.filter(ingredient => Utils.FullCompositionList(product.name).indexOf(ingredient) > -1).length || (product.merchandisable && product.composition.length === 0))
+    static FilterByIngredients = (ingredients) => store
+        .getState()
+        .products
+        .filter(product => ingredients.filter(ingredient => (product.merchandisable && product.composition.length === 0) || Utils.BreakdownToRawIngredients(Utils.FullCompositionList(product.name)).includes(ingredient)))
 
-    static FullCompositionList = (product) => Utils.GetProduct(product)
+    static FullCompositionList = (product) => Utils
+        .GetProduct(product)
         .composition
         .map(ingredient => Utils.FullCompositionList(ingredient))
         .reduce((lastIngredient, newIngredient) => newIngredient.length

@@ -29,14 +29,24 @@ export default class Products extends Component {
     }
 
     render() {
-        //console.log(Utils.GetProduct("Digital Decoder"))
-        //console.log(Utils.BreakdownToRawIngredients(Utils.FullCompositionList("Digital Decoder")))
-        let products = Utils.FilterByIngredients(store.getState().ingredients)
+        let product = "Crocodile Handbags"
+        product = "Digital Decoder"
+        console.log(product)
+        console.log(Utils.GetProduct(product))
+        //console.log(Utils.FilterByIngredients(store.getState().ingredients))
+        console.log((Utils.FullCompositionList(product)))
+        console.log(Utils.BreakdownToRawIngredients(Utils.FullCompositionList(product)))
+        console.log(Utils.BreakdownToRawIngredients(Utils.FullCompositionList(product)).includes("Leather"))        
+        let products = Utils.FilterByIngredients(store.getState().ingredients.map(ingredient=>ingredient.name))
             .filter(product => product.merchandisable === true)
             .filter(product => product.date <= store.getState().date)
 
-        if (store.getState().stores)
-            products = products.filter(product => store.getState().stores.includes(product.soldAt))
+        const openStores = store.getState().stores.filter(store=>store.active === true).map(store=>store.name)
+
+        /*if (store.getState().stores)
+        */
+        products = products.filter(product => openStores.includes(product.soldAt))
+        
 
         products.sort(this.sortBy)
 

@@ -28,8 +28,7 @@ const reducers = (state, action) => {
                 })
         case ActionTypes.STORE_CHANGE:
             let stores = state.stores
-            const storeIndex = stores.indexOf(action.store)
-            storeIndex > -1 ? stores.splice(storeIndex, 1) : stores.push(action.store)
+            stores[action.index].active = !stores[action.index].active
 
             return Object.assign({},
                 state, {
