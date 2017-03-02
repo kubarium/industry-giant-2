@@ -3,9 +3,27 @@ import React, {Component} from 'react';
 
 import ActionTypes from '../ActionTypes';
 import classNames from 'classnames'
-import {store} from '../Store'
+import {connect} from 'react-redux'
 
-export default class Ingredients extends Component {
+//import {store} from '../Store'
+const mapStateToProps = (state) => {
+    return {products: state.products}
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        /*addRecipient: () => {
+            dispatch(Actions.addRecipient())
+        },
+        updateRecipient: (recipient) => {
+            dispatch(Actions.updateRecipient(recipient))
+        },
+        deleteRecipient: (index) => {
+            dispatch(Actions.deleteRecipient(index))
+        }*/
+    }
+}
+class Stores extends Component {
   onChange = (event) => {
     var btnClass = classNames({
       'btn': true,
@@ -16,14 +34,12 @@ export default class Ingredients extends Component {
       .currentTarget
       .setAttribute("class", btnClass)
 
-    store.dispatch({type: ActionTypes.STORE_CHANGE, index: event.currentTarget.value})
+    //store.dispatch({type: ActionTypes.STORE_CHANGE, index: event.currentTarget.value})
   }
   render() {
     return (
       <ButtonGroup bsSize="small">
-        {store
-          .getState()
-          .stores
+        {this.props.stores
           .map(store => <Button
             active={store.active}
             value={store.index}
@@ -33,3 +49,4 @@ export default class Ingredients extends Component {
     )
   }
 }
+export default connect(mapStateToProps, mapDispatchToProps)(Stores)

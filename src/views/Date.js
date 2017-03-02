@@ -6,7 +6,22 @@ import Slider, { Handle } from 'rc-slider'
 
 import ActionTypes from '../ActionTypes';
 import Tooltip from 'rc-tooltip'
-import { store } from '../Store'
+import {connect} from 'react-redux'
+
+//import { store } from '../Store'
+
+const mapStateToProps = (state) => {
+    return {date: state.date}
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        changeDate: () => {
+            //dispatch(Actions.addRecipient())
+        }
+    }
+}
+
 
 const handle = (props) => {
   const {value, dragging, index} = props;
@@ -16,7 +31,7 @@ const handle = (props) => {
     </Tooltip>
     );
 };
-export default class Date extends Component {
+class Date extends Component {
   constructor(props){
     super(props)
     this.state = {
@@ -39,15 +54,17 @@ export default class Date extends Component {
   return output
   }
   onChange = (date) => {
-    store.dispatch({
+    /*dispatch({
       type: ActionTypes.DATE_CHANGE,
       date
-    })
+    })*/
   }
   render() {
     return (
-      <Slider ref="date" min={ this.state.min} max={ this.state.max } marks={ this.marks() } handle={ handle } defaultValue={ store.getState().date } onAfterChange={ this.onChange }
+      <Slider ref="date" min={ this.state.min} max={ this.state.max } marks={ this.marks() } handle={ handle } defaultValue={ this.props.date } onAfterChange={ this.onChange }
       />
     )
   }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Date)

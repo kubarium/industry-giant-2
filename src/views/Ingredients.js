@@ -2,15 +2,32 @@ import {Checkbox, Col, Grid, Row} from 'react-bootstrap'
 import React, {Component} from 'react';
 
 import ActionTypes from '../ActionTypes';
-import {store} from '../Store'
+import {connect} from 'react-redux'
 
-export default class Ingredients extends Component {
+//import {store} from '../Store'
+const mapStateToProps = (state) => {
+    return {ingredients: state.ingredients}
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        /*addRecipient: () => {
+            dispatch(Actions.addRecipient())
+        },
+        updateRecipient: (recipient) => {
+            dispatch(Actions.updateRecipient(recipient))
+        },
+        deleteRecipient: (index) => {
+            dispatch(Actions.deleteRecipient(index))
+        }*/
+    }
+}
+ class Ingredients extends Component {
     onChange = (event) => {
-        store.dispatch({type: ActionTypes.TOGGLE_INGREDIENT, ingredient: event.target.value})
+        //dispatch({type: ActionTypes.TOGGLE_INGREDIENT, index: event.target.value})
     }
     render() {
-        const ingredients = store
-            .getState()
+        const ingredients = this.props
             .ingredients
             .map(ingredient => <Col
                 key={ingredient.index}
@@ -36,3 +53,5 @@ export default class Ingredients extends Component {
         )
     }
 }
+
+export default connect(mapStateToProps, mapDispatchToProps)(Ingredients)

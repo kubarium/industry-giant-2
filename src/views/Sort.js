@@ -1,41 +1,65 @@
-import { Button, ButtonGroup } from 'react-bootstrap'
-import React, { Component } from 'react';
+import {Button, ButtonGroup} from 'react-bootstrap'
+import React, {Component} from 'react';
 
 import ActionTypes from '../ActionTypes';
-import { store } from '../Store'
+import Tooltip from 'rc-tooltip'
+import {connect} from 'react-redux'
 
-export default class Ingredients extends Component {
-    constructor(props) {
+//import {store} from '../Store'
+const mapStateToProps = (state) => {
+    return {products: state.products}
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onSortChange: () => {
+            //dispatch({type: ActionTypes.SORT_CHANGE, index: event.currentTarget.value})
+        }
+        /*addRecipient: () => {
+            dispatch(Actions.addRecipient())
+        },
+        updateRecipient: (recipient) => {
+            dispatch(Actions.updateRecipient(recipient))
+        },
+        deleteRecipient: (index) => {
+            dispatch(Actions.deleteRecipient(index))
+        }*/
+    }
+}
+
+class Sort extends Component {
+    /*constructor(props) {
         super(props)
         this.state = {
-            sortings: [{
-                by: "name",
-                icon: "AZ",
-                active: true
-            }, {
-                by: "totalProfit",
-                icon: "Total Profit",
-                active: false
-            }]
+            sortings: store
+                .getState()
+                .sortings
         }
     }
-    onChange = (event) => {
-        const sortings = this.state.sortings
-        sortings.forEach(element => element.active = element.by === event.currentTarget.value)
-        this.setState({
-            sortings
-        })
-
-        store.dispatch({
-            type: ActionTypes.SORT_CHANGE,
-            sort: event.currentTarget.value
-        })
-    }
+    componentDidMount() {
+        store.subscribe(() => this.setState({
+            sortings: store
+                .getState()
+                .sortings
+        }))
+    }*/
     render() {
         return (
             <ButtonGroup bsSize="small">
-              { this.state.sortings.map(sort => <Button active={ sort.active } value={ sort.by } key={ sort.by } onClick={ this.onChange }><img src={ `icons/${sort.icon}.png` } alt={ sort.icon } /></Button>) }
+                {this.props
+                    .sortings
+                    .map(sorting => <Tooltip
+                        overlay={sorting.active.toString()}
+                        trigger={['click', 'hover']}
+                        placement="top"
+                        key={sorting.index}>
+                        <Button
+                            active={sorting.active}
+                            value={sorting.index}
+                            onClick={(event) => this.onSortChange}><img src={`icons/${sorting.icon}.png`} alt={sorting.icon}/></Button>
+                    </Tooltip>)}
             </ButtonGroup>
         )
     }
 }
+export default connect(mapStateToProps, mapDispatchToProps)(Sort)

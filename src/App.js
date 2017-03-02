@@ -9,6 +9,8 @@ import Products from './Products'
 import Sort from './views/Sort'
 import Stores from './views/Stores'
 
+//import {store} from './Store'
+
 export default class App extends Component {
 
   render() {
@@ -31,13 +33,13 @@ export default class App extends Component {
           <Row className="filter">
             <Col xs={ 12 } sm={ 12 } lg={ 10 } lgOffset={ 1 } md={ 10 } mdOffset={ 1 }>
             <Row>
-              <Col lg={ 10 } xs={ 12 } md={ 10 }>
+              <Col lg={ 8 } xs={ 12 } md={ 9 }>
               <p>Sold At</p>
               <Stores />
               </Col>
               <Clearfix visibleXsBlock visibleMdBlock />
-              <Col lg={ 2 } xs={ 12 } md={ 3 }>
-              <p>Sort</p>
+              <Col lg={ 4 } xs={ 12 } md={ 3 }>
+                  <p>Sort By</p>
               <Sort />
               </Col>
             </Row>

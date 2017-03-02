@@ -2,7 +2,7 @@ import {createStore} from 'redux'
 import products from './data.json'
 import reducers from './Reducers';
 
-export const store = createStore(reducers, {
+const stored = createStore(reducers, {
     products: localStorage["products"]
         ? JSON.parse(localStorage["products"])
         : products,
@@ -13,7 +13,29 @@ export const store = createStore(reducers, {
             name: product.name,
             active: false
         })),
-    sort: "name",
+    sortings: [
+        {
+            index: 0,
+            by: "name",
+            icon: "AZ",
+            active: true
+        }, {
+            index: 1,
+            by: "totalProfit",
+            icon: "Total Profit",
+            active: false
+        }, {
+            index: 2,
+            by: "totalCost",
+            icon: "Total Cost",
+            active: false
+        }, {
+            index: 3,
+            by: "demand",
+            icon: "Demand",
+            active: false
+        }
+    ],
     stores: [
         {
             index: 0,

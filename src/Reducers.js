@@ -6,10 +6,9 @@ const reducers = (state, action) => {
 
     switch (action.type) {
         case ActionTypes.TOGGLE_INGREDIENT:
-            let ingredients = state.ingredients
-            const ingredientIndex = ingredients.indexOf(action.ingredient)
-            ingredientIndex > -1 ? ingredients.splice(ingredientIndex, 1) : ingredients.push(action.ingredient)
-
+            let ingredients = state.ingredients.slice()
+            ingredients[action.index].active = !ingredients[action.index].active
+            
             return Object.assign({},
                 state, {
                     ingredients
@@ -21,13 +20,17 @@ const reducers = (state, action) => {
                     date: action.date
                 })
         case ActionTypes.SORT_CHANGE:
+            let sortings = state.sortings.slice()
+            sortings.forEach(sorting => sorting.active = false)
+            sortings[action.index].active = true
+            
             return Object.assign({},
                 state
                 , {
-                    sort: action.sort
+                    sortings
                 })
         case ActionTypes.STORE_CHANGE:
-            let stores = state.stores
+            let stores = state.stores.slice()
             stores[action.index].active = !stores[action.index].active
 
             return Object.assign({},
@@ -35,7 +38,7 @@ const reducers = (state, action) => {
                     stores
                 })
         case ActionTypes.DEMAND_CHANGE:
-            products = state.products
+            products = state.products.slice()
 
             product = products[action.product.index]
             product.demand = parseInt(action.product.demand, 10)
@@ -48,7 +51,7 @@ const reducers = (state, action) => {
                     products
                 })
         case ActionTypes.ADJUST_PRICE:
-            products = state.products
+            products = state.products.slice()
 
             product = products[action.product.index]
             product.priceAdjustment = parseInt(action.product.priceAdjustment, 10)

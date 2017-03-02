@@ -31,7 +31,8 @@ h2 {
 }
 
 .list-group-item:nth-child(2n) {
-  background: #f9f9ff
+  background: #fbfbfb;
+  /*background: papayawhip*/
 }
 
 .list-group-item h4 {
@@ -73,7 +74,12 @@ h2 {
     display:none;
   }
 
-
+.highlight{
+  border:1px solid steelblue;
+  background: green;
+  color: antiquewhite;
+  font-weight: bold;
+}
 @media (max-width:360px) {
   .product-title {
     width: 100%;

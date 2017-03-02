@@ -60,30 +60,22 @@ export default class Utils {
     }
 
     static GetProduct = (name) => products.filter(product => product.name === name)[0]
-    static FilterByDate = (date) => Utils
-        .filteredProducts
-        .filter(product => product.date <= date)
-
-    static FilterByIngredients = (ingredients) => store
+    
+    static FilterByIngredients = () => store
         .getState()
         .products
-        .filter(product => ingredients.filter(ingredient => (product.merchandisable && product.composition.length === 0) || Utils.BreakdownToRawIngredients(Utils.FullCompositionList(product.name)).includes(ingredient)))
+        .filter(product => (product.merchandisable && product.raw) || store.getState().ingredients.filter(ingredient => ingredient.active === true && Utils.FullCompositionList(product.name).includes(ingredient.name)).length)
 
     static FullCompositionList = (product) => Utils
         .GetProduct(product)
         .composition
-        .map(ingredient => Utils.FullCompositionList(ingredient))
-        .reduce((lastIngredient, newIngredient) => newIngredient.length
-            ? [lastIngredient, newIngredient]
-            : [lastIngredient], Utils.GetProduct(product).composition)
-        .toString()
-
-    static BreakdownToRawIngredients = (product) => product
-        .split(',')
-        .filter(product => Utils.GetProduct(product).composition.length === 0)
+        .reduce((result, current) => result.concat(Utils.GetProduct(current).raw
+            ? current
+            : Utils.FullCompositionList(current)), [])
         .reduce((result, current) => result.indexOf(current) === -1
             ? result.concat(current)
             : result, [])
+   
 }
 
 window.Utils = Utils
