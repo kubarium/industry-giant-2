@@ -11,7 +11,7 @@ import {
 import React, {Component} from 'react';
 import {TiStarFullOutline, TiStarOutline} from 'react-icons/lib/ti/'
 
-import Demand from './Demand'
+import Demand from '../containers/Demand'
 import NumericInput from 'react-numeric-input';
 import Slider from 'rc-slider'
 import Space from 'react-nbsp'
@@ -69,12 +69,8 @@ export default class Product extends Component {
               lg={2}
               sm={2}
               xs={3}
-              className={classNames({
-              "demand-form": true,
-              "highlight": this.props
-                .sortByDemand
-            })}>
-              <Demand demand={this.props.product.demand} onChange={this.props.onDemandChange}/>
+              className={classNames({"demand-form": true, "highlight": this.props.sortByDemand})}>
+              <Demand index={this.props.product.index}/>
             </Col>
           </Row>
         </Grid>
@@ -96,7 +92,7 @@ export default class Product extends Component {
                     step={10}
                     format={(num) => num + "%"}
                     value={this.props.product.priceAdjustment}
-                    onChange={(price)=>this.props.onPriceChange(price)}/>
+                    onChange={(price) => this.props.onPriceChange(price)}/>
                 </Col>
               </Row>
             </Col>
@@ -109,7 +105,7 @@ export default class Product extends Component {
                 step={10}
                 value={this.props.product.priceAdjustment}
                 marks={this.marks()}
-                onChange={(price)=>this.props.onPriceChange(price)}/>
+                onChange={(price) => this.props.onPriceChange(price)}/>
             </Col>
           </Row>
         </Grid>
@@ -125,10 +121,7 @@ export default class Product extends Component {
               lg={3}
               sm={3}
               xs={3}
-              className={classNames({
-              "highlight": this.props
-                .sortByTotalCost
-            })}>
+              className={classNames({"highlight": this.props.sortByTotalCost})}>
               <strong>Total Cost:</strong>
               <Space/>
               <Clearfix visibleXsBlock/> {this.decimalFormatter(this.props.product.totalCost)}
@@ -143,10 +136,7 @@ export default class Product extends Component {
               lg={3}
               sm={3}
               xs={3}
-              className={classNames({
-              "highlight": this.props
-                .sortByTotalProfit
-            })}>
+              className={classNames({"highlight": this.props.sortByTotalProfit})}>
               <strong>Total Profit:</strong>
               <Space/>
               <Clearfix visibleXsBlock/> {this.decimalFormatter(this.props.product.totalProfit)}

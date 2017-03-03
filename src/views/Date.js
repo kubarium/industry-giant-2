@@ -1,18 +1,18 @@
 import 'rc-tooltip/assets/bootstrap.css';
 import 'rc-slider/assets/index.css';
 
-import React, { Component } from 'react';
-import Slider, { Handle } from 'rc-slider'
+import React, {Component} from 'react';
+import Slider, {Handle} from 'rc-slider'
 
 import Tooltip from 'rc-tooltip'
 
 const handle = (props) => {
   const {value, dragging, index} = props;
   return (
-    <Tooltip overlay={ value } visible={ dragging } placement="top" key={ index }>
+    <Tooltip overlay={value} visible={dragging} placement="top" key={index}>
       <Handle {...props}/>
     </Tooltip>
-    );
+  );
 };
 export default class Date extends Component {
   constructor(props) {
@@ -37,9 +37,12 @@ export default class Date extends Component {
     return output
   }
   render() {
-    return (
-      <Slider min={ this.state.min } max={ this.state.max } marks={ this.marks() } handle={ handle } defaultValue={ this.props.date } onAfterChange={ (date) => this.props.dateChange(date) }
-      />
-    )
+    return (<Slider
+      min={this.state.min}
+      max={this.state.max}
+      marks={this.marks()}
+      handle={handle}
+      defaultValue={this.props.date}
+      onAfterChange={(date) => this.props.dateChange(date)}/>)
   }
 }

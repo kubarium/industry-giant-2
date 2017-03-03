@@ -3,15 +3,12 @@ import React, {Component} from 'react';
 
 import {TiChartLine} from 'react-icons/lib/ti/'
 
-//TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy, 
-
-
-
+//TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy,
 
 export default class Demand extends Component {
-/*
+    /*
     onChange = (event) => {
-        const value = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
+        const value = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0
 
         let seasonalDemand = this.state.seasonalDemand
         seasonalDemand[event.target.id] = parseInt(value, 10)
@@ -20,22 +17,21 @@ export default class Demand extends Component {
         this.calculateTotal()
 
     }*/
-    onChange = (event) => this.props.onChange(RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 )
-        
     render() {
         return (
             <Form className="demand" bsSize="sm">
                 <FormGroup>
                     <InputGroup>
                         <InputGroup.Addon><TiChartLine/></InputGroup.Addon>
-                    <FormControl
+                        <FormControl
                             id="fluctuation"
                             type="number"
                             min="0"
                             max="150"
                             value={this.props.demand}
-                            onChange={this.onChange}/>
-                        {/*<InputGroup.Addon><TiLeaf/></InputGroup.Addon>
+                            onChange={(event) => this.props.demandChange(RegExp(/\d+/, "g").test(event.target.value)
+                            ? event.target.value
+                            : 0)}/> {/*<InputGroup.Addon><TiLeaf/></InputGroup.Addon>
                         <FormControl
                             id="spring"
                             type="number"

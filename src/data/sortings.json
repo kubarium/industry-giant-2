@@ -1,0 +1,26 @@
+[
+    {
+        "index": 0,
+        "by": "name",
+        "icon": "AZ",
+        "active": true
+    },
+    {
+        "index": 1,
+        "by": "totalProfit",
+        "icon": "Total Profit",
+        "active": false
+    },
+    {
+        "index": 2,
+        "by": "totalCost",
+        "icon": "Total Cost",
+        "active": false
+    },
+    {
+        "index": 3,
+        "by": "demand",
+        "icon": "Demand",
+        "active": false
+    }
+]

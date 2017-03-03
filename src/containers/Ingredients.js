@@ -1,12 +1,10 @@
 import * as Actions from '../Actions'
 
 import Ingredients from '../views/Ingredients'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 
 const mapStateToProps = (state) => {
-    return {
-        ingredients: state.ingredients
-    }
+    return {ingredients: state.ingredients}
 }
 
 const mapDispatchToProps = (dispatch) => {

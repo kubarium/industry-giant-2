@@ -51,7 +51,7 @@ class Products:
             "soldAt": str
         }
 
-        products = read_csv("src/data.csv", delimiter='\t',
+        products = read_csv("src/data/products.csv", delimiter='\t',
                             converters=converters).to_dict(orient="records")
 
         for product in products:
@@ -87,7 +87,7 @@ class Products:
 
             index += 1
 
-        with open("src/data.json", "w") as file:
+        with open("src/data/products.json", "w") as file:
             json.dump(products, file, indent="\t")
 
     @staticmethod

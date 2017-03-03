@@ -1,12 +1,10 @@
 import * as Actions from '../Actions'
 
 import Date from '../views/Date'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 
 const mapStateToProps = (state) => {
-    return {
-        date: state.date
-    }
+    return {date: state.date}
 }
 
 const mapDispatchToProps = (dispatch) => {
