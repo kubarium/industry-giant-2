@@ -3,13 +3,11 @@ import './App.css';
 import { Clearfix, Col, Grid, Row } from 'react-bootstrap'
 import React, { Component } from 'react';
 
-import Date from './views/Date'
-import Ingredients from './views/Ingredients'
-import Products from './Products'
-import Sort from './views/Sort'
-import Stores from './views/Stores'
-
-//import {store} from './Store'
+import Date from './containers/Date'
+import Ingredients from './containers/Ingredients'
+import Products from './containers/Products'
+import Sort from './containers/Sort'
+import Stores from './containers/Stores'
 
 export default class App extends Component {
 
@@ -33,13 +31,13 @@ export default class App extends Component {
           <Row className="filter">
             <Col xs={ 12 } sm={ 12 } lg={ 10 } lgOffset={ 1 } md={ 10 } mdOffset={ 1 }>
             <Row>
-              <Col lg={ 8 } xs={ 12 } md={ 9 }>
+              <Col lg={ 8 } xs={ 12 } md={ 12 }>
               <p>Sold At</p>
               <Stores />
               </Col>
               <Clearfix visibleXsBlock visibleMdBlock />
-              <Col lg={ 4 } xs={ 12 } md={ 3 }>
-                  <p>Sort By</p>
+              <Col lg={ 4 } xs={ 12 } md={ 12 }>
+                  <p>Sort By {/*{this.props.sortings.filter(sorting=>sorting.active)[0].icon}*/}</p>
               <Sort />
               </Col>
             </Row>

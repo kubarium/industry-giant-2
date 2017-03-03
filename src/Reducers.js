@@ -1,35 +1,35 @@
-import ActionTypes from './ActionTypes';
+import * as Actions from './Actions';
 
 const reducers = (state, action) => {
     let products = []
     let product = {}
 
     switch (action.type) {
-        case ActionTypes.TOGGLE_INGREDIENT:
+        case Actions.TOGGLE_INGREDIENT:
             let ingredients = state.ingredients.slice()
             ingredients[action.index].active = !ingredients[action.index].active
-            
+
             return Object.assign({},
                 state, {
                     ingredients
                 })
-        case ActionTypes.DATE_CHANGE:
+        case Actions.DATE_CHANGE:
             return Object.assign({},
                 state
                 , {
                     date: action.date
                 })
-        case ActionTypes.SORT_CHANGE:
+        case Actions.SORT_CHANGE:
             let sortings = state.sortings.slice()
             sortings.forEach(sorting => sorting.active = false)
             sortings[action.index].active = true
-            
+
             return Object.assign({},
                 state
                 , {
                     sortings
                 })
-        case ActionTypes.STORE_CHANGE:
+        case Actions.STORE_CHANGE:
             let stores = state.stores.slice()
             stores[action.index].active = !stores[action.index].active
 
@@ -37,7 +37,7 @@ const reducers = (state, action) => {
                 state, {
                     stores
                 })
-        case ActionTypes.DEMAND_CHANGE:
+        case Actions.DEMAND_CHANGE:
             products = state.products.slice()
 
             product = products[action.product.index]
@@ -50,7 +50,7 @@ const reducers = (state, action) => {
                 , {
                     products
                 })
-        case ActionTypes.ADJUST_PRICE:
+        case Actions.PRICE_CHANGE:
             products = state.products.slice()
 
             product = products[action.product.index]

@@ -1,9 +1,11 @@
-import React, {Component} from 'react';
 import {Form, FormControl, FormGroup, InputGroup} from 'react-bootstrap'
+import React, {Component} from 'react';
+
 import {TiChartLine} from 'react-icons/lib/ti/'
+
 //TiLeaf, TiWeatherSunny, TiWeatherSnow, TiWeatherCloudy, 
-import { store } from '../Store'
-import ActionTypes from '../ActionTypes';
+
+
 
 
 export default class Demand extends Component {
@@ -18,14 +20,8 @@ export default class Demand extends Component {
         this.calculateTotal()
 
     }*/
-    onFluctuate = (event) => {
-        const demand = RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 
-
-        store.dispatch({
-            type: ActionTypes.DEMAND_CHANGE,
-            product:Object.assign({},this.props.product,{demand})
-        })
-    }
+    onChange = (event) => this.props.onChange(RegExp(/\d+/,"g").test(event.target.value) ? event.target.value : 0 )
+        
     render() {
         return (
             <Form className="demand" bsSize="sm">
@@ -37,8 +33,8 @@ export default class Demand extends Component {
                             type="number"
                             min="0"
                             max="150"
-                            value={this.props.product.demand}
-                            onChange={this.onFluctuate}/>
+                            value={this.props.demand}
+                            onChange={this.onChange}/>
                         {/*<InputGroup.Addon><TiLeaf/></InputGroup.Addon>
                         <FormControl
                             id="spring"

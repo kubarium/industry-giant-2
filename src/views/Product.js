@@ -11,33 +11,13 @@ import {
 import React, {Component} from 'react';
 import {TiStarFullOutline, TiStarOutline} from 'react-icons/lib/ti/'
 
-import ActionTypes from '../ActionTypes';
 import Demand from './Demand'
 import NumericInput from 'react-numeric-input';
 import Slider from 'rc-slider'
 import Space from 'react-nbsp'
 import classNames from 'classnames'
-import {connect} from 'react-redux'
 
-//import {store} from '../Store'
-const mapStateToProps = (state) => {
-    return {products: state.products}
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        /*addRecipient: () => {
-            dispatch(Actions.addRecipient())
-        },
-        updateRecipient: (recipient) => {
-            dispatch(Actions.updateRecipient(recipient))
-        },
-        deleteRecipient: (index) => {
-            dispatch(Actions.deleteRecipient(index))
-        }*/
-    }
-}
-class Product extends Component {
+export default class Product extends Component {
   marks = () => {
     const max = 150
     const min = 50
@@ -57,13 +37,6 @@ class Product extends Component {
       ? (number / 1000).toFixed(2) + "K"
       : number
 
-  onPriceChange = (priceAdjustment) => {
-    /*store.dispatch({
-      type: ActionTypes.ADJUST_PRICE,
-      product: Object.assign({}, this.props.product, {priceAdjustment})
-
-    })*/
-  }
   render() {
     return (
       <ListGroupItem>
@@ -99,9 +72,9 @@ class Product extends Component {
               className={classNames({
               "demand-form": true,
               "highlight": this.props
-                .sortings[3].active
+                .sortByDemand
             })}>
-              <Demand product={this.props.product}/>
+              <Demand demand={this.props.product.demand} onChange={this.props.onDemandChange}/>
             </Col>
           </Row>
         </Grid>
@@ -123,7 +96,7 @@ class Product extends Component {
                     step={10}
                     format={(num) => num + "%"}
                     value={this.props.product.priceAdjustment}
-                    onChange={this.onPriceChange}/>
+                    onChange={(price)=>this.props.onPriceChange(price)}/>
                 </Col>
               </Row>
             </Col>
@@ -136,7 +109,7 @@ class Product extends Component {
                 step={10}
                 value={this.props.product.priceAdjustment}
                 marks={this.marks()}
-                onChange={this.onPriceChange}/>
+                onChange={(price)=>this.props.onPriceChange(price)}/>
             </Col>
           </Row>
         </Grid>
@@ -154,7 +127,7 @@ class Product extends Component {
               xs={3}
               className={classNames({
               "highlight": this.props
-                .sortings[2].active
+                .sortByTotalCost
             })}>
               <strong>Total Cost:</strong>
               <Space/>
@@ -172,7 +145,7 @@ class Product extends Component {
               xs={3}
               className={classNames({
               "highlight": this.props
-                .sortings[1].active
+                .sortByTotalProfit
             })}>
               <strong>Total Profit:</strong>
               <Space/>
@@ -184,4 +157,3 @@ class Product extends Component {
     )
   }
 }
-export default connect(mapStateToProps, mapDispatchToProps)(Product)

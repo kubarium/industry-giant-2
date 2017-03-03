@@ -4,24 +4,7 @@ import 'rc-slider/assets/index.css';
 import React, { Component } from 'react';
 import Slider, { Handle } from 'rc-slider'
 
-import ActionTypes from '../ActionTypes';
 import Tooltip from 'rc-tooltip'
-import {connect} from 'react-redux'
-
-//import { store } from '../Store'
-
-const mapStateToProps = (state) => {
-    return {date: state.date}
-}
-
-const mapDispatchToProps = (dispatch) => {
-    return {
-        changeDate: () => {
-            //dispatch(Actions.addRecipient())
-        }
-    }
-}
-
 
 const handle = (props) => {
   const {value, dragging, index} = props;
@@ -31,40 +14,32 @@ const handle = (props) => {
     </Tooltip>
     );
 };
-class Date extends Component {
-  constructor(props){
+export default class Date extends Component {
+  constructor(props) {
     super(props)
     this.state = {
-      min:1900,
-      max:2019,
-      divider:8
+      min: 1900,
+      max: 2019,
+      divider: 8
     }
   }
   marks = () => {
-  const max = this.state.max
-  const min = this.state.min
-  let divider = this.state.divider
-  const interval =  Math.floor((max-min)/(divider-1))
-  let output = {}
-  while(divider){
-    const date = min+(--divider*interval)
-    output[date] = date
-  }
-  output[max] = max
-  return output
-  }
-  onChange = (date) => {
-    /*dispatch({
-      type: ActionTypes.DATE_CHANGE,
-      date
-    })*/
+    const max = this.state.max
+    const min = this.state.min
+    let divider = this.state.divider
+    const interval = Math.floor((max - min) / (divider - 1))
+    let output = {}
+    while (divider) {
+      const date = min + (--divider * interval)
+      output[date] = date
+    }
+    output[max] = max
+    return output
   }
   render() {
     return (
-      <Slider ref="date" min={ this.state.min} max={ this.state.max } marks={ this.marks() } handle={ handle } defaultValue={ this.props.date } onAfterChange={ this.onChange }
+      <Slider min={ this.state.min } max={ this.state.max } marks={ this.marks() } handle={ handle } defaultValue={ this.props.date } onAfterChange={ (date) => this.props.dateChange(date) }
       />
     )
   }
 }
-
-export default connect(mapStateToProps, mapDispatchToProps)(Date)
