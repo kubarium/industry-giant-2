@@ -53,5 +53,20 @@
         "index": 10,
         "name": "Car Dealer",
         "active": false
+    },
+    {
+        "index": 11,
+        "name": "Book Shop",
+        "active": false
+    },
+    {
+        "index": 12,
+        "name": "Jewellery",
+        "active": false
+    },
+    {
+        "index": 13,
+        "name": "Coffee Shop",
+        "active": false
     }
 ]

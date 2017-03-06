@@ -1,8 +1,8 @@
 name	cost	ingredient_1	ingredient_2	ingredient_3	ingredient_4	price	date	merchandisable	raw	manufacturedAt	soldAt
 Accordion	640	Plastics				22150	1958	TRUE	FALSE	Instruments	Instruments
 Action Heros	1770	Plastics				27300	1960	TRUE	FALSE	Toys	Toys
-Aluminum	420	Bauxite				0	1923	FALSE	FALSE	NOPE	NOPE
-Aluminum Ladder	2560	Aluminum				25000	1942	TRUE	FALSE	NOPE	Home Hardware
+Aluminum	420	Bauxite				0	1923	FALSE	FALSE	Forge	NOPE
+Aluminum Ladder	2560	Aluminum				25000	1942	TRUE	FALSE	Home Hardware	Home Hardware
 Amplifier	2570	Wooden Board	Steel	Electronic Components		48000	1947	TRUE	FALSE	Instruments	Instruments
 Baby Food	340	Milk				14150	1928	TRUE	FALSE	Grocery	Grocery
 Baby Nappies	640	Cotton				21230	1961	TRUE	FALSE	Clothing	Clothing
@@ -16,19 +16,19 @@ Body	6500	Steel				0	1935	FALSE	FALSE	Car Factory	NOPE
 Bowling Balls	1280	Plastics				15380	1922	TRUE	FALSE	Sports	Sports
 Brass Instruments	1450	High Grade Steel				29070	1936	TRUE	FALSE	Instruments	Instruments
 Bread	240	Wheat				4540	1900	TRUE	FALSE	Grocery	Grocery
-Calendar	980	Cardboard	Paper			16740	1911	TRUE	FALSE	Printshop	Printshop
+Calendar	980	Cardboard	Paper			16740	1911	TRUE	FALSE	Book Shop	Book Shop
 Cans	480	Steel				4240	1934	TRUE	FALSE	NOPE	NOPE
-Cardboard	420	Grain Wood				6980	1900	TRUE	FALSE	Paper Factory	Printshop
-Cards	670	Cardboard				11540	1904	TRUE	FALSE	Printshop	Printshop
+Cardboard	420	Grain Wood				6980	1900	TRUE	FALSE	Paper Factory	Book Shop
+Cards	670	Cardboard				11540	1904	TRUE	FALSE	Book Shop	Book Shop
 CD Player	3230	Aluminum	Electronic Components	Plastics		60000	1000	TRUE	FALSE	Electronics	Electronics
 Chairs	2320	Leather	Cut Wood			20300	1908	TRUE	FALSE	Furniture	Furniture
-Christmas Trees	140					7920	1913	TRUE	FALSE	Farm	NOPE
+Christmas Trees	140					7920	1913	TRUE	FALSE	Farm	Home Hardware
 Colour TV	2240	Plastics	Electronic Components	Electronic Components	Glass	51460	1963	TRUE	FALSE	Electronics	Electronics
-Comics	780	Paper				24460	1941	TRUE	FALSE	Printshop	Printshop
+Comics	780	Paper				24460	1941	TRUE	FALSE	Book Shop	Book Shop
 Computer	3890	Steel	Electronic Components	Electronic Components	Plastics	85390	1000	TRUE	FALSE	Electronics	Electronics
 Copper Ore	520					0	1900	FALSE	TRUE	Mine	NOPE
 Copper Wire	760	Copper Ore				0	1925	FALSE	FALSE	Forge	NOPE
-Copybooks	540	Paper				8690	1900	TRUE	FALSE	Printshop	Printshop
+Copybooks	540	Paper				8690	1900	TRUE	FALSE	Book Shop	Book Shop
 Cotton	180					350	1900	FALSE	TRUE	Farm	NOPE
 Crank Telephone	-1	Wooden Board	Copper Wire			-1	1910	TRUE	FALSE	Electronics	Electronics
 Crocodile Handbags	1090	Crocodile Leather				23770	1936	TRUE	FALSE	Clothing	Clothing
@@ -54,7 +54,7 @@ Electric Toothbrush	-1	Plastics	Electric Engines			-1	1964	TRUE	FALSE	NOPE	Home 
 Electronic Components	890	Plastics	Copper Wire			17700	1925	FALSE	FALSE	Electronics	NOPE
 Engines	4800	Steel				0	1935	FALSE	FALSE	Car Factory	NOPE
 Fabrics	840	Cotton				7920	1900	TRUE	FALSE	Clothing	Clothing
-Fashion Jewellery	3700	Aluminum	Glass			23080	1955	FALSE	FALSE	NOPE	NOPE
+Fashion Jewellery	3700	Aluminum	Glass			23080	1955	FALSE	FALSE	Jewellery Factory	Jewellery
 Fish	490					6970	1955	TRUE	TRUE	Fishmonger	Grocery
 Fishing	1190	Aluminum	Nylon			37460	1955	TRUE	FALSE	Sports	Sports
 Fitness Appliances	3840	Steel				28150	1945	TRUE	FALSE	Sports	Sports
@@ -69,12 +69,12 @@ Furry Pets	870	Fabrics	Grain Wood			15690	1902	TRUE	FALSE	Toys	Toys
 Gambling Pieces	460	Wooden Board				0	1919	FALSE	FALSE	NOPE	NOPE
 Garden Furniture (Plastic)	-1	Plastics				-1	1962	TRUE	FALSE	Furniture	Furniture
 Garden Furniture (Wooden)	960	Wooden Board				14380	1962	TRUE	FALSE	Furniture	Furniture
-Garden Gnome	990	Plastics				21300	1933	TRUE	FALSE	NOPE	NOPE
+Garden Gnome	990	Plastics				21300	1933	TRUE	FALSE	NOPE	Home Hardware
 Garden Houses	840	Wooden Board	Wooden Board	Wooden Board		18300	1912	TRUE	FALSE	Furniture	Furniture
-Gift Wrapping	600	Paper				12500	1916	TRUE	FALSE	Printshop	Printshop
-Glass	360	Quartz Sand				10230	1900	TRUE	FALSE	NOPE	NOPE
+Gift Wrapping	600	Paper				12500	1916	TRUE	FALSE	Book Shop	Book Shop
+Glass	360	Quartz Sand				10230	1900	TRUE	FALSE	Glassmaker	Home Appliances
 Gold	6708					0	1955	FALSE	TRUE	Port	NOPE
-Gold Jewellery	6500	Gold				30770	1955	FALSE	FALSE	NOPE	NOPE
+Gold Jewellery	6500	Gold				30770	1955	FALSE	FALSE	Jewellery Factory	NOPE
 Grain Wood	520	Cut Wood				1770	1900	FALSE	FALSE	Sawmill	NOPE
 Grapes	1000					6920	1900	TRUE	TRUE	Vineyard	Grocery
 Gril	1290	High Grade Steel				38460	1951	TRUE	FALSE	Home Hardware	Home Hardware
@@ -106,12 +106,12 @@ Model Railroad	2290	Plastics	Electronic Components			40380	1952	TRUE	FALSE	Toys	
 Motor Car	12450	Body	Tyres	Engines		85380	1935	TRUE	FALSE	NOPE	Car Dealer
 Mouth Organ	780	Steel				14610	1941	TRUE	FALSE	Instruments	Instruments
 MP3 Player	2190	Plastics	Electronic Components			60000	2005	TRUE	FALSE	Electronics	Electronics
-Newspaper	750	Paper				8770	1900	TRUE	FALSE	Printshop	Printshop
+Newspaper	750	Paper				8770	1900	TRUE	FALSE	Book Shop	Book Shop
 Nylon	720	Petroleum				2770	1939	FALSE	FALSE	NOPE	NOPE
 Nylon Tights	780	Nylon				19070	1939	TRUE	FALSE	Clothing	Clothing
 Nylon Toothbrush	720	Plastics	Nylon			19920	1946	TRUE	FALSE	NOPE	Home Appliances
 Office Furniture	2780	Wooden Board	Steel			39230	1931	TRUE	FALSE	Furniture	Furniture
-Paper	360	Grain Wood				6070	1900	TRUE	FALSE	Paper Factory	Printshop
+Paper	360	Grain Wood				6070	1900	TRUE	FALSE	Paper Factory	Book Shop
 Peanut Butter	-1	Peanuts	Milk			-1	1917	TRUE	FALSE	Grocery	Grocery
 Peanuts	140					300	1905	FALSE	TRUE	Farm	NOPE
 Petroleum	540					0	1900	FALSE	TRUE	Oil Derelict	NOPE
@@ -124,7 +124,7 @@ Plastic Cars	720	Plastics				13840	1937	TRUE	FALSE	NOPE	Toys
 Plastic Discus	750	Plastics				18230	1000	TRUE	FALSE	Sports	Sports
 Plastics	480	Petroleum				2540	1900	FALSE	FALSE	Chemical Plant	NOPE
 Popcorn	660	Maize				6930	1900	TRUE	FALSE	Grocery	Grocery
-Posters	700	Paper				16000	1924	TRUE	FALSE	Printshop	Printshop
+Posters	700	Paper				16000	1924	TRUE	FALSE	Book Shop	Book Shop
 Potatoes	360					7840	1900	TRUE	FALSE	Farm	NOPE
 Power Mower	3590	Steel	Engines	Rubber		61540	1960	TRUE	FALSE	Home Hardware	Home Hardware
 Precious Metals	560					0	1900	FALSE	TRUE	Mine	NOPE
@@ -156,18 +156,18 @@ Sport Shoes	800	Fabrics	Leather	Rubber		42150	1947	TRUE	FALSE	Clothing	Clothing
 Steel	850	Iron Ore				3000	1900	FALSE	FALSE	Forge	NOPE
 Summer Clothes	1230	Fabrics				13690	1900	TRUE	FALSE	Clothing	Clothing
 Sun Glasses	1780	High Grade Steel	Glass			38470	1955	TRUE	FALSE	NOPE	NOPE
-Sun Protection	720	Petroleum				19770	1958	TRUE	FALSE	NOPE	NOPE
+Sun Protection	720	Petroleum				19770	1958	TRUE	FALSE	NOPE	Home Appliances
 Telephone	2030	Plastics	Copper Wire			34300	1932	TRUE	FALSE	Electronics	Electronics
 Tennis Racket	1290	Aluminum	Nylon			43690	1959	TRUE	FALSE	Sports	Sports
-Tissues	-1	Grain Wood				13840	1914	TRUE	FALSE	NOPE	NOPE
-Tomatoes	320					7680	1900	TRUE	FALSE	Farm	NOPE
+Tissues	-1	Grain Wood				13840	1914	TRUE	FALSE	NOPE	Home Appliances
+Tomatoes	320					7680	1900	TRUE	TRUE	Farm	Grocery
 Tools	1760	Wooden Board	Steel			17320	1900	TRUE	FALSE	Home Hardware	Home Hardware
 Tricycles	1120	Steel				6380	1900	TRUE	FALSE	Toys	Toys
 TV Set	2460	Wooden Board	Electronic Components	Glass		38380	1929	TRUE	FALSE	Electronics	Electronics
 Tyres	2390	Steel	Rubber			20440	1935	TRUE	FALSE	Car Factory	Car Dealer
 Video Phone	-1	Plastics	Electronic Components			-1	2011	TRUE	FALSE	Electronics	Electronics
 Video Recorder	2340	Aluminum	Electronic Components			55390	1000	TRUE	FALSE	Electronics	Electronics
-Wallpaper	1390	Paper				14610	1921	TRUE	FALSE	Printshop	Printshop
+Wallpaper	1390	Paper				14610	1921	TRUE	FALSE	Book Shop	Book Shop
 Washing Machine	3370	Steel	Steel	Electric Engines		46610	1938	TRUE	FALSE	Home Appliances	Home Appliances
 Watch	1900	High Grade Steel	Leather	Glass		49240	1955	TRUE	FALSE	NOPE	NOPE
 Watering Can	890	Plastics				19840	1948	TRUE	FALSE	Home Hardware	Home Hardware
@@ -189,3 +189,10 @@ Plastic Bricks	500	Plastics				27000	1000	TRUE	FALSE	Toys	Toys
 Keyboard	2370	Plastics	Electronic Components			65460	1000	TRUE	FALSE	Instruments	Instruments
 CD	920	Plastics	Glass			37770	1000	TRUE	FALSE	Instruments	Instruments
 Lightbulb	660	Glass	High Grade Steel			15390	1000	TRUE	FALSE	Electronics	Electronics
+Tea	-1	Tea Leaves				-1	1900	TRUE	FALSE	Grocery	Coffee Shop
+Tea Leaves	-1					-1	1900	FALSE	TRUE	Port	NOPE
+Coffee	-1	Coffee Beans				-1	1900	TRUE	FALSE	Grocery	Coffee Shop
+Coffee Beans	-1					-1	1900	FALSE	TRUE	Port	NOPE
+Chocolate	-1	Cocoa Beans	Milk			-1	1900	TRUE	FALSE	Grocery	Grocery
+Cocoa Beans	-1					-1	1900	FALSE	TRUE	Port	NOPE
+Ketchup	-1	Tomatoes	Plastics			-1	1900	TRUE	FALSE	Grocery	Grocery
