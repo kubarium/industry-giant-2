@@ -189,10 +189,10 @@ Plastic Bricks	500	Plastics				27000	1000	TRUE	FALSE	Toys	Toys
 Keyboard	2370	Plastics	Electronic Components			65460	1000	TRUE	FALSE	Instruments	Instruments
 CD	920	Plastics	Glass			37770	1000	TRUE	FALSE	Instruments	Instruments
 Lightbulb	660	Glass	High Grade Steel			15390	1000	TRUE	FALSE	Electronics	Electronics
-Tea	-1	Tea Leaves				-1	1900	TRUE	FALSE	Grocery	Coffee Shop
-Tea Leaves	-1					-1	1900	FALSE	TRUE	Port	NOPE
-Coffee	-1	Coffee Beans				-1	1900	TRUE	FALSE	Grocery	Coffee Shop
-Coffee Beans	-1					-1	1900	FALSE	TRUE	Port	NOPE
-Chocolate	-1	Cocoa Beans	Milk			-1	1900	TRUE	FALSE	Grocery	Grocery
-Cocoa Beans	-1					-1	1900	FALSE	TRUE	Port	NOPE
-Ketchup	-1	Tomatoes	Plastics			-1	1900	TRUE	FALSE	Grocery	Grocery
+Tea	360	Tea Leaves				16160	1900	TRUE	FALSE	Grocery	Coffee Shop
+Tea Leaves	7428					0	1900	FALSE	TRUE	Port	NOPE
+Coffee	520	Coffee Beans				19240	1900	TRUE	FALSE	Grocery	Coffee Shop
+Coffee Beans	9108					0	1900	FALSE	TRUE	Port	NOPE
+Chocolate	710	Cocoa Beans	Milk			23080	1900	TRUE	FALSE	Grocery	Grocery
+Cocoa Beans	10188					0	1900	FALSE	TRUE	Port	NOPE
+Ketchup	620	Tomatoes	Plastics			17700	1900	TRUE	FALSE	Grocery	Grocery

@@ -6,6 +6,7 @@ export default class Utils {
 
         return products
             .filter(product => product.raw)
+            .sort((a, b) => a.name < b.name ? -1 : a.name > b.name ? 1 : 0)
             .map((product, index) => Object.assign({}, {
                 index,
                 name: product.name,
@@ -14,7 +15,6 @@ export default class Utils {
     }
 
     static GetProduct = (name) => products.filter(product => product.name === name)[0]
-
     static FilterByIngredients = (products, ingredients) => products.filter(product => (product.merchandisable && product.raw) || ingredients.filter(ingredient => ingredient.active === true && Utils.FullCompositionList(product.name).includes(ingredient.name)).length)
 
     static FullCompositionList = (product) => Utils
