@@ -5,6 +5,7 @@ import {connect} from 'react-redux'
 
 const mapStateToProps = (state) => {
     return {
+        date:state.date,
         sortBy: state
             .sortings
             .filter(sorting => sorting.active)[0]

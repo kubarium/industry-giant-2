@@ -1,6 +1,7 @@
 import 'rc-tooltip/assets/bootstrap.css';
 import 'rc-slider/assets/index.css';
 
+import {Col, Grid, Row} from 'react-bootstrap'
 import React, {Component} from 'react';
 import Slider, {Handle} from 'rc-slider'
 
@@ -37,12 +38,19 @@ export default class Date extends Component {
     return output
   }
   render() {
-    return (<Slider
-      min={this.state.min}
-      max={this.state.max}
-      marks={this.marks()}
-      handle={handle}
-      defaultValue={this.props.date}
-      onAfterChange={(date) => this.props.dateChange(date)}/>)
+    return (
+      <Grid fluid>
+        <Row>
+          <Col>
+            <Slider
+              min={this.state.min}
+              max={this.state.max}
+              marks={this.marks()}
+              handle={handle}
+              defaultValue={this.props.date}
+              onAfterChange={(date) => this.props.dateChange(date)}/></Col>
+        </Row>
+      </Grid>
+    )
   }
 }
