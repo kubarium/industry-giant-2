@@ -42,12 +42,12 @@ export default class App extends Component {
                 </Col>
               </Row>
               <Row>
-                <Col lg={8} xs={7} md={8}>
+                <Col lg={7} xs={12} md={7}>
                   <p>Sold At</p>
                   <Stores/>
                 </Col>
-                {/* <Clearfix visibleXsBlock visibleMdBlock/> */}
-                <Col lg={4} xs={5} md={4}>
+                <Clearfix visibleXsBlock/> 
+                <Col lg={4} lgOffset={1} xs={12} md={4} mdOffset={1}>
                   <p>Sort By {this.props.sortBy}</p>
                   <Sort/>
                 </Col>

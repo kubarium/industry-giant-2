@@ -1,13 +1,14 @@
 import {Button, ButtonGroup} from 'react-bootstrap'
 import React, {Component} from 'react';
 
+import Media from 'react-media'
 import Tooltip from 'rc-tooltip'
 
 export default class Sort extends Component {
 
     render() {
         return (
-            <ButtonGroup bsSize="xsmall">
+            <ButtonGroup bsSize={<Media query="(max-width: 640px)">{matches => matches ? ("small") : ("xsmall")}</Media>}>
                 {this
                     .props
                     .sortings
