@@ -1,5 +1,8 @@
-h2 {
+h1 {
   text-align: center;
+}
+h3{
+  margin-top:0px;
 }
 
 .App-header {
@@ -8,10 +11,6 @@ h2 {
   padding: 20px;
   color: white;
   margin-bottom: 20px
-}
-
-.App-intro {
-  font-size: large;
 }
 
 #spring+.input-group-addon>svg {
@@ -49,6 +48,10 @@ h2 {
   padding-bottom: 0px;
 }
 
+.rc-slider{
+  margin: 15px 0 20px;
+}
+
 .ingredients {
   font-size: smaller
 }
@@ -62,8 +65,8 @@ h2 {
 }
 
 .filter {
-  padding: 15px 0;
-  margin: 15px 0;
+  padding: 10px 0;
+  margin: 10px 0;
 }
 
 .btn-group{
