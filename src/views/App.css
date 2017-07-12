@@ -77,6 +77,32 @@ h3{
     display:none;
   }
 
+  /* span{
+  
+  border:1px solid red;
+  width:24px;
+  height:24px;
+  display:inline-block; 
+  margin:0;
+  padding:0;
+  position: relative;
+}
+
+span > span{
+  display:none;
+  
+}
+span.checked{
+  border:0;
+  position: absolute;
+    left: 3px;
+    top: 3px;
+  width:18px;
+  height:18px;
+  display:inline-block;
+  background:red;
+} */
+
 .highlight{
   border:1px solid steelblue;
   background: green;
